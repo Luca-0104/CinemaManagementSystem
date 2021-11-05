@@ -1,0 +1,30 @@
+actor Administrator
+control ": Screening System" as system
+participant ": Cinema" as c
+entity ": Screening(current)" as sc
+entity "ss: Screening(selected)" as ss
+entity "s : Screen" as S
+entity "m : Movie" as M
+
+ref over Administrator,sc:displayScreening()
+Administrator->system:selectScreening(ss)
+activate system
+system->system:highLightScreening(ss)
+Administrator<--system:
+
+deactivate system
+
+Administrator->system:changeScreening(screen,dateTime,movie)
+activate system
+system->c:updateScreening(ss,screen,dateTime,movie)
+activate c
+c->ss:setTime(dateTime)
+c->c:s := getScreen(screen)
+c->c:m := getMovie(movie)
+c->ss:setScreen(s)
+c->ss:setMovie(m)
+system<--c:
+deactivate c
+system->system:updateDisplay()
+Administrator<--system:
+deactivate system

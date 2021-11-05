@@ -1,0 +1,24 @@
+actor Administrator
+control ": Screening System" as system
+participant ": Cinema" as c
+entity ": Screening(current)" as sc
+entity "s: Screening(selected)" as ss
+
+ref over Administrator,sc:displayScreening()
+Administrator->system:selectScreening(s)
+activate system
+system->system:highLightScreening(s)
+Administrator<--system:
+deactivate system
+
+Administrator->system:changeScreening(screen,dateTime,movie)
+activate system
+system ->system:checkOverScreening()
+activate system
+system->c:getScreen(sno)
+system<--c:return screen
+system->system:sendAlert("Capacity Issue")
+deactivate system
+Administrator<--system:
+deactivate system
+

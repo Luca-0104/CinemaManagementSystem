@@ -1,0 +1,23 @@
+actor Administrator
+control ": Screening System" as system
+participant ": Cinema" as c
+entity ": Screening(current)" as sc
+entity "ss: Screening(selected)" as ss
+
+ref over Administrator,sc:displayScreening()
+Administrator->system:selectScreening(ss)
+activate system
+system->system:highLightScreening(ss)
+Administrator<--system:
+deactivate system
+
+Administrator->system:changeScreening(screen,dateTime,movie)
+activate system
+system ->system:checkOverlapping()
+activate system
+system<-system:sendAlert("Overlapping")
+
+deactivate system
+Administrator<--system:
+deactivate system
+

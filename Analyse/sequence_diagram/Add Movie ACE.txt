@@ -1,0 +1,13 @@
+actor Administrator
+control ": Screening System" as system
+entity ": Cinema" as c
+entity ": Movie" as m
+
+Administrator->system:addMovie(details)
+activate system
+Administrator<-system:confirm()
+activate Administrator
+Administrator-->system:return false
+deactivate Administrator
+Administrator<--system:
+deactivate system

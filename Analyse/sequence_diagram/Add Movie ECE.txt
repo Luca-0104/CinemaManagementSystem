@@ -1,0 +1,15 @@
+actor Administrator
+control ": Screening System" as system
+entity ": Cinema" as c
+entity ": Movie" as m
+
+Administrator->system:addMovie(details)
+activate system
+system->system:checkExistMovie()
+activate system
+system<-system:sendAlert("Existed Movie")
+deactivate system
+Administrator<--system:
+deactivate system
+
+

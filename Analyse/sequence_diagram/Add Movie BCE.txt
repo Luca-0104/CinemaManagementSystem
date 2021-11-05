@@ -1,0 +1,20 @@
+actor Administrator
+control ": Screening System" as system
+entity ": Cinema" as c
+entity ": Movie" as m
+
+Administrator->system:addMovie(details)
+activate system
+system->c:addMovie(details)
+activate c
+c->*m:Movie(title, running time)
+activate m
+c<--m:
+deactivate m
+system<--c:
+deactivate c
+system->system:updateDisplay()
+Administrator<--system:
+deactivate system
+
+
