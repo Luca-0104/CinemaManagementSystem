@@ -1,0 +1,42 @@
+title Sell Tickets (ECE)
+
+actor Teller
+control ": Ticket System" as ts
+entity ": Cinema" as c
+entity ": Screening(current)" as sc
+entity "s: Screening(selected)" as s
+
+ref over Teller,sc:displayScreening()
+
+
+Teller->ts:selectedScreening()
+activate Teller
+activate ts
+
+ts->ts:highLightScreening()
+ts-->Teller:
+
+Teller->ts:sellTickets()
+
+ts->Teller:enterNum()
+Teller-->ts:return num
+ts->Teller:confirm()
+Teller-->ts:return ture
+deactivate Teller
+
+ts->c:sellTickets(s, num)
+activate c
+
+c->s:isEnough(num)
+activate s
+s-->c:return false
+
+deactivate s
+
+c-->ts:return false
+deactivate c
+
+ts->ts:sendAlert("Capacity Issue")
+
+ts-->Teller:
+deactivate ts

@@ -1,0 +1,29 @@
+title Sell Tickets (ACEb)
+
+actor Teller
+control ": Ticket System" as ts
+entity ": Cinema" as c
+entity ": Screening(current)" as sc
+entity "s: Screening(selected)" as s
+
+ref over Teller,sc:displayScreening()
+
+Teller->ts:selectedScreening()
+activate Teller
+activate ts
+
+ts->ts:highLightScreening()
+ts-->Teller:
+
+Teller->ts:sellTickets()
+
+ts->Teller:enterNum()
+Teller-->ts:return num
+ts->Teller:confirm()
+Teller-->ts:return false
+deactivate Teller
+
+ts->ts:updateDisplay()
+
+ts-->Teller:
+deactivate ts

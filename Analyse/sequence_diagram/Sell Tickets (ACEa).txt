@@ -1,0 +1,26 @@
+title Sell Tickets (ACEa)
+
+actor Teller
+control ": Ticket System" as ts
+entity ": Cinema" as c
+entity ": Screening(current)" as sc
+entity "s: Screening(selected)" as s
+
+ref over Teller,sc:displayScreening()
+
+Teller->ts:selectedScreening()
+activate Teller
+activate ts
+
+ts->ts:highLightScreening()
+ts-->Teller:
+
+Teller->ts:sellTickets()
+deactivate Teller
+
+ts->ts:sendAlert("Already begun")
+
+ts->ts:updateDisplay()
+
+ts-->Teller:
+deactivate ts
