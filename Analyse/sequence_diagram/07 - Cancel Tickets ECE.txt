@@ -1,0 +1,41 @@
+actor "Teller" as A
+control ": TicketSystem" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "selected: Screening (selected)" as selected
+
+
+ref over A,SI: displayScreen()
+
+A->SS: selectScreening(selected)
+activate A
+activate SS
+SS->SS:highLightScreening(selected)
+
+SS-->A:
+deactivate SS
+
+A->SS: cancelTickets()
+activate SS
+
+SS->A: getTicketNumber()
+
+A-->SS: return number
+deactivate A
+
+SS->SS:checkNumber()
+activate SS
+
+SS->C: getSoldNumber(selected)
+activate C
+
+C->selected: n := getSoldNumber(selected)
+
+C-->SS:return n
+deactivate C
+deactivate SS
+
+SS->SS:sendAlert("number exceeds the available seats")
+
+SS-->A:alert
+deactivate SS

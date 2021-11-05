@@ -1,0 +1,37 @@
+actor "Administrator" as A
+control ":Screening System" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "m : Movie" as M
+
+A->SS: deleteMovie()
+activate SS
+
+SS->SS: updateDisplay()
+
+A->SS: selectMovie(movie)
+
+SS->A: confirm()
+activate A
+
+A-->SS:return yes
+deactivate A
+
+SS->C: getMovie(movie)
+activate C
+
+
+C-->SS:return "No such movie"
+deactivate C
+
+
+
+
+SS->SS:updataDisplay()
+
+SS->SS: sendAlert("No such movie")
+
+SS-->A:return alert
+deactivate SS
+
+

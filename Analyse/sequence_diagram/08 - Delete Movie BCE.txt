@@ -1,0 +1,38 @@
+actor "Administrator" as A
+control ":Screening System" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "m : Movie" as M
+
+A->SS: deleteMovie()
+activate SS
+
+SS->SS: updateDisplay()
+
+A->SS: selectMovie(movie)
+
+SS->A: confirm()
+activate A
+
+A-->SS:return true
+deactivate A
+
+SS->C:deleteMovie(movie)
+activate C
+
+C->C: m := getMovie(movie)
+
+C->C: deleteMovie(m)
+activate C
+C-->M:<<destroy>>
+destroy M
+deactivate C
+C-->SS:
+deactivate C
+
+SS->SS:updateDisplay()
+
+SS-->A:
+deactivate SS
+
+

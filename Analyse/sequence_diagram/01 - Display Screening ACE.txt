@@ -1,0 +1,28 @@
+actor "Teller" as A
+control ": ScreeningSystem" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "s : Screen" as S
+entity "m : Movie" as M
+
+A->SS: displayScreening()
+activate SS
+
+
+SS->A: getScreeningDate()
+activate A
+
+A-->SS: return date
+deactivate A
+
+SS->C: getScreening(date)
+activate C
+
+C-->SS: return null
+deactivate C
+
+SS->SS: sendAlart("No Screening")
+SS->SS: updateDisplay()
+
+SS-->A:
+deactivate SS

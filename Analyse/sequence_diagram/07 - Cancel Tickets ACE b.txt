@@ -1,0 +1,27 @@
+actor "Teller" as A
+control ": TicketSystem" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "selected: Screening (selected)" as selected
+
+
+ref over A,SI: displayScreen()
+
+A->SS: selectScreening(selected)
+activate A
+activate SS
+SS->SS:highLightScreening(selected)
+
+SS-->A:
+deactivate SS
+
+A->SS: cancelTickets()
+activate SS
+
+SS->A: confirm()
+
+A-->SS: return false
+deactivate A
+
+SS-->A:
+deactivate SS

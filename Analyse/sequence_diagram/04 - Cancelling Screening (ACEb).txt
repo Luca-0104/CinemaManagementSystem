@@ -1,18 +1,19 @@
-title Cancelling Screening (BCE)
+title Cancelling Screening (ACEb)
 
 actor Administator
-control ": Administative System" as as
+control ": ScreeningSystem" as as
 entity ": Cinema" as c
 entity ": Screening(current)" as sc
-entity ": Screening(selected)" as ss
+entity "selected: Screening(selected)" as ss
 
 ref over Administator,sc:displayScreening()
 
-Administator->as:selectedScreening()
+
+Administator->as:selectScreening(selected)
 activate Administator
 activate as
 
-as->as:highLightScreening()
+as->as:highLightScreening(selected)
 as-->Administator:
 
 Administator->as:cancelScreening()
@@ -25,14 +26,13 @@ activate c
 
 c->ss:isSold()
 activate ss
-ss-->c:return false
+ss-->c:return true
 deactivate ss
-c->ss:<<destroy>>
-destroy ss
-c-->as:return true
+
+c-->as:return false
 deactivate c
 
-as->as:updateDisplay()
+as->as:sendAlert("Sold")
 
 as-->Administator:
 deactivate as

@@ -1,0 +1,40 @@
+actor "Teller" as A
+control ": TicketSystem" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "selected: Screening (selected)" as selected
+entity "s : Screen" as S
+entity "m : Movie" as M
+
+
+ref over A,SI: displayScreening()
+
+
+A->SS: selectScreening(selected)
+activate SS
+
+SS->SS:highLightScreening(selected)
+
+SS-->A:
+deactivate SS
+
+A->SS: cancelTickets()
+activate SS
+
+SS->SS: checkScreeningTime()
+activate SS
+
+SS->C: getScreeningTime()
+activate C
+
+C->SI: t := getStartTime()
+
+C-->SS: return t
+deactivate C
+deactivate SS
+
+SS->SS: sendAlert("Screening already begun")
+
+SS-->A:
+deactivate SS
+

@@ -1,0 +1,30 @@
+actor "Administrtor" as A
+control ": ScreeningSystem" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "s : Screen" as S
+entity "m : Movie" as M
+
+
+ref over A,SI: displayScreen()
+
+A->SS: getAvaillableScreen(slot)
+activate SS
+
+SS->SS: checkAvailableScreens(slot)
+activate SS
+
+SS->C: getScreenings(slot)
+activate C
+
+C-->SS: return screenings
+deactivate C
+
+deactivate SS
+
+SS->SS: updateDisplay()
+
+SS->SS:sendAlert("No Available Screens")
+
+SS-->A:
+deactivate SS

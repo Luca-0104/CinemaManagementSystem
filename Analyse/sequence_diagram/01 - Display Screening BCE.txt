@@ -1,0 +1,34 @@
+actor "Teller" as A
+control ": ScreeningSystem" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "s : Screen" as S
+entity "m : Movie" as M
+
+A->SS: displayScreening()
+activate SS
+
+
+SS->A: getScreeningDate()
+activate A
+
+A-->SS: return date
+deactivate A
+
+SS->C: getScreening(date)
+activate C
+
+loop once for each screening on the day
+  	C->SI: m := getMovie()
+  	C->SI: s := getScreen()
+  	C->SI: sDT := getStartDatetime()
+  	C->SI: eDT := getEndDatetime()
+end 
+
+C-->SS: return screenings
+deactivate C
+
+SS->SS: updateDisplay()
+
+SS-->A: 
+deactivate SS

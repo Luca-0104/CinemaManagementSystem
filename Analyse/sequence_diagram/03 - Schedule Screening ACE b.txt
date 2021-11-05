@@ -1,0 +1,30 @@
+actor "Administrtor" as A
+control ": ScreeningSystem" as SS
+entity ": Cinema" as C
+entity ": Screening" as SI
+entity "s : Screen" as S
+entity "m : Movie" as M
+
+
+ref over A,SI: displayScreen()
+
+
+A->SS: scheduleScreening()
+activate A
+activate SS
+
+
+SS->A: getScreeningDetails()
+
+A-->SS: return timeSlot, screen, movie
+deactivate A
+
+SS->A: confirmInfo()
+activate A
+
+A-->SS: return false
+deactivate A
+
+SS->SS:updateDisplay()
+SS-->A:
+deactivate SS
