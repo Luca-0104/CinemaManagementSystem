@@ -1,4 +1,4 @@
-# This is a Delaration of the part2
+# This is a Declaration of the part2
 
 ## Our group chose to complete the second part of this assignment based on the **sample solution**.
 
