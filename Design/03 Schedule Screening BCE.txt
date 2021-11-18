@@ -34,7 +34,7 @@ activate ManagementSystem
 
 expandable- see diagram 03 - Schedule Screening ECE (double screening)
 
-ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : PersistentScreening)
+ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : Screening)
 end 
 
 expandable- see diagrams 03 - Schedule Screening ACE (running time of movie is longer than available time)
