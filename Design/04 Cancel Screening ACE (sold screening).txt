@@ -56,32 +56,36 @@ Alert-->StaffUI:return true
 deactivate Alert
 StaffUI-->ManagementSystem:return true
 deactivate StaffUI
-
-expandable- see diagram 04 Cancel Screening ACE (sold screening)
+ManagementSystem-->ManagementSystem:return true
+deactivate ManagementSystem
 
 ManagementSystem->ManagementSystem:checkSold(time : LocalTime, screenName : String, sg : PersistentScreening)
-end 
 
-ManagementSystem->Cinema:cancelScreening(selectedScreening : Screening)
-activate Cinema
-Cinema->ScreeningMapper:deleteScreening(sg : Screening)
-activate ScreeningMapper
-ScreeningMapper->ScreeningMapper:performUpdate(sql : String)
-activate ScreeningMapper
-ScreeningMapper->Database:executeUpdate(sql : String)
-ScreeningMapper-->ScreeningMapper:
-deactivate ScreeningMapper
-ScreeningMapper-->Cinema:
-deactivate ScreeningMapper
-Cinema-->ManagementSystem:
-deactivate Cinema
-expandable− see 01 - Display Screening BCE
-ManagementSystem->ManagementSystem:notifyObservers()                        
-end
-ManagementSystem-->ManagementSystem:
-deactivate ManagementSystem
-ManagementSystem-->StaffUI:
-deactivate ManagementSystem
+activate ManagementSystem
+note over ManagementSystem:found the screening has been sold
 
+ManagementSystem->ManagementSystem:observerMessage(message : String, false : Boolean)
+activate ManagementSystem
+ManagementSystem->StaffUI:message(message : String, false : Boolean)
+activate StaffUI
+StaffUI->*Alert:Alert( warning : AlertType)
+activate Alert
+Alert-->StaffUI:
+deactivate Alert
+StaffUI->Alert:showAndWait();
+Alert->Staff:
+activate Staff
+Staff-->Alert:
+deactivate Staff
+Alert-->StaffUI:return result
+StaffUI-->ManagementSystem:return false
+deactivate StaffUI
+ManagementSystem-->ManagementSystem:return false
+deactivate ManagementSystem
+ManagementSystem-->ManagementSystem:return false
+deactivate ManagementSystem
+ManagementSystem-->StaffUI:return false
+deactivate ManagementSystem
 StaffUI-->Staff:
 deactivate StaffUI
+

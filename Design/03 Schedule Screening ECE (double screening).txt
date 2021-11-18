@@ -1,0 +1,79 @@
+actor Staff
+boundary Alert
+boundary ScreeningDialog
+boundary StaffUI
+control ManagementSystem
+participant Cinema
+
+
+Staff->StaffUI:scheduleScreening()
+activate StaffUI
+
+StaffUI->*ScreeningDialog:ScreeningDialog()
+activate ScreeningDialog
+ScreeningDialog-->StaffUI:
+deactivate ScreeningDialog
+
+StaffUI->ScreeningDialog:showAndWait()
+activate ScreeningDialog
+ScreeningDialog->Staff:
+activate Staff
+Staff-->ScreeningDialog:
+deactivate Staff
+ScreeningDialog->StaffUI:return sgi : ScreeningInfo
+deactivate ScreeningDialog
+
+StaffUI->ManagementSystem:scheduleScreening(date : LocalDate, \ntime : LocalTime, title : String, \nyear : int, screenName : String)
+activate ManagementSystem
+
+
+
+ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : Screening)
+activate ManagementSystem
+
+ManagementSystem->Cinema:checkExistedScreening(time : LocalTime, screenName : String, sg : Screening)
+activate Cinema
+Cinema->ScreeningMapper:checkExistedScreening(time : LocalTime, screenName : String, sg : Screening)
+activate ScreeningMapper
+ScreeningMapper->ScreeningMapper:performSelect(sql : String)
+activate ScreeningMapper
+ScreeningMapper->db:executeSelect(sql : String)
+activate db
+db-->ScreeningMapper:
+deactivate db
+ScreeningMapper-->ScreeningMapper:return true
+deactivate ScreeningMapper
+ScreeningMapper-->Cinema:return true
+deactivate ScreeningMapper
+Cinema-->ManagementSystem:return true
+deactivate Cinema
+
+
+note over ManagementSystem: another screening is found that overlaps with this in the same screen and at the same time
+
+ManagementSystem->ManagementSystem:observerMessage(message : String, false : Boolean)
+activate ManagementSystem
+ManagementSystem->StaffUI:message(message : String, false : Boolean)
+activate StaffUI
+StaffUI->*Alert:Alert( warning : AlertType)
+activate Alert
+Alert-->StaffUI:
+deactivate Alert
+StaffUI->Alert:showAndWait();
+Alert->Staff:
+activate Staff
+Staff-->Alert:
+deactivate Staff
+Alert-->StaffUI:return result
+StaffUI-->ManagementSystem:return false
+deactivate StaffUI
+ManagementSystem-->ManagementSystem:return false
+deactivate ManagementSystem
+ManagementSystem-->ManagementSystem:return false
+deactivate ManagementSystem
+ManagementSystem-->StaffUI:return false
+deactivate ManagementSystem
+StaffUI-->Staff:
+deactivate StaffUI
+
+
