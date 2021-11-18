@@ -48,7 +48,7 @@ MovieMapper->MovieMapper:performUpdate(sql : String)
 activate MovieMapper
 
 
-MovieMapper->Database:execute(sql : String)
+MovieMapper->Database:executeUpdate(sql : String)
 MovieMapper-->MovieMapper:
 deactivate MovieMapper
 
@@ -57,6 +57,9 @@ MovieMapper->*Movie:PersistentMovie(title : String, runningTime : int, year : in
 activate Movie
 Movie-->MovieMapper:
 deactivate Movie
+
+MovieMapper->MovieMapper:addToCache(Movie : PersistentMovie)
+
 MovieMapper-->Cinema:
 deactivate MovieMapper
 Cinema-->ManagementSystem:
