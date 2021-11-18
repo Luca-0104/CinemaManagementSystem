@@ -1,0 +1,81 @@
+actor Staff
+boundary TicketDialog
+boundary StaffUI
+
+control ManagementSystem
+participant Cinema
+entity Screening (current)
+entity Screening (selected)
+entity "sc : Screen" as sc
+participant ScreeningMapper
+database Database
+Staff->StaffUI:mousePressed(x : Integer, y : Integer)
+activate StaffUI
+
+StaffUI->StaffUI:sn := yToScreen(y : Integer)
+StaffUI->StaffUI:time := xToTime(x : Integer)
+StaffUI->ManagementSystem:selectScreening(sn : String, time : LocalTime)
+activate ManagementSystem
+
+loop for each current Screening
+ManagementSystem->Screening (current):getScreenName()
+ManagementSystem->Screening (current):getTime()
+end
+ManagementSystem->ManagementSystem:notifyObservers()
+ManagementSystem->StaffUI:update()
+
+ManagementSystem-->StaffUI:
+deactivate ManagementSystem
+StaffUI-->Staff:
+deactivate StaffUI
+
+Staff->StaffUI:sellTickets()
+activate StaffUI
+
+StaffUI->*TicketDialog:TicketDialog()
+activate TicketDialog
+TicketDialog-->StaffUI:
+deactivate TicketDialog
+
+StaffUI->TicketDialog:showAndWait()
+activate TicketDialog
+TicketDialog->Staff:
+Staff-->TicketDialog:
+TicketDialog-->StaffUI:return tn : TicketNumber
+deactivate TicketDialog
+
+StaffUI->ManagementSystem:sellTickets(tn : int, sg : Screening)
+activate ManagementSystem
+
+ManagementSystem->Screening (selected):nts := getNumberTicketsSold()
+ManagementSystem->Screening (selected):sc := getScreen()
+ManagementSystem->sc:cp := getCapacity()
+
+expandable- see diagram 06 ACE (sold ticket number exceeds the capacity number)
+ManagementSystem->ManagementSystem:checkTicketOverSold(tn : int, cp : int, nts : int)                                   
+end        
+
+ManagementSystem->Screening (selected):setNumberTicketsSold(tn : int)
+
+ManagementSystem->Cinema:updateScreening(selected : Screening)
+activate Cinema
+Cinema->ScreeningMapper:updateScreening(sg : Screening)
+activate ScreeningMapper
+ScreeningMapper->ScreeningMapper:performUpdate(sql : String)
+activate ScreeningMapper
+ScreeningMapper->Database:executeUpdate(sql : String)
+ScreeningMapper-->ScreeningMapper:
+deactivate ScreeningMapper
+ScreeningMapper-->Cinema:
+
+
+Cinema-->ManagementSystem:
+deactivate Cinema
+expandable- see 01 - Display Date BCE
+ManagementSystem->ManagementSystem:notifyObservers()                    
+end
+ManagementSystem-->StaffUI:
+deactivate ManagementSystem
+
+StaffUI-->Staff:
+deactivate StaffUI
