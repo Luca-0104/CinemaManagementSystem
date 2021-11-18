@@ -38,7 +38,7 @@ Cinema->MovieMapper:checkExistedMovie(title : String, runningTime : Integer, yea
 activate MovieMapper
 MovieMapper->MovieMapper:performSelect(sql : String)
 activate MovieMapper
-MovieMapper->db:executeSelect(sql : String)
+MovieMapper->db:execute(sql : String)
 activate db
 db-->MovieMapper:
 deactivate db

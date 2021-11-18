@@ -63,7 +63,7 @@ Cinema->ScreeningMapper:updateScreening(sg : Screening)
 activate ScreeningMapper
 ScreeningMapper->ScreeningMapper:performUpdate(sql : String)
 activate ScreeningMapper
-ScreeningMapper->Database:executeUpdate(sql : String)
+ScreeningMapper->Database:execute(sql : String)
 ScreeningMapper-->ScreeningMapper:
 deactivate ScreeningMapper
 ScreeningMapper-->Cinema:
