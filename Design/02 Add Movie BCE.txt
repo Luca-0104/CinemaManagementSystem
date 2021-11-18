@@ -1,0 +1,83 @@
+actor Staff
+boundary MovieDialog
+boundary StaffUI
+
+control ManagementSystem
+participant Cinema
+participant MovieMapper
+
+
+
+database Database
+entity Movie
+
+Staff->StaffUI:addMovie()
+activate StaffUI
+
+StaffUI->*MovieDialog:MovieDialog()
+activate MovieDialog
+MovieDialog-->StaffUI:
+deactivate MovieDialog
+
+StaffUI->MovieDialog:showAndWait()
+activate MovieDialog
+MovieDialog->Staff:
+Staff-->MovieDialog:
+MovieDialog->StaffUI:return m : MovieInfo
+deactivate MovieDialog
+
+StaffUI->ManagementSystem:addMovie(title : String, runningTime : int, year : int)
+activate ManagementSystem
+
+
+expandable- see diagram 02 - Add Movie ECE (double added movie)
+ManagementSystem->ManagementSystem:checkDoubleAdded(title : String, runningTime : Integer, year : Integer)
+end 
+
+ManagementSystem->Cinema:addMovie(title : String, runningTime : int, year : int)
+activate Cinema
+
+
+
+Cinema->MovieMapper:addMovie(title : String, runningTime : int, year : int)
+activate MovieMapper
+MovieMapper->Database:oid := getId()
+MovieMapper->MovieMapper:performUpdate(sql : String)
+activate MovieMapper
+
+
+MovieMapper->Database:executeUpdate(sql : String)
+MovieMapper-->MovieMapper:
+deactivate MovieMapper
+
+
+MovieMapper->*Movie:PersistentMovie(title : String, runningTime : Integer, year : Integer)
+activate Movie
+Movie-->MovieMapper:
+deactivate Movie
+MovieMapper-->Cinema:
+deactivate MovieMapper
+Cinema-->ManagementSystem:
+deactivate Cinema
+
+ManagementSystem->ManagementSystem:notifyObservers()
+activate ManagementSystem
+
+ManagementSystem->StaffUI:update()
+activate StaffUI
+
+StaffUI->ManagementSystem:getMovies()
+activate ManagementSystem
+ManagementSystem-->StaffUI:return movies
+deactivate ManagementSystem
+
+StaffUI-->ManagementSystem:
+deactivate StaffUI
+
+ManagementSystem-->ManagementSystem:
+
+deactivate ManagementSystem
+ManagementSystem-->StaffUI:
+deactivate ManagementSystem
+StaffUI-->Staff:
+deactivate StaffUI

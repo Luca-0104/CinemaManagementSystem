@@ -1,0 +1,83 @@
+actor Staff
+boundary StaffUI
+
+control ManagementSystem
+participant Cinema
+entity Screening (current)
+entity Screening (selected)
+participant ScreeningMapper
+database Database
+Staff->StaffUI:mousePressed(x : Integer, y : Integer)
+activate StaffUI
+
+StaffUI->StaffUI:sn := yToScreen(y : Integer)
+StaffUI->StaffUI:time := xToTime(x : Integer)
+StaffUI->ManagementSystem:selectScreening(sn : String, time : LocalTime)
+activate ManagementSystem
+
+loop for each current Screening
+ManagementSystem->Screening (current):getScreenName()
+ManagementSystem->Screening (current):getTime()
+end
+ManagementSystem->ManagementSystem:notifyObservers()
+ManagementSystem->StaffUI:update()
+
+ManagementSystem-->StaffUI:
+deactivate ManagementSystem
+StaffUI-->Staff:
+deactivate StaffUI
+
+
+loop for every time the mouse is moved
+Staff->StaffUI:mouseMoved(x : integer, y : integer)
+activate StaffUI
+StaffUI->StaffUI:update()
+StaffUI-->Staff:
+deactivate StaffUI
+end
+
+Staff->StaffUI:mouseReleased(x : Integer, y : Integer)
+activate StaffUI
+StaffUI->StaffUI:sn := yToScreen(y : Integer)
+StaffUI->StaffUI:time := xToTime(x : Integer)
+StaffUI->ManagementSystem:changeSelected(time : LocalTime, sn : ScreenName)
+activate ManagementSystem
+
+expandable- see diagram 05 - Update Screening ACE(1) (tickets already began sold so this screening cannot be updated)
+ 
+ManagementSystem->ManagementSystem:checkScreeningSoldTicket()                                                                                                                                          
+end 
+
+expandable- see diagrams 05 - Update Screening ACE(2) (running time of movie is longer than scheduled screening time)
+
+	ManagementSystem->ManagementSystem:checkLongerScreening()                                                                                                                                      
+end 
+expandable- see diagram 05 - Update Screening ECE (double screening)
+
+ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, sn : String, sg : Screening)    
+end 
+ManagementSystem->Cinema:screen := getScreen(sn : String)
+ManagementSystem->Screening (selected):setTime(time : LocalTime)
+ManagementSystem->Screening (selected):setScreen(screen : Screen)
+ManagementSystem->Cinema:updateScreening(selected : Screening)
+activate Cinema
+Cinema->ScreeningMapper:updateScreening(sg : Screening)
+activate ScreeningMapper
+ScreeningMapper->ScreeningMapper:performUpdate(sql : String)
+activate ScreeningMapper
+ScreeningMapper->Database:executeUpdate(sql : String)
+ScreeningMapper-->ScreeningMapper:
+deactivate ScreeningMapper
+ScreeningMapper-->Cinema:
+
+
+Cinema-->ManagementSystem:
+deactivate Cinema
+expandable- see 01 - Display Date BCE
+ManagementSystem->ManagementSystem:notifyObservers()                    
+end
+ManagementSystem-->StaffUI:
+deactivate ManagementSystem
+
+StaffUI-->Staff:
+deactivate StaffUI
