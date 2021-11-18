@@ -51,9 +51,9 @@ ScreenMapper->ScreenMapper:getFromCacheByName(screenName)
 ScreenMapper-->Cinema:return s : Screen
 deactivate ScreenMapper
 
-expandable- [see 02 - getMovie Expanded for details of the getMovie functionality]
+expandable- [see 03 - getMovie Expanded for details of the getMovie functionality]
 
-Cinema->MovieMapper:m := getMovie(title : String, year : int)
+Cinema->MovieMapper:m := getMovie(title : String, runningTime : int, year : int)
 end 
 
 
