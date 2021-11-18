@@ -32,12 +32,12 @@ deactivate ScreeningDialog
 StaffUI->ManagementSystem:scheduleScreening(date : LocalDate, \ntime : LocalTime, title : String, \nyear : int, screenName : String)
 activate ManagementSystem
 
-expandable- see diagram 03 - Schedule PersistentScreening ECE (double screening)
+expandable- see diagram 03 - Schedule Screening ECE (double screening)
 
 ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : PersistentScreening)
 end 
 
-expandable- see diagrams 03 - Schedule PersistentScreening ACE (running time of movie is longer than available time)
+expandable- see diagrams 03 - Schedule Screening ACE (running time of movie is longer than available time)
 
 	ManagementSystem->ManagementSystem:checkTimeAvailable()                                                                                                                                         
 end 
@@ -65,7 +65,7 @@ ScreeningMapper->ScreeningMapper:performUpdate(sql : String)
 activate ScreeningMapper
 
 
-ScreeningMapper->Database:executeUpdate(sql : String)
+ScreeningMapper->Database:execute(sql : String)
 ScreeningMapper-->ScreeningMapper:
 deactivate ScreeningMapper
 

@@ -48,7 +48,7 @@ MovieMapper->MovieMapper:performUpdate(sql : String)
 activate MovieMapper
 
 
-MovieMapper->Database:executeUpdate(sql : String)
+MovieMapper->Database:execute(sql : String)
 MovieMapper-->MovieMapper:
 deactivate MovieMapper
 

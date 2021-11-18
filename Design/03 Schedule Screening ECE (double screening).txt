@@ -37,7 +37,7 @@ Cinema->ScreeningMapper:checkExistedScreening(time : LocalTime, screenName : Str
 activate ScreeningMapper
 ScreeningMapper->ScreeningMapper:performSelect(sql : String)
 activate ScreeningMapper
-ScreeningMapper->db:executeSelect(sql : String)
+ScreeningMapper->db:execute(sql : String)
 activate db
 db-->ScreeningMapper:
 deactivate db

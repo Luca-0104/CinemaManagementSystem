@@ -59,7 +59,7 @@ deactivate StaffUI
 
 expandable- see diagram 04 Cancel Screening ACE (sold screening)
 
-ManagementSystem->ManagementSystem:checkSold(time : LocalTime, screenName : String, sg : PersistentScreening)
+ManagementSystem->ManagementSystem:checkSold(sg : Screening)                                            
 end 
 
 ManagementSystem->Cinema:cancelScreening(selectedScreening : Screening)
@@ -68,7 +68,7 @@ Cinema->ScreeningMapper:deleteScreening(sg : Screening)
 activate ScreeningMapper
 ScreeningMapper->ScreeningMapper:performUpdate(sql : String)
 activate ScreeningMapper
-ScreeningMapper->Database:executeUpdate(sql : String)
+ScreeningMapper->Database:execute(sql : String)
 ScreeningMapper-->ScreeningMapper:
 deactivate ScreeningMapper
 ScreeningMapper-->Cinema:

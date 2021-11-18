@@ -26,9 +26,9 @@ deactivate ScreeningDialog
 StaffUI->ManagementSystem:scheduleScreening(date : LocalDate, \ntime : LocalTime, title : String, \nyear : int, screenName : String)
 activate ManagementSystem
 
-expandable- see diagram 03 - Schedule PersistentScreening ECE (double screening)
+expandable- see diagram 03 - Schedule Screening ECE (double screening)
 
-ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : PersistentScreening)
+ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : Screening)
 end 
 
 ManagementSystem->ManagementSystem:checkTimeAvailable()         

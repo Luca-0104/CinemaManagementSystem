@@ -59,7 +59,7 @@ deactivate StaffUI
 ManagementSystem-->ManagementSystem:return true
 deactivate ManagementSystem
 
-ManagementSystem->ManagementSystem:checkSold(time : LocalTime, screenName : String, sg : PersistentScreening)
+ManagementSystem->ManagementSystem:checkSold(sg : Screening)
 
 activate ManagementSystem
 note over ManagementSystem:found the screening has been sold

@@ -45,12 +45,12 @@ StaffUI->ManagementSystem:changeSelected(time : LocalTime, sn : ScreenName)
 activate ManagementSystem
 
 expandable- see diagram 04 - Cancel Screening ACE (sold screening)
-ManagementSystem->ManagementSystem:checkSold()                                                                                                                                          
+ManagementSystem->ManagementSystem:checkSold(sg : Screening)                                                                                     
 end 
 
 expandable- see diagram 03 - schedule Screening ECE (double screening)
 
-ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : PersistentScreening)  
+ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : Screening)  
 end 
 
 expandable- see diagrams 03 - Update Screening ACE (not available)
@@ -67,7 +67,7 @@ Cinema->ScreeningMapper:updateScreening(sg : Screening)
 activate ScreeningMapper
 ScreeningMapper->ScreeningMapper:performUpdate(sql : String)
 activate ScreeningMapper
-ScreeningMapper->Database:executeUpdate(sql : String)
+ScreeningMapper->Database:execute(sql : String)
 ScreeningMapper-->ScreeningMapper:
 deactivate ScreeningMapper
 ScreeningMapper-->Cinema:

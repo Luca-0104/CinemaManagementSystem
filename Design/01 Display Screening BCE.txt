@@ -20,7 +20,7 @@ activate Cinema
 
 Cinema->ScreeningMapper:getScreenings(date : LocalDate)
 activate ScreeningMapper
-ScreeningMapper->db:executeQuery(sql : String)
+ScreeningMapper->db:execute(sql : String)
 
 loop for every row returned for reservations
 ScreeningMapper->ScreenMapper:s := getScreenforOid(screen : Integer)
