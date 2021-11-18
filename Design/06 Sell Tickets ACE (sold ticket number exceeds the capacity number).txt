@@ -1,0 +1,85 @@
+actor Staff
+boundary Alert
+boundary TicketDialog
+boundary StaffUI
+
+control ManagementSystem
+participant Cinema
+entity Screening (current)
+entity Screening (selected)
+entity "sc : Screen" as sc
+participant ScreeningMapper
+database Database
+Staff->StaffUI:mousePressed(x : Integer, y : Integer)
+activate StaffUI
+
+StaffUI->StaffUI:sn := yToScreen(y : Integer)
+StaffUI->StaffUI:time := xToTime(x : Integer)
+StaffUI->ManagementSystem:selectScreening(sn : String, time : LocalTime)
+activate ManagementSystem
+
+loop for each current Screening
+ManagementSystem->Screening (current):getScreenName()
+ManagementSystem->Screening (current):getTime()
+end
+ManagementSystem->ManagementSystem:notifyObservers()
+ManagementSystem->StaffUI:update()
+
+ManagementSystem-->StaffUI:
+deactivate ManagementSystem
+StaffUI-->Staff:
+deactivate StaffUI
+
+Staff->StaffUI:sellTickets()
+activate StaffUI
+
+StaffUI->*TicketDialog:TicketDialog()
+activate TicketDialog
+TicketDialog-->StaffUI:
+deactivate TicketDialog
+
+StaffUI->TicketDialog:showAndWait()
+activate TicketDialog
+TicketDialog->Staff:
+activate Staff
+Staff-->TicketDialog:
+deactivate Staff
+TicketDialog-->StaffUI:return tn : TicketNumber
+deactivate TicketDialog
+
+StaffUI->ManagementSystem:sellTickets(tn : int, sg : Screening)
+activate ManagementSystem
+
+ManagementSystem->Screening (selected):nts := getNumberTicketsSold()
+ManagementSystem->Screening (selected):sc := getScreen()
+ManagementSystem->sc:cp := getCapacity()
+
+ManagementSystem->ManagementSystem:checkTicketOverSold(tn : int, cp : int, nts : int)                                     
+activate ManagementSystem
+note over ManagementSystem:found the left ticket number is less the required ticket number
+
+ManagementSystem->ManagementSystem:observerMessage(message : String, false : Boolean)
+activate ManagementSystem
+ManagementSystem->StaffUI:message(message : String, false : Boolean)
+activate StaffUI
+StaffUI->*Alert:Alert( warning : AlertType)
+activate Alert
+Alert-->StaffUI:
+deactivate Alert
+StaffUI->Alert:showAndWait();
+Alert->Staff:
+activate Staff
+Staff-->Alert:
+deactivate Staff
+Alert-->StaffUI:return result
+StaffUI-->ManagementSystem:return false
+deactivate StaffUI
+ManagementSystem-->ManagementSystem:return false
+deactivate ManagementSystem
+ManagementSystem-->ManagementSystem:return false
+deactivate ManagementSystem
+ManagementSystem-->StaffUI:return false
+deactivate ManagementSystem
+StaffUI-->Staff:
+deactivate StaffUI
+

@@ -22,7 +22,9 @@ deactivate MovieDialog
 StaffUI->MovieDialog:showAndWait()
 activate MovieDialog
 MovieDialog->Staff:
+activate Staff
 Staff-->MovieDialog:
+deactivate Staff
 MovieDialog->StaffUI:return m : MovieInfo
 deactivate MovieDialog
 
@@ -51,7 +53,7 @@ MovieMapper-->MovieMapper:
 deactivate MovieMapper
 
 
-MovieMapper->*Movie:PersistentMovie(title : String, runningTime : Integer, year : Integer)
+MovieMapper->*Movie:PersistentMovie(title : String, runningTime : int, year : int)
 activate Movie
 Movie-->MovieMapper:
 deactivate Movie

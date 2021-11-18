@@ -23,20 +23,23 @@ deactivate ScreeningDialog
 StaffUI->ScreeningDialog:showAndWait()
 activate ScreeningDialog
 ScreeningDialog->Staff:
+activate Staff
 Staff-->ScreeningDialog:
-ScreeningDialog->StaffUI:return sg : ScreeningInfo
+deactivate Staff
+ScreeningDialog->StaffUI:return sgi : ScreeningInfo
 deactivate ScreeningDialog
 
 StaffUI->ManagementSystem:scheduleScreening(date : LocalDate, \ntime : LocalTime, title : String, \nyear : int, screenName : String)
 activate ManagementSystem
 
-expandable- see diagrams 03 - Schedule PersistentScreening ACE (1) (running time of movie is longer than scheduled screening time)
+expandable- see diagram 03 - Schedule PersistentScreening ECE (double screening)
 
-	ManagementSystem->ManagementSystem:checkLongerScreening()                                                                                                                                         
+ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : PersistentScreening)
 end 
-expandable- see diagram 03 - Schedule PersistentScreening ACE(2) (double screening)
 
-ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : int, sg : Screening)
+expandable- see diagrams 03 - Schedule PersistentScreening ACE (running time of movie is longer than available time)
+
+	ManagementSystem->ManagementSystem:checkTimeAvailable()                                                                                                                                         
 end 
 
 ManagementSystem->Cinema:scheduleScreening(date : LocalDate, \ntime : LocalTime, title : String, \nyear : int, screenName : String)
@@ -44,7 +47,7 @@ activate Cinema
 
 Cinema->ScreenMapper:getScreen(screenName : String)
 activate ScreenMapper
-ScreenMapper->ScreenMapper:getFromCacheByName(screenName : String)
+ScreenMapper->ScreenMapper:getFromCacheByName(screenName)
 ScreenMapper-->Cinema:return s : Screen
 deactivate ScreenMapper
 

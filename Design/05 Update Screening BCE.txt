@@ -20,8 +20,9 @@ ManagementSystem->Screening (current):getScreenName()
 ManagementSystem->Screening (current):getTime()
 end
 ManagementSystem->ManagementSystem:notifyObservers()
+activate ManagementSystem
 ManagementSystem->StaffUI:update()
-
+deactivate ManagementSystem
 ManagementSystem-->StaffUI:
 deactivate ManagementSystem
 StaffUI-->Staff:
@@ -43,19 +44,20 @@ StaffUI->StaffUI:time := xToTime(x : Integer)
 StaffUI->ManagementSystem:changeSelected(time : LocalTime, sn : ScreenName)
 activate ManagementSystem
 
-expandable- see diagram 05 - Update Screening ACE(1) (tickets already began sold so this screening cannot be updated)
- 
-ManagementSystem->ManagementSystem:checkScreeningSoldTicket()                                                                                                                                          
+expandable- see diagram 04 - Cancel Screening ACE (sold screening)
+ManagementSystem->ManagementSystem:checkSold()                                                                                                                                          
 end 
 
-expandable- see diagrams 05 - Update Screening ACE(2) (running time of movie is longer than scheduled screening time)
+expandable- see diagram 03 - schedule Screening ECE (double screening)
 
-	ManagementSystem->ManagementSystem:checkLongerScreening()                                                                                                                                      
+ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, screenName : String, sg : PersistentScreening)  
 end 
-expandable- see diagram 05 - Update Screening ECE (double screening)
 
-ManagementSystem->ManagementSystem:checkDoubleScreening(time : LocalTime, sn : String, sg : Screening)    
+expandable- see diagrams 03 - Update Screening ACE (not available)
+
+ManagementSystem->ManagementSystem:checkTimeAvailable()                                                       
 end 
+
 ManagementSystem->Cinema:screen := getScreen(sn : String)
 ManagementSystem->Screening (selected):setTime(time : LocalTime)
 ManagementSystem->Screening (selected):setScreen(screen : Screen)
