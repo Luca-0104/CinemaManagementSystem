@@ -1,182 +1,182 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='-1 -16 3680 2700' xmlns:xlink='http://www.w3.org/1999/xlink' width='3680.0px' font-size='13' font-family='Arial, LiberationSans' version='1.1' height='2700.0px'>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='-1 -16 3719 2830' xmlns:xlink='http://www.w3.org/1999/xlink' width='3719.0px' font-size='13' font-family='Arial, LiberationSans' version='1.1' height='2830.0px'>
   <defs>
-<style type='text/css'><![CDATA[svg text {text-rendering: geometricPrecision;}]]></style>    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='1117256a-a29d-4bb1-b87e-883c400fe972' spreadMethod='pad'>
+<style type='text/css'><![CDATA[svg text {text-rendering: geometricPrecision;}]]></style>    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='50290846-11af-4869-9a33-4aa62edc6570' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(239, 233, 222)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='1242bc49-a7c5-4b29-941c-8612274d2359' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='51bd82d3-3cbd-46c9-b3fe-9625f1086be4' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(239, 233, 222)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='963918d4-7a07-4d9f-8308-14d45cee6448' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='5645af21-c3d5-46bd-a3c0-5401562a71a6' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(239, 233, 222)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='9d3d02a1-7dab-4d56-ab89-709e973f9317' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='e302f0a0-bdd9-4c07-81df-4d21b217341d' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ec3e6338-617d-4df0-9b0e-a5d01cba3d1b' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='a939a94a-1dd0-4597-9d12-c9cdcca959ad' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='a5baa271-1467-4229-981f-16118f79e173' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='4194a42b-d780-4ff3-b02b-ec5ec7e15af3' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ca794a5d-1d65-4ff1-94a0-b2bea3272878' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='65c782b7-9c86-45dc-bb12-4bb7ce895b53' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='2fe12f90-a68c-4989-87d2-15acd467d552' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='b90a8655-2cd3-414f-8546-6bb4bdbb38f0' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='0b1721ff-702a-4bfe-9153-d94027b78d25' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='4f91ee6c-45d1-4b5c-b0a5-fa80f1657c51' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='00ebeb9b-0a40-4614-aef9-9c84c4634727' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='8f882846-e9b0-49e0-9534-4e62d11c97db' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='bf0fc399-bd4a-45a2-a922-1e3cfdbb6f55' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='bd5b3879-8b05-40ed-a437-a22df666608a' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='b12ce27c-e949-4b23-83f2-6bdb6bfa1aca' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='f619ef8e-88ec-439f-a645-34e4c7026917' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='106f5a8d-b31a-4b5e-aaad-e623244d8f0f' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='01a0742b-a1fd-4fc6-88d8-b2d71004bb59' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(239, 233, 222)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='f582aaba-a5f5-40e3-8f1a-8957e302897e' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='0ae01cbc-a8a5-4068-8d50-6a79a7686bbe' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(239, 233, 222)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='7eafbd68-b60c-416b-a264-2bc04adda52d' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='17e11673-a35f-4fe4-b11e-2b7741a41da6' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='a657de1a-54d4-4ec6-9a2b-0ae708083994' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='13202e75-efce-4f65-ad8e-c10445591fe2' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='981c6442-ab90-4d05-8522-f82261440e22' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='1b8c1f25-c1c9-4a89-b9dd-c9a0209abf76' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='6cdc7b3e-5626-440f-9ea4-db48d9fb5db3' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='03849183-c5d7-4389-856e-67cc80853f1f' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='845c3022-d1f3-46fb-95dc-3973e6c62d39' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='81866791-94eb-4713-bf64-b9c1d3575f21' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='bebe7fda-8b99-4755-a5be-284eca5955da' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='4a2a5c1f-7cdc-4133-a719-53f1526c5f38' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='3ba617ff-63c5-40a6-ab93-20473ef51c8c' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='89b2f69e-69ac-424f-877a-d4eaed8e455d' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ecdfdd3c-99d1-4e2e-8214-e1b2d75edb4e' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='85c302de-dfe4-4744-a722-066d32086660' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c61cc676-7316-4754-b2dc-76863cb0c2be' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='4dcd1b13-2f50-4113-8ae2-15ff84dd90f9' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='d87b4d05-f170-4f85-b33e-f1b880a8e7b6' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='95b2e658-5828-4044-83c6-d2addc600b89' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='b10f5d6b-388f-49e8-8947-20d0d77ee4f0' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='68d4066b-6d28-44b5-8315-36ee5c70e20c' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='80c5e624-5d6b-4a80-9a93-69acc2db939a' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='0f1b5322-0230-4ff6-97be-60dcf87dcd6a' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='f5048a3c-ed8b-4269-90c2-d8d7f7f341ad' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='01d0619e-10b4-4e5e-8656-cd89bb0eac4e' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='791f0833-ade9-4ed1-b2e5-a873953e5012' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='2c7739d6-07d8-4842-acb9-220157a4b9c5' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='4fde3234-6804-4436-aec1-594c00b5b9cf' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='5ca3fa6d-20b5-4cb0-9bf6-20fc5957b183' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='69f5330f-4ff0-4c32-a5bf-587adb8edca0' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c064cc44-b8cb-41f3-8498-1026822c6549' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c09fbc79-2aaa-41e5-9396-9020a66a382b' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='094bb785-8c60-44be-ab86-26fda497963e' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='12a2a50b-658c-462f-960f-35abb404c279' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='cab32246-b14b-41d3-827a-b1021e749ed9' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='510c46eb-a5d6-4b0f-8a5d-0110390bd438' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c5c978d2-fa1c-46ec-8edb-0f01a1498863' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='e76e2d38-22a0-4845-84fe-40119a04a9e8' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='9d5f2e69-bbf7-4ab4-9405-d4c4db525cc4' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='552c84d0-278c-4fd2-bc3b-82e2a1867e01' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='b986f398-1d6e-4cc2-9511-a5e1271d4a13' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='d2e99221-230b-452c-9043-ab74062c9af8' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='9f5881c1-f700-41fe-a3fd-ed4fc5902e91' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='2b0f13b9-1131-48b9-b3be-537facce863d' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='5d9100b6-7b57-4ba0-8b6a-86a9ccbc6320' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='707607f5-d4a8-4221-8294-1e050e79329e' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='d6922a28-8e74-478a-b756-4f27c23f4deb' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
-    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ef8b89a6-e932-4651-9eda-c71df3c47974' spreadMethod='pad'>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='5307878c-d33d-49e7-bb0b-c083213841d7' spreadMethod='pad'>
       <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
       <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
     </linearGradient>
   </defs>
   <desc>ClassDiagram</desc>
-  <g transform='translate(29.0,926.0)' id='_hcIyXCmkEDqHSIS6CmAK0g'>
-    <rect x='0.0' width='82.0px' y='0.0' stroke-width='1.0' fill='url(#1117256a-a29d-4bb1-b87e-883c400fe972)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
-    <rect x='0.0' width='3620.0px' y='24.0' stroke-width='1.0' fill='url(#1117256a-a29d-4bb1-b87e-883c400fe972)' stroke='rgb(194, 183, 159)' look='allInOne' height='1446.0px'/>
+  <g transform='translate(29.0,938.0)' id='_hcIyXCmkEDqHSIS6CmAK0g'>
+    <rect x='0.0' width='82.0px' y='0.0' stroke-width='1.0' fill='url(#50290846-11af-4869-9a33-4aa62edc6570)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
+    <rect x='0.0' width='3659.0px' y='24.0' stroke-width='1.0' fill='url(#50290846-11af-4869-9a33-4aa62edc6570)' stroke='rgb(194, 183, 159)' look='allInOne' height='1547.0px'/>
     <text font-weight='bold' text-anchor='middle' x='41.0' y='18.0' font-size='13' fill='rgb(128, 98, 33)'>application</text>
   </g>
   <g transform='translate(29.0,14.0)' id='_fNDicSniEDqsSf9tFrxS-Q'>
-    <rect x='0.0' width='92.0px' y='0.0' stroke-width='1.0' fill='url(#1242bc49-a7c5-4b29-941c-8612274d2359)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
-    <rect x='0.0' width='1630.0px' y='24.0' stroke-width='1.0' fill='url(#1242bc49-a7c5-4b29-941c-8612274d2359)' stroke='rgb(194, 183, 159)' look='allInOne' height='856.0px'/>
+    <rect x='0.0' width='92.0px' y='0.0' stroke-width='1.0' fill='url(#51bd82d3-3cbd-46c9-b3fe-9625f1086be4)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
+    <rect x='0.0' width='1630.0px' y='24.0' stroke-width='1.0' fill='url(#51bd82d3-3cbd-46c9-b3fe-9625f1086be4)' stroke='rgb(194, 183, 159)' look='allInOne' height='856.0px'/>
     <text font-weight='bold' text-anchor='middle' x='46.0' y='18.0' font-size='13' fill='rgb(128, 98, 33)'>presentation</text>
   </g>
-  <g transform='translate(3252.0,2454.0)' id='_6JCT0Sn6EDqsSf9tFrxS-Q'>
-    <rect x='0.0' width='63.0px' y='0.0' stroke-width='1.0' fill='url(#963918d4-7a07-4d9f-8308-14d45cee6448)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
-    <rect x='0.0' width='380.0px' y='24.0' stroke-width='1.0' fill='url(#963918d4-7a07-4d9f-8308-14d45cee6448)' stroke='rgb(194, 183, 159)' look='allInOne' height='176.0px'/>
+  <g transform='translate(3266.0,2584.0)' id='_6JCT0Sn6EDqsSf9tFrxS-Q'>
+    <rect x='0.0' width='63.0px' y='0.0' stroke-width='1.0' fill='url(#5645af21-c3d5-46bd-a3c0-5401562a71a6)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
+    <rect x='0.0' width='380.0px' y='24.0' stroke-width='1.0' fill='url(#5645af21-c3d5-46bd-a3c0-5401562a71a6)' stroke='rgb(194, 183, 159)' look='allInOne' height='176.0px'/>
     <text font-weight='bold' text-anchor='middle' x='31.5' y='18.0' font-size='13' fill='rgb(128, 98, 33)'>storage</text>
   </g>
   <g transform='translate(70.0,87.0)' id='_vm-XMCniEDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='308.0px' y='0.0' stroke-width='1.0' fill='url(#9d3d02a1-7dab-4d56-ab89-709e973f9317)' stroke='rgb(187, 187, 187)' look='allInOne' height='384.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='308.0px' y='0.0' stroke-width='1.0' fill='url(#e302f0a0-bdd9-4c07-81df-4d21b217341d)' stroke='rgb(187, 187, 187)' look='allInOne' height='384.0px'/>
     <text font-weight='bold' text-anchor='middle' x='154.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>StaffUI</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='308.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_sLUI0CoHEDqsSf9tFrxS-Q'>
@@ -266,7 +266,7 @@
     </g>
   </g>
   <g transform='translate(1103.0,271.0)' id='_mtvOMCn5EDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='193.0px' y='0.0' stroke-width='1.0' fill='url(#ec3e6338-617d-4df0-9b0e-a5d01cba3d1b)' stroke='rgb(187, 187, 187)' look='allInOne' height='155.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='193.0px' y='0.0' stroke-width='1.0' fill='url(#a939a94a-1dd0-4597-9d12-c9cdcca959ad)' stroke='rgb(187, 187, 187)' look='allInOne' height='155.0px'/>
     <text font-weight='bold' text-anchor='middle' x='96.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>MovieDialog</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='193.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_4J1xUCn8EDqsSf9tFrxS-Q'>
@@ -299,7 +299,7 @@
     </g>
   </g>
   <g transform='translate(1105.0,466.0)' id='_m7nSICn5EDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='191.0px' y='0.0' stroke-width='1.0' fill='url(#a5baa271-1467-4229-981f-16118f79e173)' stroke='rgb(187, 187, 187)' look='allInOne' height='197.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='191.0px' y='0.0' stroke-width='1.0' fill='url(#4194a42b-d780-4ff3-b02b-ec5ec7e15af3)' stroke='rgb(187, 187, 187)' look='allInOne' height='197.0px'/>
     <text font-weight='bold' text-anchor='middle' x='95.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>ScreeningDialog</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='191.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_UiCsoCpjEDqi6579jH1RDA'>
@@ -339,8 +339,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>showAndWait()</text>
     </g>
   </g>
-  <g transform='translate(3312.0,2523.0)' id='_8_vbMCn6EDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='193.0px' y='0.0' stroke-width='1.0' fill='url(#ca794a5d-1d65-4ff1-94a0-b2bea3272878)' stroke='rgb(187, 187, 187)' look='allInOne' height='90.0px'/>
+  <g transform='translate(3326.0,2653.0)' id='_8_vbMCn6EDqsSf9tFrxS-Q'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='193.0px' y='0.0' stroke-width='1.0' fill='url(#65c782b7-9c86-45dc-bb12-4bb7ce895b53)' stroke='rgb(187, 187, 187)' look='allInOne' height='90.0px'/>
     <text font-weight='bold' text-anchor='middle' x='96.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Database</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='193.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='__uL-cCn6EDqsSf9tFrxS-Q'>
@@ -360,7 +360,7 @@
     </g>
   </g>
   <g transform='translate(1105.0,703.0)' id='_54JbUCn-EDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='165.0px' y='0.0' stroke-width='1.0' fill='url(#2fe12f90-a68c-4989-87d2-15acd467d552)' stroke='rgb(187, 187, 187)' look='allInOne' height='113.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='165.0px' y='0.0' stroke-width='1.0' fill='url(#b90a8655-2cd3-414f-8546-6bb4bdbb38f0)' stroke='rgb(187, 187, 187)' look='allInOne' height='113.0px'/>
     <text font-weight='bold' text-anchor='middle' x='82.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Alert</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='165.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_8ioroCn-EDqsSf9tFrxS-Q'>
@@ -384,7 +384,7 @@
     </g>
   </g>
   <g transform='translate(1104.0,87.0)' id='_b-Y94CptEDqi6579jH1RDA'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='190.0px' y='0.0' stroke-width='1.0' fill='url(#0b1721ff-702a-4bfe-9153-d94027b78d25)' stroke='rgb(187, 187, 187)' look='allInOne' height='134.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='190.0px' y='0.0' stroke-width='1.0' fill='url(#4f91ee6c-45d1-4b5c-b0a5-fa80f1657c51)' stroke='rgb(187, 187, 187)' look='allInOne' height='134.0px'/>
     <text font-weight='bold' text-anchor='middle' x='95.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>TicketDialog</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='190.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_pzPN0CptEDqi6579jH1RDA'>
@@ -413,7 +413,7 @@
     </g>
   </g>
   <g transform='translate(492.0,565.0)' id='_e_L_ICqeEDqFQcTboyizEw'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='148.0px' y='0.0' stroke-width='1.0' fill='url(#00ebeb9b-0a40-4614-aef9-9c84c4634727)' stroke='rgb(187, 187, 187)' look='allInOne' height='90.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='148.0px' y='0.0' stroke-width='1.0' fill='url(#8f882846-e9b0-49e0-9534-4e62d11c97db)' stroke='rgb(187, 187, 187)' look='allInOne' height='90.0px'/>
     <text font-weight='bold' text-anchor='middle' x='74.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>MovieInfo</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='148.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_kicMUCqeEDqFQcTboyizEw'>
@@ -430,7 +430,7 @@
     </g>
   </g>
   <g transform='translate(493.0,703.0)' id='_fY9KACqeEDqFQcTboyizEw'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='143.0px' y='0.0' stroke-width='1.0' fill='url(#bf0fc399-bd4a-45a2-a922-1e3cfdbb6f55)' stroke='rgb(187, 187, 187)' look='allInOne' height='132.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='143.0px' y='0.0' stroke-width='1.0' fill='url(#bd5b3879-8b05-40ed-a437-a22df666608a)' stroke='rgb(187, 187, 187)' look='allInOne' height='132.0px'/>
     <text font-weight='bold' text-anchor='middle' x='71.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>ScreeningInfo</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='143.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_x-hW8CqeEDqFQcTboyizEw'>
@@ -455,7 +455,7 @@
     </g>
   </g>
   <g transform='translate(489.0,87.0)' id='_DpE-ECqoEDqFQcTboyizEw'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='154.0px' y='0.0' stroke-width='1.0' fill='url(#b12ce27c-e949-4b23-83f2-6bdb6bfa1aca)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
+    <rect rx='3.0' ry='3.0' x='0.0' width='154.0px' y='0.0' stroke-width='1.0' fill='url(#f619ef8e-88ec-439f-a645-34e4c7026917)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
     <text font-weight='bold' text-anchor='middle' x='77.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>TicketInfo</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='154.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_F8GwoCqoEDqFQcTboyizEw'>
@@ -497,18 +497,18 @@
   <g transform='translate(864.0,135.0)' id='_eMdWOSqoEDqFQcTboyizEw'>
     <text text-anchor='middle' x='55.5' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>《dependency》</text>
   </g>
-  <g transform='translate(1998.0,1006.0)' id='_pLtGESmkEDqHSIS6CmAK0g'>
-    <rect x='0.0' width='86.0px' y='0.0' stroke-width='1.0' fill='url(#106f5a8d-b31a-4b5e-aaad-e623244d8f0f)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
-    <rect x='0.0' width='1520.0px' y='24.0' stroke-width='1.0' fill='url(#106f5a8d-b31a-4b5e-aaad-e623244d8f0f)' stroke='rgb(194, 183, 159)' look='allInOne' height='1246.0px'/>
+  <g transform='translate(2037.0,1052.0)' id='_pLtGESmkEDqHSIS6CmAK0g'>
+    <rect x='0.0' width='86.0px' y='0.0' stroke-width='1.0' fill='url(#01a0742b-a1fd-4fc6-88d8-b2d71004bb59)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
+    <rect x='0.0' width='1520.0px' y='24.0' stroke-width='1.0' fill='url(#01a0742b-a1fd-4fc6-88d8-b2d71004bb59)' stroke='rgb(194, 183, 159)' look='allInOne' height='1246.0px'/>
     <text font-weight='bold' text-anchor='middle' x='43.0' y='18.0' font-size='13' fill='rgb(128, 98, 33)'>persistency</text>
   </g>
-  <g transform='translate(89.0,1006.0)' id='_2M2fACniEDqsSf9tFrxS-Q'>
-    <rect x='0.0' width='63.0px' y='0.0' stroke-width='1.0' fill='url(#f582aaba-a5f5-40e3-8f1a-8957e302897e)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
-    <rect x='0.0' width='1710.0px' y='24.0' stroke-width='1.0' fill='url(#f582aaba-a5f5-40e3-8f1a-8957e302897e)' stroke='rgb(194, 183, 159)' look='allInOne' height='1336.0px'/>
+  <g transform='translate(68.0,1052.0)' id='_2M2fACniEDqsSf9tFrxS-Q'>
+    <rect x='0.0' width='63.0px' y='0.0' stroke-width='1.0' fill='url(#0ae01cbc-a8a5-4068-8d50-6a79a7686bbe)' stroke='rgb(194, 183, 159)' look='allInOne' height='24.0px'/>
+    <rect x='0.0' width='1710.0px' y='24.0' stroke-width='1.0' fill='url(#0ae01cbc-a8a5-4068-8d50-6a79a7686bbe)' stroke='rgb(194, 183, 159)' look='allInOne' height='1336.0px'/>
     <text font-weight='bold' text-anchor='middle' x='31.5' y='18.0' font-size='13' fill='rgb(128, 98, 33)'>domain</text>
   </g>
-  <g transform='translate(123.0,1614.0)' id='_YNjnECmdEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='622.0px' y='0.0' stroke-width='1.0' fill='url(#7eafbd68-b60c-416b-a264-2bc04adda52d)' stroke='rgb(187, 187, 187)' look='allInOne' height='575.0px'/>
+  <g transform='translate(102.0,1660.0)' id='_YNjnECmdEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='622.0px' y='0.0' stroke-width='1.0' fill='url(#17e11673-a35f-4fe4-b11e-2b7741a41da6)' stroke='rgb(187, 187, 187)' look='allInOne' height='575.0px'/>
     <text font-weight='bold' text-anchor='middle' x='311.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>ManagementSystem</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='622.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_iMOakCnoEDqsSf9tFrxS-Q'>
@@ -642,8 +642,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>changeSelected(time: LocalTime, screenName: String)</text>
     </g>
   </g>
-  <g transform='translate(963.0,1758.0)' id='_Z6jUYCmdEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='622.0px' y='0.0' stroke-width='1.0' fill='url(#a657de1a-54d4-4ec6-9a2b-0ae708083994)' stroke='rgb(187, 187, 187)' look='allInOne' height='216.0px'/>
+  <g transform='translate(942.0,1804.0)' id='_Z6jUYCmdEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='622.0px' y='0.0' stroke-width='1.0' fill='url(#13202e75-efce-4f65-ad8e-c10445591fe2)' stroke='rgb(187, 187, 187)' look='allInOne' height='216.0px'/>
     <text font-weight='bold' text-anchor='middle' x='311.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Cinema</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='622.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_xZq0wCmeEDqHSIS6CmAK0g'>
@@ -692,83 +692,10 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>checkExistedScreening(time: Integer, screenName: String, sg: Screening): Boolean</text>
     </g>
   </g>
-  <g transform='translate(655.0,1115.0)' id='_bmU5sCmdEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='477.0px' y='0.0' stroke-width='1.0' fill='url(#981c6442-ab90-4d05-8522-f82261440e22)' stroke='rgb(187, 187, 187)' look='allInOne' height='323.0px'/>
-    <text font-weight='bold' text-anchor='middle' x='238.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Screening</text>
-    <line y1='26.0' x1='0.0' y2='26.0' x2='477.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
-    <g transform='translate(0.0,26.0)' id='_ysiK0CmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
-      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>date: LocalDate</text>
-    </g>
-    <g transform='translate(0.0,46.0)' id='_y1q4sCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
-      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>time: LocalTime</text>
-    </g>
-    <g transform='translate(0.0,66.0)' id='_y-qcoCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
-      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>ticketsSold: Integer</text>
-    </g>
-    <line y1='90.0' x1='0.0' y2='90.0' x2='477.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
-    <g transform='translate(0.0,90.0)' id='_0CQAkCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getDate(): LocalDate</text>
-    </g>
-    <g transform='translate(0.0,110.0)' id='_0I2X0CmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>Screening(movie: Movie, screen: Screen, data: LocalDate, time: LocalTime)</text>
-    </g>
-    <g transform='translate(0.0,130.0)' id='_0MWXwCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getTime(): LocalTime</text>
-    </g>
-    <g transform='translate(0.0,150.0)' id='_0PzUYCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getScreen(): Screen</text>
-    </g>
-    <g transform='translate(0.0,170.0)' id='_0TC1oCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setMovie(movie: Movie)</text>
-    </g>
-    <g transform='translate(0.0,190.0)' id='_0WS98CmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setScreen(screen: Screen)</text>
-    </g>
-    <g transform='translate(0.0,210.0)' id='_0Zol0CmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setDate()</text>
-    </g>
-    <g transform='translate(0.0,230.0)' id='_1VE6YCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setTime(time: LocalTime)</text>
-    </g>
-    <g transform='translate(0.0,250.0)' id='_1ZxNICmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getNumberTicketsSold(): Integer</text>
-    </g>
-    <g transform='translate(0.0,270.0)' id='_1e0FMCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setNumberTicketsSold(soldNum: Integer)</text>
-    </g>
-    <g transform='translate(0.0,290.0)' id='_M2jZ4CpeEDqi6579jH1RDA'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
-      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getScreenName(): String</text>
-    </g>
-  </g>
-  <g transform='translate(1293.0,1345.0)' id='_dIRNkCmdEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='354.0px' y='0.0' stroke-width='1.0' fill='url(#6cdc7b3e-5626-440f-9ea4-db48d9fb5db3)' stroke='rgb(187, 187, 187)' look='allInOne' height='113.0px'/>
-    <text font-weight='bold' text-anchor='middle' x='177.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Movie</text>
-    <line y1='26.0' x1='0.0' y2='26.0' x2='354.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+  <g transform='translate(1277.0,1468.0)' id='_dIRNkCmdEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='180.0px' y='0.0' stroke-width='1.0' fill='url(#1b8c1f25-c1c9-4a89-b9dd-c9a0209abf76)' stroke='rgb(187, 187, 187)' look='allInOne' height='155.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='90.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Movie</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='180.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_lbrYwCmeEDqHSIS6CmAK0g'>
       <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
       <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>title: String</text>
@@ -781,24 +708,34 @@
       <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
       <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>year: Integer</text>
     </g>
-    <line y1='90.0' x1='0.0' y2='90.0' x2='354.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
-    <g transform='translate(0.0,90.0)' id='_s8yZwCmeEDqHSIS6CmAK0g'>
+    <line y1='90.0' x1='0.0' y2='90.0' x2='180.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+    <g transform='translate(0.0,90.0)' id='_5IMaACs7EDqVbeeq31-xvQ'>
       <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
       <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
-      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>Movie(title: String, runningTime: Integer, year: Integer)</text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getTitle(): String</text>
+    </g>
+    <g transform='translate(0.0,110.0)' id='_6Nq0UCs7EDqVbeeq31-xvQ'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getRunningTime(): Integer</text>
+    </g>
+    <g transform='translate(0.0,130.0)' id='_7q1V4Cs7EDqVbeeq31-xvQ'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getYear(): Integer</text>
     </g>
   </g>
-  <g transform='translate(1377.0,1181.0)' id='_eI1SsCmdEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='153.0px' y='0.0' stroke-width='1.0' fill='url(#845c3022-d1f3-46fb-95dc-3973e6c62d39)' stroke='rgb(187, 187, 187)' look='allInOne' height='92.0px'/>
+  <g transform='translate(1353.0,1314.0)' id='_eI1SsCmdEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='153.0px' y='0.0' stroke-width='1.0' fill='url(#03849183-c5d7-4389-856e-67cc80853f1f)' stroke='rgb(187, 187, 187)' look='allInOne' height='113.0px'/>
     <text font-weight='bold' text-anchor='middle' x='76.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Screen</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='153.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
-    <g transform='translate(0.0,26.0)' id='_2RzBUCmeEDqHSIS6CmAK0g'>
-      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP////3+/ypvqCtuqCtvqDF0qzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+z6/+36/+P4/+f5//L8//b9/wWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACj1MwgAAAArdFJOU////////////////////////////////////////////////////////wAjyafQAAAAjklEQVR42lyPMQrCUBBE364bbbSwEcE+EO9/l0AqIZ0K2in8v7sWIkmc7s1MMSNnltI/xnjMcY8Rt4kPYNRjIYUUaCoYvr3vvvlzU0DxVyFiHetIcTDcgiZr4+EWYPjKrwC8udB3RtZTUSDGFgaMHDVBKqBBL7/pfQsaYIsXSsyMQHLeGGhhmN52HSTwGQCflTcMX9qOTgAAAABJRU5ErkJggg==' height='16.0'/>
-      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>name: String</text>
-    </g>
-    <g transform='translate(0.0,46.0)' id='_2aRA0CmeEDqHSIS6CmAK0g'>
+    <g transform='translate(0.0,26.0)' id='_2aRA0CmeEDqHSIS6CmAK0g'>
       <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
       <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>capacity: Integer</text>
+    </g>
+    <g transform='translate(0.0,46.0)' id='_CCMgkCs8EDqVbeeq31-xvQ'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>name: String</text>
     </g>
     <line y1='70.0' x1='0.0' y2='70.0' x2='153.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,70.0)' id='_2xbjoCmeEDqHSIS6CmAK0g'>
@@ -806,9 +743,14 @@
       <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getCapacity(): Integer</text>
     </g>
+    <g transform='translate(0.0,90.0)' id='_3fXbACs7EDqVbeeq31-xvQ'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getName(): String</text>
+    </g>
   </g>
-  <g transform='translate(2040.0,1093.0)' id='_4T-FsCmkEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='769.0px' y='0.0' stroke-width='1.0' fill='url(#bebe7fda-8b99-4755-a5be-284eca5955da)' stroke='rgb(187, 187, 187)' look='allInOne' height='92.0px'/>
+  <g transform='translate(2079.0,1139.0)' id='_4T-FsCmkEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='769.0px' y='0.0' stroke-width='1.0' fill='url(#81866791-94eb-4713-bf64-b9c1d3575f21)' stroke='rgb(187, 187, 187)' look='allInOne' height='92.0px'/>
     <text font-weight='bold' text-anchor='middle' x='384.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>PersistentScreening</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='769.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_NKQYECmlEDqHSIS6CmAK0g'>
@@ -827,8 +769,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>PersistentScreening(oid: Integer, date: LocalDate, pScreen: PersistentScreen, pMovie: PersistentMovie, startTime: LocalTime)</text>
     </g>
   </g>
-  <g transform='translate(2040.0,1242.0)' id='_6rA1kCmkEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='118.0px' y='0.0' stroke-width='1.0' fill='url(#3ba617ff-63c5-40a6-ab93-20473ef51c8c)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
+  <g transform='translate(2079.0,1288.0)' id='_6rA1kCmkEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='118.0px' y='0.0' stroke-width='1.0' fill='url(#4a2a5c1f-7cdc-4133-a719-53f1526c5f38)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
     <text font-weight='bold' text-anchor='middle' x='59.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>PersistentScreen</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='118.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_Oc5rsCmlEDqHSIS6CmAK0g'>
@@ -842,8 +784,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getId(): Integer</text>
     </g>
   </g>
-  <g transform='translate(2040.0,1389.0)' id='_8aNiUCmkEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='412.0px' y='0.0' stroke-width='1.0' fill='url(#ecdfdd3c-99d1-4e2e-8214-e1b2d75edb4e)' stroke='rgb(187, 187, 187)' look='allInOne' height='92.0px'/>
+  <g transform='translate(2079.0,1435.0)' id='_8aNiUCmkEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='412.0px' y='0.0' stroke-width='1.0' fill='url(#89b2f69e-69ac-424f-877a-d4eaed8e455d)' stroke='rgb(187, 187, 187)' look='allInOne' height='92.0px'/>
     <text font-weight='bold' text-anchor='middle' x='206.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>PersistentMovie</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='412.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_Pdg0ICmlEDqHSIS6CmAK0g'>
@@ -862,8 +804,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>PersistentMovie(title: String, runningTime: Integer, year: Integer)</text>
     </g>
   </g>
-  <g transform='translate(2189.0,2056.0)' id='_VRT-wCmlEDqHSIS6CmAK0g'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='639.0px' y='0.0' stroke-width='1.0' fill='url(#c61cc676-7316-4754-b2dc-76863cb0c2be)' stroke='rgb(187, 187, 187)' look='allInOne' height='174.0px'/>
+  <g transform='translate(2228.0,2102.0)' id='_VRT-wCmlEDqHSIS6CmAK0g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='639.0px' y='0.0' stroke-width='1.0' fill='url(#85c302de-dfe4-4744-a722-066d32086660)' stroke='rgb(187, 187, 187)' look='allInOne' height='174.0px'/>
     <text font-weight='bold' text-anchor='middle' x='319.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>ScreeningMapper</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='639.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_vzmlgCoEEDqsSf9tFrxS-Q'>
@@ -902,8 +844,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>checkExistedScreening(time: Integer, screenName: String, sg: Screening): Boolean</text>
     </g>
   </g>
-  <g transform='translate(235.0,1253.0)' id='_1lS6UCnjEDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='314.0px' y='0.0' stroke-width='1.0' fill='url(#d87b4d05-f170-4f85-b33e-f1b880a8e7b6)' stroke='rgb(187, 187, 187)' look='allInOne' height='85.0px'/>
+  <g transform='translate(268.0,1299.0)' id='_1lS6UCnjEDqsSf9tFrxS-Q'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='314.0px' y='0.0' stroke-width='1.0' fill='url(#4dcd1b13-2f50-4113-8ae2-15ff84dd90f9)' stroke='rgb(187, 187, 187)' look='allInOne' height='85.0px'/>
     <text font-weight='bold' text-anchor='middle' x='157.0' y='18.0' font-size='12' fill='rgb(105, 105, 105)'>« Interface »</text>
     <text font-weight='bold' text-anchor='middle' x='157.0' y='35.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>ManagementObserver</text>
     <line y1='42.0' x1='0.0' y2='42.0' x2='314.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
@@ -918,8 +860,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>message(parameter: String, b: Boolean): Boolean</text>
     </g>
   </g>
-  <g transform='translate(2590.0,1620.0)' id='_fa1tgCnnEDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='336.0px' y='0.0' stroke-width='1.0' fill='url(#b10f5d6b-388f-49e8-8947-20d0d77ee4f0)' stroke='rgb(187, 187, 187)' look='allInOne' height='111.0px'/>
+  <g transform='translate(2629.0,1666.0)' id='_fa1tgCnnEDqsSf9tFrxS-Q'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='336.0px' y='0.0' stroke-width='1.0' fill='url(#95b2e658-5828-4044-83c6-d2addc600b89)' stroke='rgb(187, 187, 187)' look='allInOne' height='111.0px'/>
     <text font-weight='bold' text-anchor='middle' x='168.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>ScreenMapper</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='336.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_OgvZQCqqEDqFQcTboyizEw'>
@@ -943,8 +885,8 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getScreen(screenName: String): Screen</text>
     </g>
   </g>
-  <g transform='translate(2335.0,1800.0)' id='_vfKswCnnEDqsSf9tFrxS-Q'>
-    <rect rx='3.0' ry='3.0' x='0.0' width='488.0px' y='0.0' stroke-width='1.0' fill='url(#80c5e624-5d6b-4a80-9a93-69acc2db939a)' stroke='rgb(187, 187, 187)' look='allInOne' height='216.0px'/>
+  <g transform='translate(2374.0,1846.0)' id='_vfKswCnnEDqsSf9tFrxS-Q'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='488.0px' y='0.0' stroke-width='1.0' fill='url(#68d4066b-6d28-44b5-8315-36ee5c70e20c)' stroke='rgb(187, 187, 187)' look='allInOne' height='216.0px'/>
     <text font-weight='bold' text-anchor='middle' x='244.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>MovieMapper</text>
     <line y1='26.0' x1='0.0' y2='26.0' x2='488.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
     <g transform='translate(0.0,26.0)' id='_Rx1WkCqqEDqFQcTboyizEw'>
@@ -993,195 +935,218 @@
       <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>performSelect(sql: String)</text>
     </g>
   </g>
-  <text text-anchor='middle' x='935.0' y='1856.0' fill='rgb(0, 0, 0)'>-cinema</text>
-  <text text-anchor='middle' x='943.0' y='1886.0' fill='rgb(0, 0, 0)'>1</text>
-  <text text-anchor='middle' x='685.0' y='1480.0' fill='rgb(0, 0, 0)'>-currentScreening</text>
-  <text text-anchor='middle' x='715.0' y='1463.0' fill='rgb(0, 0, 0)'>*</text>
-  <text text-anchor='middle' x='1424.0' y='1488.0' fill='rgb(0, 0, 0)'>-movies</text>
-  <text text-anchor='middle' x='1454.0' y='1483.0' fill='rgb(0, 0, 0)'>*</text>
-  <text text-anchor='middle' x='1032.0' y='1480.0' fill='rgb(0, 0, 0)'>-screenings</text>
-  <text text-anchor='middle' x='1062.0' y='1463.0' fill='rgb(0, 0, 0)'>*</text>
-  <text text-anchor='middle' x='1268.0' y='1381.0' fill='rgb(0, 0, 0)'>-movie</text>
-  <text text-anchor='middle' x='1273.0' y='1411.0' fill='rgb(0, 0, 0)'>1</text>
-  <text text-anchor='middle' x='1349.0' y='1217.0' fill='rgb(0, 0, 0)'>-screen</text>
-  <text text-anchor='middle' x='1357.0' y='1247.0' fill='rgb(0, 0, 0)'>1</text>
-  <text text-anchor='middle' x='2134.0' y='2133.0' fill='rgb(0, 0, 0)'>+screeningMapper</text>
-  <text text-anchor='middle' x='2169.0' y='2163.0' fill='rgb(0, 0, 0)'>1</text>
-  <text text-anchor='middle' x='377.0' y='1407.0' fill='rgb(0, 0, 0)'>-observers</text>
-  <text text-anchor='middle' x='407.0' y='1363.0' fill='rgb(0, 0, 0)'>*</text>
-  <text text-anchor='middle' x='265.0' y='1561.0' fill='rgb(0, 0, 0)'>-managementSystem</text>
-  <text text-anchor='middle' x='235.0' y='1599.0' fill='rgb(0, 0, 0)'>1</text>
-  <g transform='translate(3023.0,2265.0)' id='_H2woMyn7EDqsSf9tFrxS-Q'>
+  <g transform='translate(681.0,1210.0)' id='_N6n1NSs-EDqdNopg3cpIOw'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='280.0px' y='0.0' stroke-width='1.0' fill='url(#0f1b5322-0230-4ff6-97be-60dcf87dcd6a)' stroke='rgb(187, 187, 187)' look='allInOne' height='323.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='140.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Screening</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='280.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_N6n1Nis-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>date: LocalDate</text>
+    </g>
+    <g transform='translate(0.0,46.0)' id='_N6n1Nys-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>time: LocalTime</text>
+    </g>
+    <g transform='translate(0.0,66.0)' id='_N6n1OCs-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>ticketsSold: Integer</text>
+    </g>
+    <line y1='90.0' x1='0.0' y2='90.0' x2='280.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+    <g transform='translate(0.0,90.0)' id='_N6n1OSs-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getDate(): LocalDate</text>
+    </g>
+    <g transform='translate(0.0,110.0)' id='_N6n1Ois-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getTime(): LocalTime</text>
+    </g>
+    <g transform='translate(0.0,130.0)' id='_N6n1Oys-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getTicketsSold(): Integer</text>
+    </g>
+    <g transform='translate(0.0,150.0)' id='_N6n1PCs-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getScreen(): Screen</text>
+    </g>
+    <g transform='translate(0.0,170.0)' id='_N6n1PSs-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setMovie(movie: Movie)</text>
+    </g>
+    <g transform='translate(0.0,190.0)' id='_N6n1Pis-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setScreen(screen: Screen)</text>
+    </g>
+    <g transform='translate(0.0,210.0)' id='_N6n1Pys-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setDate()</text>
+    </g>
+    <g transform='translate(0.0,230.0)' id='_N6n1QCs-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setTime(time: LocalTime)</text>
+    </g>
+    <g transform='translate(0.0,250.0)' id='_N6n1QSs-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getNumberTicketsSold(): Integer</text>
+    </g>
+    <g transform='translate(0.0,270.0)' id='_N6n1Qis-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>setNumberTicketsSold(soldNum: Integer)</text>
+    </g>
+    <g transform='translate(0.0,290.0)' id='_N6n1Qys-EDqdNopg3cpIOw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(105, 105, 105)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getScreenName(): String</text>
+    </g>
+  </g>
+  <text text-anchor='middle' x='914.0' y='1902.0' fill='rgb(0, 0, 0)'>-cinema</text>
+  <text text-anchor='middle' x='922.0' y='1932.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1352.0' y='1653.0' fill='rgb(0, 0, 0)'>-movies</text>
+  <text text-anchor='middle' x='1382.0' y='1648.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='2173.0' y='2179.0' fill='rgb(0, 0, 0)'>+screeningMapper</text>
+  <text text-anchor='middle' x='2208.0' y='2209.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='410.0' y='1453.0' fill='rgb(0, 0, 0)'>-observers</text>
+  <text text-anchor='middle' x='440.0' y='1409.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='255.0' y='1607.0' fill='rgb(0, 0, 0)'>-managementSystem</text>
+  <text text-anchor='middle' x='225.0' y='1645.0' fill='rgb(0, 0, 0)'>1</text>
+  <g transform='translate(3044.0,2353.0)' id='_H2woMyn7EDqsSf9tFrxS-Q'>
     <text text-anchor='middle' x='55.5' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>《dependency》</text>
   </g>
-  <g transform='translate(3077.0,2122.0)' id='_JyO2SSn7EDqsSf9tFrxS-Q'>
+  <g transform='translate(3103.0,2210.0)' id='_JyO2SSn7EDqsSf9tFrxS-Q'>
     <text text-anchor='middle' x='55.5' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>《dependency》</text>
   </g>
-  <g transform='translate(2993.0,2372.0)' id='_KX5vOSn7EDqsSf9tFrxS-Q'>
+  <g transform='translate(3011.0,2460.0)' id='_KX5vOSn7EDqsSf9tFrxS-Q'>
     <text text-anchor='middle' x='55.5' y='16.0' font-size='13' fill='rgb(0, 0, 0)'>《dependency》</text>
   </g>
-  <text text-anchor='middle' x='2544.0' y='1684.0' fill='rgb(0, 0, 0)'>+screenMapper</text>
-  <text text-anchor='middle' x='2570.0' y='1714.0' fill='rgb(0, 0, 0)'>1</text>
-  <text text-anchor='middle' x='2292.0' y='1877.0' fill='rgb(0, 0, 0)'>+movieMapper</text>
-  <text text-anchor='middle' x='2315.0' y='1907.0' fill='rgb(0, 0, 0)'>1</text>
-  <text text-anchor='middle' x='2216.0' y='1294.0' fill='rgb(0, 0, 0)'>-cache</text>
-  <text text-anchor='middle' x='2178.0' y='1264.0' fill='rgb(0, 0, 0)'>*</text>
-  <text text-anchor='middle' x='2378.0' y='1541.0' fill='rgb(0, 0, 0)'>-cache</text>
-  <text text-anchor='middle' x='2408.0' y='1506.0' fill='rgb(0, 0, 0)'>*</text>
-  <g transform='translate(785.0,1881.0)' id='_hiQsoCmdEDqHSIS6CmAK0g'/>
-  <g transform='translate(622.0,1541.0)' id='_tB708CmdEDqHSIS6CmAK0g'/>
-  <g transform='translate(1403.0,1623.0)' id='_0BvfsCmdEDqHSIS6CmAK0g'/>
-  <g transform='translate(999.0,1613.0)' id='_DEgUQCmeEDqHSIS6CmAK0g'/>
-  <g transform='translate(1168.0,1406.0)' id='_KzfZMCmeEDqHSIS6CmAK0g'/>
-  <g transform='translate(1207.0,1242.0)' id='_LRHwYSmeEDqHSIS6CmAK0g'/>
-  <g transform='translate(1852.0,2065.0)' id='_yPpg4CmmEDqHSIS6CmAK0g'/>
-  <g transform='translate(287.0,1491.0)' id='_SFngMCnkEDqsSf9tFrxS-Q'/>
-  <g transform='translate(178.0,1058.0)' id='_bL4hICnkEDqsSf9tFrxS-Q'/>
-  <g transform='translate(2031.0,1759.0)' id='_lboXkCpxEDqi6579jH1RDA'/>
-  <g transform='translate(1906.0,1902.0)' id='_mulNMCpxEDqi6579jH1RDA'/>
-  <g transform='translate(2681.0,1452.0)' id='_jvrcMCqqEDqFQcTboyizEw'/>
-  <g transform='translate(2312.0,1656.0)' id='_tqwlQCqqEDqFQcTboyizEw'/>
+  <text text-anchor='middle' x='2583.0' y='1711.0' fill='rgb(0, 0, 0)'>+screenMapper</text>
+  <text text-anchor='middle' x='2609.0' y='1741.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='2331.0' y='1923.0' fill='rgb(0, 0, 0)'>+movieMapper</text>
+  <text text-anchor='middle' x='2354.0' y='1953.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='2255.0' y='1340.0' fill='rgb(0, 0, 0)'>-cache</text>
+  <text text-anchor='middle' x='2217.0' y='1310.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='2417.0' y='1587.0' fill='rgb(0, 0, 0)'>-cache</text>
+  <text text-anchor='middle' x='2447.0' y='1552.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='1325.0' y='1360.0' fill='rgb(0, 0, 0)'>-screen</text>
+  <text text-anchor='middle' x='1333.0' y='1390.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1252.0' y='1490.0' fill='rgb(0, 0, 0)'>-movie</text>
+  <text text-anchor='middle' x='1257.0' y='1520.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='936.0' y='1575.0' fill='rgb(0, 0, 0)'>-screenings</text>
+  <text text-anchor='middle' x='966.0' y='1558.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='687.0' y='1575.0' fill='rgb(0, 0, 0)'>-currentScreening</text>
+  <text text-anchor='middle' x='717.0' y='1558.0' fill='rgb(0, 0, 0)'>*</text>
+  <g transform='translate(764.0,1927.0)' id='_hiQsoCmdEDqHSIS6CmAK0g'/>
+  <g transform='translate(1331.0,1729.0)' id='_0BvfsCmdEDqHSIS6CmAK0g'/>
+  <g transform='translate(1861.0,2111.0)' id='_yPpg4CmmEDqHSIS6CmAK0g'/>
+  <g transform='translate(320.0,1537.0)' id='_SFngMCnkEDqsSf9tFrxS-Q'/>
+  <g transform='translate(168.0,1081.0)' id='_bL4hICnkEDqsSf9tFrxS-Q'/>
+  <g transform='translate(2040.0,1805.0)' id='_lboXkCpxEDqi6579jH1RDA'/>
+  <g transform='translate(1915.0,1948.0)' id='_mulNMCpxEDqi6579jH1RDA'/>
+  <g transform='translate(2720.0,1498.0)' id='_jvrcMCqqEDqFQcTboyizEw'/>
+  <g transform='translate(2351.0,1702.0)' id='_tqwlQCqqEDqFQcTboyizEw'/>
+  <g transform='translate(1106.0,1385.0)' id='_UoVqYCs-EDqdNopg3cpIOw'/>
+  <g transform='translate(1074.0,1515.0)' id='_dNF5sCs-EDqdNopg3cpIOw'/>
+  <g transform='translate(900.0,1684.0)' id='_hCmLoCs-EDqdNopg3cpIOw'/>
+  <g transform='translate(621.0,1612.0)' id='_nGEJ8Cs-EDqdNopg3cpIOw'/>
   <g id='_hiLNEymdEDqHSIS6CmAK0g'>
-    <line y1='1866.0' x1='745.0' y2='1866.0' x2='854.0' id='_hiMbNCmdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1912.0' x1='724.0' y2='1912.0' x2='833.0' id='_hiMbNCmdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_hiLNEymdEDqHSIS6CmAK0g'>
-    <line y1='1866.0' x1='854.0' y2='1866.0' x2='854.0' id='_hiNCQimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1912.0' x1='833.0' y2='1912.0' x2='833.0' id='_hiNCQimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_hiLNEymdEDqHSIS6CmAK0g'>
-    <line y1='1866.0' x1='854.0' y2='1866.0' x2='963.0' id='_hiNCQymdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(963.0,1866.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
-  </g>
-  <g id='_tB1uUimdEDqHSIS6CmAK0g'>
-    <line y1='1614.0' x1='700.0' y2='1526.0' x2='700.0' id='_tB28cimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_tB1uUimdEDqHSIS6CmAK0g'>
-    <line y1='1526.0' x1='700.0' y2='1526.0' x2='700.0' id='_tB28dSmdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_tB1uUimdEDqHSIS6CmAK0g'>
-    <line y1='1526.0' x1='700.0' y2='1438.0' x2='700.0' id='_tB28dimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(700.0,1438.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1912.0' x1='833.0' y2='1912.0' x2='942.0' id='_hiNCQymdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(942.0,1912.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_0BoyAymdEDqHSIS6CmAK0g'>
-    <line y1='1758.0' x1='1439.0' y2='1608.0' x2='1439.0' id='_0BqAIimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1804.0' x1='1367.0' y2='1713.0' x2='1367.0' id='_0BqAIimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_0BoyAymdEDqHSIS6CmAK0g'>
-    <line y1='1608.0' x1='1439.0' y2='1608.0' x2='1439.0' id='_0BqAJSmdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1713.0' x1='1367.0' y2='1714.0' x2='1367.0' id='_0BqAJSmdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_0BoyAymdEDqHSIS6CmAK0g'>
-    <line y1='1608.0' x1='1439.0' y2='1458.0' x2='1439.0' id='_0BqAJimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(1439.0,1458.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
-  </g>
-  <g id='_DEXxZymeEDqHSIS6CmAK0g'>
-    <line y1='1758.0' x1='1047.0' y2='1598.0' x2='1047.0' id='_DEY_hCmeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_DEXxZymeEDqHSIS6CmAK0g'>
-    <line y1='1598.0' x1='1047.0' y2='1598.0' x2='1047.0' id='_DEY_hymeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_DEXxZymeEDqHSIS6CmAK0g'>
-    <line y1='1598.0' x1='1047.0' y2='1438.0' x2='1047.0' id='_DEY_iCmeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(1047.0,1438.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
-  </g>
-  <g id='_KzVBJSmeEDqHSIS6CmAK0g'>
-    <line y1='1391.0' x1='1132.0' y2='1391.0' x2='1212.0' id='_KzWPQimeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_KzVBJSmeEDqHSIS6CmAK0g'>
-    <line y1='1391.0' x1='1212.0' y2='1391.0' x2='1213.0' id='_KzWPRSmeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_KzVBJSmeEDqHSIS6CmAK0g'>
-    <line y1='1391.0' x1='1213.0' y2='1391.0' x2='1293.0' id='_KzWPRimeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(1293.0,1391.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
-  </g>
-  <g id='_LQ_0lCmeEDqHSIS6CmAK0g'>
-    <line y1='1227.0' x1='1132.0' y2='1227.0' x2='1254.0' id='_LRBCuCmeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_LQ_0lCmeEDqHSIS6CmAK0g'>
-    <line y1='1227.0' x1='1254.0' y2='1227.0' x2='1255.0' id='_LRBCuymeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_LQ_0lCmeEDqHSIS6CmAK0g'>
-    <line y1='1227.0' x1='1255.0' y2='1227.0' x2='1377.0' id='_LRBCvCmeEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(1377.0,1227.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
-  </g>
-  <g id='_B-MIQimlEDqHSIS6CmAK0g'>
-    <line y1='1150.0' x1='2040.0' y2='1150.0' x2='1586.0' id='_B-MvUimlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_B-MIQimlEDqHSIS6CmAK0g'>
-    <line y1='1150.0' x1='1586.0' y2='1150.0' x2='1586.0' id='_B-MvVSmlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-  </g>
-  <g id='_B-MIQimlEDqHSIS6CmAK0g'>
-    <line y1='1150.0' x1='1586.0' y2='1150.0' x2='1132.0' id='_B-MvVimlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polygon transform='translate(1132.0,1150.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+    <line y1='1714.0' x1='1367.0' y2='1623.0' x2='1367.0' id='_0BqAJimdEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(1367.0,1623.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_CscVYimlEDqHSIS6CmAK0g'>
-    <line y1='1257.0' x1='2040.0' y2='1257.0' x2='1785.0' id='_CscVZymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1341.0' x1='2079.0' y2='1341.0' x2='1793.0' id='_CscVZymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_CscVYimlEDqHSIS6CmAK0g'>
-    <line y1='1257.0' x1='1785.0' y2='1257.0' x2='1785.0' id='_CscVaimlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1341.0' x1='1793.0' y2='1341.0' x2='1792.0' id='_CscVaimlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_CscVYimlEDqHSIS6CmAK0g'>
-    <line y1='1257.0' x1='1785.0' y2='1257.0' x2='1530.0' id='_CscVaymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polygon transform='translate(1530.0,1257.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+    <line y1='1341.0' x1='1792.0' y2='1341.0' x2='1506.0' id='_CscVaymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1506.0,1341.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
   </g>
   <g id='_1phcMimlEDqHSIS6CmAK0g'>
-    <line y1='1452.0' x1='2040.0' y2='1452.0' x2='1844.0' id='_1phcNymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1526.0' x1='2079.0' y2='1526.0' x2='1768.0' id='_1phcNymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_1phcMimlEDqHSIS6CmAK0g'>
-    <line y1='1452.0' x1='1844.0' y2='1452.0' x2='1843.0' id='_1phcOimlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1526.0' x1='1768.0' y2='1526.0' x2='1768.0' id='_1phcOimlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_1phcMimlEDqHSIS6CmAK0g'>
-    <line y1='1452.0' x1='1843.0' y2='1452.0' x2='1647.0' id='_1phcOymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polygon transform='translate(1647.0,1452.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+    <line y1='1526.0' x1='1768.0' y2='1526.0' x2='1457.0' id='_1phcOymlEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1457.0,1526.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
   </g>
   <g id='_yPizMymmEDqHSIS6CmAK0g'>
-    <line y1='2143.0' x1='2189.0' y2='2143.0' x2='1918.0' id='_yPjaQimmEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(2189.0,2143.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='2189.0' x1='2228.0' y2='2189.0' x2='1927.0' id='_yPjaQimmEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(2228.0,2189.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_yPizMymmEDqHSIS6CmAK0g'>
-    <line y1='2143.0' x1='1918.0' y2='1956.0' x2='1918.0' id='_yPjaRSmmEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='2189.0' x1='1927.0' y2='2002.0' x2='1927.0' id='_yPjaRSmmEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_yPizMymmEDqHSIS6CmAK0g'>
-    <line y1='1956.0' x1='1918.0' y2='1956.0' x2='1585.0' id='_yPjaRimmEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='2002.0' x1='1927.0' y2='2002.0' x2='1564.0' id='_yPjaRimmEDqHSIS6CmAK0g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_Pa7bkinkEDqsSf9tFrxS-Q'>
-    <line y1='471.0' x1='306.0' y2='862.0' x2='306.0' stroke-dasharray='7, 3' id='_Pa8CoCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='471.0' x1='323.0' y2='885.0' x2='323.0' stroke-dasharray='7, 3' id='_Pa8CoCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_Pa7bkinkEDqsSf9tFrxS-Q'>
-    <line y1='862.0' x1='306.0' y2='862.0' x2='306.0' stroke-dasharray='7, 3' id='_Pa8CoynkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='885.0' x1='323.0' y2='885.0' x2='323.0' stroke-dasharray='7, 3' id='_Pa8CoynkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_Pa7bkinkEDqsSf9tFrxS-Q'>
-    <line y1='862.0' x1='306.0' y2='1253.0' x2='306.0' stroke-dasharray='7, 3' id='_Pa8CpCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polygon transform='translate(306.0,1253.0) rotate(-180.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+    <line y1='885.0' x1='323.0' y2='1299.0' x2='323.0' stroke-dasharray='7, 3' id='_Pa8CpCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(323.0,1299.0) rotate(-180.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
   </g>
   <g id='_SFdIJSnkEDqsSf9tFrxS-Q'>
-    <line y1='1614.0' x1='392.0' y2='1476.0' x2='392.0' id='_SFeWQinkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1660.0' x1='425.0' y2='1522.0' x2='425.0' id='_SFeWQinkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_SFdIJSnkEDqsSf9tFrxS-Q'>
-    <line y1='1476.0' x1='392.0' y2='1476.0' x2='392.0' id='_SFeWRSnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1522.0' x1='425.0' y2='1522.0' x2='425.0' id='_SFeWRSnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_SFdIJSnkEDqsSf9tFrxS-Q'>
-    <line y1='1476.0' x1='392.0' y2='1338.0' x2='392.0' id='_SFeWRinkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(392.0,1338.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1522.0' x1='425.0' y2='1384.0' x2='425.0' id='_SFeWRinkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(425.0,1384.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_bLxzdSnkEDqsSf9tFrxS-Q'>
-    <line y1='471.0' x1='250.0' y2='1043.0' x2='250.0' id='_bLyahCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='471.0' x1='240.0' y2='1066.0' x2='240.0' id='_bLyahCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_bLxzdSnkEDqsSf9tFrxS-Q'>
-    <line y1='1043.0' x1='250.0' y2='1042.0' x2='250.0' id='_bLyahynkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1066.0' x1='240.0' y2='1065.0' x2='240.0' id='_bLyahynkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_bLxzdSnkEDqsSf9tFrxS-Q'>
-    <line y1='1042.0' x1='250.0' y2='1614.0' x2='250.0' id='_bLyaiCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(250.0,1614.0) rotate(-180.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1065.0' x1='240.0' y2='1660.0' x2='240.0' id='_bLyaiCnkEDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(240.0,1660.0) rotate(-180.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_H2s9sSn7EDqsSf9tFrxS-Q'>
-    <line y1='2016.0' x1='2714.0' y2='2523.0' x2='3352.0' stroke-dasharray='7, 3' id='_H2tkwCn7EDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(3352.0,2523.0) rotate(128.47314194409617)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='2062.0' x1='2734.0' y2='2653.0' x2='3374.0' stroke-dasharray='7, 3' id='_H2tkwCn7EDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(3374.0,2653.0) rotate(132.7205427821972)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_JyKk0in7EDqsSf9tFrxS-Q'>
-    <line y1='1731.0' x1='2798.0' y2='2523.0' x2='3376.0' stroke-dasharray='7, 3' id='_JyLL7in7EDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(3376.0,2523.0) rotate(143.87810756826795)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1777.0' x1='2832.0' y2='2653.0' x2='3394.0' stroke-dasharray='7, 3' id='_JyLL7in7EDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(3394.0,2653.0) rotate(147.31769672820963)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_KX2Ewin7EDqsSf9tFrxS-Q'>
-    <line y1='2230.0' x1='2693.0' y2='2523.0' x2='3313.0' stroke-dasharray='7, 3' id='_KX2r3yn7EDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(3313.0,2523.0) rotate(115.29451159209613)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='2276.0' x1='2697.0' y2='2653.0' x2='3345.0' stroke-dasharray='7, 3' id='_KX2r3yn7EDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(3345.0,2653.0) rotate(120.19042189229451)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_KroRgin9EDqsSf9tFrxS-Q'>
     <line y1='290.0' x1='378.0' y2='342.0' x2='1103.0' stroke-dasharray='7, 3' id='_Kro4lCn9EDqsSf9tFrxS-Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
@@ -1196,24 +1161,24 @@
     <polyline transform='translate(1104.0,166.0) rotate(82.70021313210204)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_lbcKVCpxEDqi6579jH1RDA'>
-    <line y1='1812.0' x1='1585.0' y2='1812.0' x2='2087.0' id='_lbdYcipxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1858.0' x1='1564.0' y2='1858.0' x2='2096.0' id='_lbdYcipxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_lbcKVCpxEDqi6579jH1RDA'>
-    <line y1='1812.0' x1='2087.0' y2='1675.0' x2='2088.0' id='_lbd_gSpxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1858.0' x1='2096.0' y2='1721.0' x2='2097.0' id='_lbd_gSpxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_lbcKVCpxEDqi6579jH1RDA'>
-    <line y1='1675.0' x1='2088.0' y2='1675.0' x2='2590.0' id='_lbd_gipxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(2590.0,1675.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1721.0' x1='2097.0' y2='1721.0' x2='2629.0' id='_lbd_gipxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(2629.0,1721.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_muZnBSpxEDqi6579jH1RDA'>
-    <line y1='1887.0' x1='1585.0' y2='1887.0' x2='1960.0' id='_muaOFypxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1933.0' x1='1564.0' y2='1933.0' x2='1969.0' id='_muaOFypxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_muZnBSpxEDqi6579jH1RDA'>
-    <line y1='1887.0' x1='1960.0' y2='1887.0' x2='1960.0' id='_muaOGipxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1933.0' x1='1969.0' y2='1933.0' x2='1969.0' id='_muaOGipxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_muZnBSpxEDqi6579jH1RDA'>
-    <line y1='1887.0' x1='1960.0' y2='1887.0' x2='2335.0' id='_muaOGypxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(2335.0,1887.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1933.0' x1='1969.0' y2='1933.0' x2='2374.0' id='_muaOGypxEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(2374.0,1933.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_DQIiIipyEDqi6579jH1RDA'>
     <line y1='355.0' x1='378.0' y2='718.0' x2='1105.0' stroke-dasharray='7, 3' id='_DQJJNCpyEDqi6579jH1RDA' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
@@ -1244,23 +1209,73 @@
     <polyline transform='translate(643.0,130.0) rotate(-87.63990446533707)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_jven5iqqEDqFQcTboyizEw'>
-    <line y1='1620.0' x1='2768.0' y2='1600.0' x2='2768.0' id='_jvf2AiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1666.0' x1='2807.0' y2='1646.0' x2='2807.0' id='_jvf2AiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_jven5iqqEDqFQcTboyizEw'>
-    <line y1='1600.0' x1='2768.0' y2='1274.0' x2='2768.0' id='_jvf2BSqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1646.0' x1='2807.0' y2='1320.0' x2='2807.0' id='_jvf2BSqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_jven5iqqEDqFQcTboyizEw'>
-    <line y1='1274.0' x1='2768.0' y2='1274.0' x2='2158.0' id='_jvf2BiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(2158.0,1274.0) rotate(-90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1320.0' x1='2807.0' y2='1320.0' x2='2197.0' id='_jvf2BiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(2197.0,1320.0) rotate(-90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
   <g id='_tqjJ6CqqEDqFQcTboyizEw'>
-    <line y1='1800.0' x1='2393.0' y2='1640.0' x2='2393.0' id='_tqkYAiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1846.0' x1='2432.0' y2='1686.0' x2='2432.0' id='_tqkYAiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_tqjJ6CqqEDqFQcTboyizEw'>
-    <line y1='1640.0' x1='2393.0' y2='1641.0' x2='2393.0' id='_tqkYBSqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <line y1='1686.0' x1='2432.0' y2='1687.0' x2='2432.0' id='_tqkYBSqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
   </g>
   <g id='_tqjJ6CqqEDqFQcTboyizEw'>
-    <line y1='1641.0' x1='2393.0' y2='1481.0' x2='2393.0' id='_tqkYBiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
-    <polyline transform='translate(2393.0,1481.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+    <line y1='1687.0' x1='2432.0' y2='1527.0' x2='2432.0' id='_tqkYBiqqEDqFQcTboyizEw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(2432.0,1527.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+  </g>
+  <g id='_TSbnYSs-EDqdNopg3cpIOw'>
+    <line y1='1220.0' x1='2079.0' y2='1220.0' x2='1520.0' id='_TSbnZis-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_TSbnYSs-EDqdNopg3cpIOw'>
+    <line y1='1220.0' x1='1520.0' y2='1220.0' x2='1520.0' id='_TScOcis-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_TSbnYSs-EDqdNopg3cpIOw'>
+    <line y1='1220.0' x1='1520.0' y2='1220.0' x2='961.0' id='_TScOcys-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(961.0,1220.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_UoGZ0is-EDqdNopg3cpIOw'>
+    <line y1='1370.0' x1='961.0' y2='1370.0' x2='1157.0' id='_UoIPACs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_UoGZ0is-EDqdNopg3cpIOw'>
+    <line y1='1370.0' x1='1157.0' y2='1370.0' x2='1157.0' id='_UoIPAys-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_UoGZ0is-EDqdNopg3cpIOw'>
+    <line y1='1370.0' x1='1157.0' y2='1370.0' x2='1353.0' id='_UoIPBCs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(1353.0,1370.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+  </g>
+  <g id='_dM5FZSs-EDqdNopg3cpIOw'>
+    <line y1='1500.0' x1='961.0' y2='1500.0' x2='1119.0' id='_dM5sdSs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_dM5FZSs-EDqdNopg3cpIOw'>
+    <line y1='1500.0' x1='1119.0' y2='1500.0' x2='1119.0' id='_dM5seCs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_dM5FZSs-EDqdNopg3cpIOw'>
+    <line y1='1500.0' x1='1119.0' y2='1500.0' x2='1277.0' id='_dM5seSs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(1277.0,1500.0) rotate(90.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+  </g>
+  <g id='_hCYJNCs-EDqdNopg3cpIOw'>
+    <line y1='1804.0' x1='951.0' y2='1668.0' x2='951.0' id='_hCZXUSs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hCYJNCs-EDqdNopg3cpIOw'>
+    <line y1='1668.0' x1='951.0' y2='1669.0' x2='951.0' id='_hCZXVCs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hCYJNCs-EDqdNopg3cpIOw'>
+    <line y1='1669.0' x1='951.0' y2='1533.0' x2='951.0' id='_hCZXVSs-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(951.0,1533.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
+  </g>
+  <g id='_nF3Vois-EDqdNopg3cpIOw'>
+    <line y1='1660.0' x1='702.0' y2='1596.0' x2='702.0' id='_nF38tys-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_nF3Vois-EDqdNopg3cpIOw'>
+    <line y1='1596.0' x1='702.0' y2='1597.0' x2='702.0' id='_nF38uis-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_nF3Vois-EDqdNopg3cpIOw'>
+    <line y1='1597.0' x1='702.0' y2='1533.0' x2='702.0' id='_nF38uys-EDqdNopg3cpIOw' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polyline transform='translate(702.0,1533.0) rotate(-0.0)' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)' points='-5.0,10.0 0.0,0.0 5.0,10.0'/>
   </g>
 </svg>
