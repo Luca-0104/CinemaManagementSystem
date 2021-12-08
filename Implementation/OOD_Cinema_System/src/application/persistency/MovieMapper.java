@@ -82,7 +82,7 @@ public class MovieMapper {
 
     // Add a movie to the database
 
-    PersistentMovie addMovie(String title, int runningTime) {
+    public PersistentMovie addMovie(String title, int runningTime) {
         //first we try to get the movie from the cache, if already in cache it must also be in database, we do not do anything
         PersistentMovie m = getFromCacheByDetails(title, runningTime);
 
@@ -131,6 +131,23 @@ public class MovieMapper {
         }
 
         return m;
+    }
+
+    public boolean checkExistedMovie(String title, int runningTime, int year){
+        String sql = "SELECT * FROM Movies WHERE title = '" + title + "' AND runningTime = " + runningTime + ";";
+        Database.getInstance();
+        try {
+            Statement stmt = Database.getConnection().createStatement();
+            ResultSet rset = stmt.executeQuery(sql);
+            if(rset.next()){
+                return true;
+            }
+            rset.close();
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
 }
