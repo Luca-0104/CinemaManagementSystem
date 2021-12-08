@@ -65,10 +65,13 @@ public class Cinema {
     }
 
     /*
-        operations on movie
+        operations on movie !!!!!
      */
+    public static List<Movie> getMovies(){
+        return null;
+    }
 
     /*
-        operations on ticket
+        operations on ticket !!!!!
      */
 }

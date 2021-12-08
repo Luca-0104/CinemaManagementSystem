@@ -119,8 +119,9 @@ public class MovieMapper {
                 int oid = rset.getRow();
                 String title = rset.getString("title");
                 int runningTime = rset.getInt("runningTime");
+                int year = rset.getInt("year");
                 // pack up info into object
-                m = new PersistentMovie(oid, title, runningTime);
+                m = new PersistentMovie(oid, title, runningTime, year);
             }
 
             rset.close();

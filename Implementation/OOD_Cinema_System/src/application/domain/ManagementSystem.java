@@ -2,8 +2,7 @@ package application.domain;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ManagementSystem {
     //Attributes:
@@ -61,7 +60,7 @@ public class ManagementSystem {
 
     // operations on screenings:
 
-    public void selectScreening(String screenName, LocalTime time){
+    public void selectScreening(int sno, LocalTime time){
 
     }
 
@@ -69,15 +68,15 @@ public class ManagementSystem {
 
     }
 
-    public void scheduleScreening(){
-
+    public boolean scheduleScreening(LocalDate date, LocalTime time, int screen, int movie){
+        return false;
     }
 
     public void cancelScreening(){
 
     }
 
-    public void updateScreening(){
+    public void updateScreening(LocalTime time, int sno){
 
     }
 
@@ -90,8 +89,12 @@ public class ManagementSystem {
 
 
     // operations on movies:
-    public void addMovie(String title, int runningTime, int year){
-
+    public boolean addMovie(String title, int runningTime, int year){
+        if (true) {
+            //Movie movie = cinema.addMovie(title, runningTime, year);
+            return true;
+        }
+        return false;
     }
 
 
@@ -141,5 +144,9 @@ public class ManagementSystem {
 
     public static List<Screen> getScreens(){
         return Cinema.getScreens();
+    }
+
+    public static List<Movie> getMovies() {
+        return Cinema.getMovies();
     }
 }
