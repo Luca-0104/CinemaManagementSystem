@@ -61,6 +61,8 @@ public class ScreeningDialog extends Dialog<ScreeningInfo>{
                 if (b == buttonTypeOk) {
                     return new ScreeningInfo(displayedDate, LocalTime.parse(timeBox.getValue()),
                             screenBox.getValue(), Integer.parseInt(movieBox.getValue().split(" ")[movieBox.getValue().split(" ").length - 1]));
+
+                    //return new MovieInfo()
                 }
 
                 return null;

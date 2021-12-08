@@ -86,9 +86,12 @@ public class ManagementSystem {
 
     public boolean scheduleScreening(LocalDate date, LocalTime time, String title, int runningTime, int year, String screenName){
         Movie movie = MovieMapper.getInstance().getMovie(title, runningTime, year);
-        if(!checkDoubleScreening(time, screenName, selectedScreening) &&
+
+        if(!checkDoubleScreening(time, runningTime, screenName, null) &&
                 checkTimeAvailable(date, time, movie.getRunningTime(), screenName, null)){
-            cinema.scheduleScreening(date, time, title, runningTime, year, screenName);
+            System.out.println("in check");
+            Screening s = cinema.scheduleScreening(date, time, title, runningTime, year, screenName);
+            currentScreenings.add(s);
             this.notifyObservers();
             return true;
         }
@@ -98,7 +101,7 @@ public class ManagementSystem {
 
     public void changeSelected(LocalTime time, String screenName){
         if (selectedScreening != null){
-            if(!checkSold(selectedScreening) && !checkDoubleScreening(time, screenName, selectedScreening)
+            if(!checkSold(selectedScreening) && !checkDoubleScreening(time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)
                     && !checkTimeAvailable(currentDate, time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)){
                 Screen screen = cinema.getScreen(screenName);
                 selectedScreening.setTime(time);
@@ -150,9 +153,13 @@ public class ManagementSystem {
         return false;
     }
 
-    private boolean checkDoubleScreening(LocalTime time, String screenName, Screening sg){
+    private boolean checkDoubleScreening(LocalTime time, int runningTime, String screenName, Screening sg){
         for (Screening s : currentScreenings){
             if(s != sg && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)){
+                observerMessage("Double Screening", false);
+                return true;
+            }
+            if(s != sg && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))){
                 observerMessage("Double Screening", false);
                 return true;
             }
@@ -175,15 +182,19 @@ public class ManagementSystem {
             if (s.getScreen().getName().equals(screenName) && s != screening) {
                 if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
                     observerMessage("Time is not available", false);
-                    return true;
+                    return false;
                 }
                 if (s.getEndTime().isAfter(startBoundary) && s.getEndTime().isBefore(endBoundary)){
                     observerMessage("Time is not available", false);
-                    return true;
+                    return false;
+                }
+                if ((s.getEndTime().isAfter(endBoundary) && s.getTime().isBefore(startBoundary))){
+                    observerMessage("Time is not available", false);
+                    return false;
                 }
             }
         }
-        return false;
+        return true;
     }
 
     // check if a screening has already sold tickets

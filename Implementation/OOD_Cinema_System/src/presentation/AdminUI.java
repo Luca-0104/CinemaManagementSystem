@@ -90,6 +90,7 @@ public class AdminUI implements ManagementObserver {
     public void update() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         screens = ManagementSystem.getScreens();
+        movies = ManagementSystem.getMovies();
         canvas.setHeight(TOP_MARGIN + screens.size() * ROW_HEIGHT);
         canvas.setWidth(LEFT_MARGIN + (SLOTS * COL_WIDTH));
         gc.setFill(Color.WHITE);
