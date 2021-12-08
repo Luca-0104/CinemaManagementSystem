@@ -7,7 +7,8 @@ import java.sql.Statement;
 
 public class DatabaseCreator {
     public static void main(String[] args) {
-        String url = "jdbc:sqlite:./cinema.db";
+//        String url = "jdbc:sqlite:./cinema.db";
+        String url = "jdbc:sqlite:./Implementation/OOD_Cinema_System/cinema.db";
 
         try (Connection conn = DriverManager.getConnection(url)) {
             if (conn != null) {

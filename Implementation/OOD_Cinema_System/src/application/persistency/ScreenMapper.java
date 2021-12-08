@@ -68,7 +68,7 @@ public class ScreenMapper {
             try {
                 Database.getInstance();
                 Statement stmt = Database.getConnection().createStatement();
-                ResultSet rset = stmt.executeQuery("SELECT * FROM Screens");
+                ResultSet rset = stmt.executeQuery("SELECT * FROM Screens;");
                 // loop through all the screens (row)
                 while (rset.next()) {
                     // get the info from result, then pack them up into an object

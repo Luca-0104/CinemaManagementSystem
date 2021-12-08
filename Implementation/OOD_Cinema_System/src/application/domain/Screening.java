@@ -22,7 +22,7 @@ public class Screening {
     //calculate the end time
     //we add 15 extra minutes at the end for each screening for customers to leave and arrive
     public LocalTime getEndTime(){
-        return time.plusSeconds(15*60);
+        return time.plusSeconds(movie.getRunningTime()).plusSeconds(15*60);
     }
 
     //get the detailed information of the screening

@@ -13,4 +13,13 @@ public class PersistentScreen extends Screen {
     int getOid() {
         return oid;
     }
+
+    @Override
+    public String toString() {
+        return "PersistentScreen{" +
+                "oid=" + oid +
+                ", name=" + getName() +
+                ", capacity=" + getCapacity() +
+                '}';
+    }
 }

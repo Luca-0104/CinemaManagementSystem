@@ -13,4 +13,13 @@ public class PersistentMovie extends Movie {
     int getOid() {
         return oid;
     }
+
+    @Override
+    public String toString() {
+        return "PersistentMovie{" +
+                "oid=" + oid +
+                ", title=" + super.getTitle() +
+                ", runningTime=" + super.getRunningTime() +
+                '}';
+    }
 }

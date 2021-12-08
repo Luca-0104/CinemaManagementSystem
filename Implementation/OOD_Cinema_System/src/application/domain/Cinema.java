@@ -23,8 +23,8 @@ public class Cinema {
         return sgm.getScreenings(currentDate);
     }
 
-    Movie getMovie(String title, int runningTime){
-        return mm.getMovie(title, runningTime);
+    Movie getMovie(String title, int runningTime, int year){
+        return mm.getMovie(title, runningTime, year);
     }
 
     Screen getScreen(String name){
@@ -48,9 +48,9 @@ public class Cinema {
      * @param name name of the screen
      * @return the instance of the newly scheduled screening
      */
-    public Screening scheduleScreening(LocalDate date, LocalTime time, String title, int runningTime, String name){
+    public Screening scheduleScreening(LocalDate date, LocalTime time, String title, int runningTime, int year, String name){
         // get the instance of movie and screen by their details
-        Movie movie = getMovie(title, runningTime);
+        Movie movie = getMovie(title, runningTime, year);
         Screen screen = getScreen(name);
         // schedule this new screening
         return sgm.scheduleScreening(date, time, movie, screen);

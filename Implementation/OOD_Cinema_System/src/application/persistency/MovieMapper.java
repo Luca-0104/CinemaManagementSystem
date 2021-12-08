@@ -47,17 +47,17 @@ public class MovieMapper {
         return uniqueInstance;
     }
 
-    public PersistentMovie getMovie(String title, int runningTime) {
+    public PersistentMovie getMovie(String title, int runningTime, int year) {
         //first we try to get the movie from the cache
         PersistentMovie m = getFromCacheByDetails(title, runningTime);
 
         //if no object in the cache, we try to get it from the database
         if (m == null) {
-            m = getMovie("SELECT * FROM Movies WHERE title = '" + title + "' AND runningTime = '" + runningTime + "'");
+            m = getMovie("SELECT * FROM Movies WHERE title = '" + title + "' AND runningTime = '" + runningTime + "' AND year = '" + year + "'");
 
             //if no object in database as well, we just add this new movie
             if (m == null) {
-                m = addMovie(title, runningTime);
+                m = addMovie(title, runningTime, year);
             }
 
             //after get from db, we add it into cache
@@ -82,7 +82,7 @@ public class MovieMapper {
 
     // Add a movie to the database
 
-    PersistentMovie addMovie(String title, int runningTime) {
+    PersistentMovie addMovie(String title, int runningTime, int year) {
         //first we try to get the movie from the cache, if already in cache it must also be in database, we do not do anything
         PersistentMovie m = getFromCacheByDetails(title, runningTime);
 
@@ -91,13 +91,13 @@ public class MovieMapper {
             try {
                 Database.getInstance();
                 Statement stmt = Database.getConnection().createStatement();
-                stmt.executeUpdate("INSERT INTO Movies (title, runningTime)" + "VALUES ('" + title + "', '" + runningTime + "')");
+                stmt.executeUpdate("INSERT INTO Movies (oid, title, runningTime, year)" + "VALUES ('" + Database.getInstance().getNextMovieId() + "', '" + title + "', '" + runningTime + "', '" + year + "');");
                 stmt.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
             // get the movie we have just inserted. This will also add it to cache
-            m = getMovie(title, runningTime);
+            m = getMovie(title, runningTime, year);
         }
         return m;
     }
@@ -116,7 +116,7 @@ public class MovieMapper {
 
             while (rset.next()) {
                 // get info from result set
-                int oid = rset.getRow();
+                int oid = rset.getInt("oid");
                 String title = rset.getString("title");
                 int runningTime = rset.getInt("runningTime");
                 // pack up info into object
