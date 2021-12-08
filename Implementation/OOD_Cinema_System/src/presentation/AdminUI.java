@@ -1,29 +1,30 @@
 package presentation;
 
-import application.domain.ManagementObserver;
-import application.domain.ManagementSystem;
-import application.domain.Screen;
-import application.domain.Screening;
+import application.domain.*;
 import application.persistency.PersistentScreen;
-import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.DatePicker;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.util.Callback;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class StaffUI implements ManagementObserver {
+public class AdminUI implements ManagementObserver {
     final static int         LEFT_MARGIN   = 50;
     final static int         TOP_MARGIN    = 50;
     final static int         BOTTOM_MARGIN = 50;
@@ -35,16 +36,21 @@ public class StaffUI implements ManagementObserver {
     final static int         SLOTS         = 12;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
+    private List<Movie> movies = new ArrayList<Movie>();
     private List<Screen> screens = new ArrayList<Screen>();
-    private int firstX, firstY, currentX, currentY;
-    private boolean mouseDown;
+    private int              firstX, firstY, currentX, currentY;
+    private boolean          mouseDown;
 
     @FXML
     private DatePicker datePicker;
     @FXML private Canvas canvas;
     @FXML private VBox box;
 
+    /**
+     * This methods is called after the constructor and after any FXML instance variable have been injected
+     */
     public void initialize() {
+        movies = ManagementSystem.getMovies();
         ms = ManagementSystem.getInstance();
         ms.setDate(LocalDate.now());
         ms.addObserver(this);
@@ -61,7 +67,20 @@ public class StaffUI implements ManagementObserver {
                 ms.selectScreening(screens.get(yToScreen(firstY) - 1).getName(), xToTime(firstX));
             }
         });
-
+        // code to be executed when mouse is reeleased
+        canvas.addEventFilter(MouseEvent.MOUSE_RELEASED, (e) -> {
+            mouseDown = false;
+            Screening s = ms.getSelectedScreening();
+            if (s != null && (currentX != firstX || yToScreen(currentY) != ((PersistentScreen)s.getScreen()).getOid())) {
+                ms.changeSelected(xToTime(timeToX(s.getTime()) + currentX - firstX), screens.get(yToScreen(currentY) - 1).getName());
+            }
+        });
+        // code to be executed when mouse is dragged
+        canvas.addEventFilter(MouseEvent.MOUSE_DRAGGED, (e) -> {
+            currentX = (int) e.getX();
+            currentY = (int) e.getY();
+            update();
+        });
         box.layout();
         update();
 
@@ -71,6 +90,7 @@ public class StaffUI implements ManagementObserver {
     public void update() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         screens = ManagementSystem.getScreens();
+        movies = ManagementSystem.getMovies();
         canvas.setHeight(TOP_MARGIN + screens.size() * ROW_HEIGHT);
         canvas.setWidth(LEFT_MARGIN + (SLOTS * COL_WIDTH));
         gc.setFill(Color.WHITE);
@@ -111,7 +131,7 @@ public class StaffUI implements ManagementObserver {
             }
             gc.setFill(Color.WHITE);
             // frontend
-            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2); // need to distinguish ticket sold condition
+            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2);
         }
         Screening sg = ms.getSelectedScreening();
         if (mouseDown && sg != null) {
@@ -162,6 +182,10 @@ public class StaffUI implements ManagementObserver {
         ms.setDate(displayedDate);
     }
 
+    public void cancelScreening() {
+        ms.cancelSelected();
+    }
+
     @Override
     public boolean message(String s, boolean confirm) {
         Alert alert;
@@ -180,28 +204,66 @@ public class StaffUI implements ManagementObserver {
         }
     }
 
-    public void showSellTicketDialog() {
-        Dialog sellTicket = new Dialog();
-        sellTicket.setTitle("Sell Tickets");
-        sellTicket.setHeaderText("Please enter the details for the ticket selling");
-
-        Label label = new Label("Ticket Number: ");
-        Integer[] ticketChoice = { 1, 2, 3, 4, 5 };
-        ChoiceBox<Integer> cb = new ChoiceBox<Integer>(FXCollections.observableArrayList(ticketChoice));
-
-        GridPane grid = new GridPane();
-        grid.add(label, 1, 1);
-        grid.add(cb, 2, 1);
-        sellTicket.getDialogPane().setContent(grid);
-
-        ButtonType buttonTypeOk = new ButtonType("OK", ButtonBar.ButtonData.OK_DONE);
-        sellTicket.getDialogPane().getButtonTypes().add(buttonTypeOk);
-
-        Optional<ScreeningInfo> result = sellTicket.showAndWait();
+    /**
+     * This is an example of using a separate class to create a custom dialog
+     */
+    public void showAddMovieDialog() {
+        MovieDialog addMovie = new MovieDialog();
+        Optional<MovieInfo> result = addMovie.showAndWait();
 
         if (result.isPresent()) {
-            ms.sellTickets(cb.getValue());
+            MovieInfo m = result.get();
+            if (!ms.addMovie(m.title, m.runningTime, m.year)) {
+                showAddMovieDialog(m);
+            }
+            ;
         }
     }
 
+    private void showAddMovieDialog(MovieInfo m2) {
+        MovieDialog addMovie = new MovieDialog(m2);
+        Optional<MovieInfo> result = addMovie.showAndWait();
+
+        if (result.isPresent()) {
+            MovieInfo m = result.get();
+            if (!ms.addMovie(m.title, m.runningTime, m.year)) {
+                showAddMovieDialog(m);
+            }
+            ;
+        }
+    }
+
+    public void showAddScreeningDialog() {
+        ScreeningDialog addScreening = new ScreeningDialog();
+        Optional<ScreeningInfo> result = addScreening.showAndWait();
+
+        if (result.isPresent()) {
+            ScreeningInfo s = result.get();
+            if (!ms.scheduleScreening(displayedDate,
+                                      s.time,
+                                      movies.get(s.movieNumber - 1).getTitle(),
+                                      movies.get(s.movieNumber - 1).getRunningTime(),
+                                      movies.get(s.movieNumber - 1).getYear(),
+                                      screens.get(s.screenNumber - 1).getName())) {
+                showAddScreeningDialog(s);
+            }
+        }
+    }
+
+    private void showAddScreeningDialog(ScreeningInfo s2) {
+        ScreeningDialog addScreening = new ScreeningDialog(s2);
+        Optional<ScreeningInfo> result = addScreening.showAndWait();
+
+        if (result.isPresent()) {
+            ScreeningInfo s = result.get();
+            if (!ms.scheduleScreening(displayedDate,
+                                      s.time,
+                                      movies.get(s.movieNumber - 1).getTitle(),
+                                      movies.get(s.movieNumber - 1).getRunningTime(),
+                                      movies.get(s.movieNumber - 1).getYear(),
+                                      screens.get(s.screenNumber - 1).getName())) {
+                showAddScreeningDialog(s);
+            }
+        }
+    }
 }

@@ -10,7 +10,16 @@ public class PersistentScreen extends Screen {
         this.oid = oid;
     }
 
-    int getOid() {
+    public int getOid() {
         return oid;
+    }
+
+    @Override
+    public String toString() {
+        return "PersistentScreen{" +
+                "oid=" + oid +
+                ", name=" + getName() +
+                ", capacity=" + getCapacity() +
+                '}';
     }
 }

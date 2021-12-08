@@ -18,4 +18,17 @@ public class PersistentScreening extends Screening {
     int getOid() {
         return oid;
     }
+
+    @Override
+    public String toString() {
+        return "PersistentScreening{" +
+                "oid=" + oid +
+                ", date=" + getDate() +
+                ", time=" + getTime() +
+                ", endTime=" + getEndTime() +
+                ", ticketsSold=" + getTicketsSold() +
+                ", movieId=" + ((PersistentMovie) getMovie()).getOid() +
+                ", ScreenId=" + ((PersistentScreen) getScreen()).getOid() +
+                '}';
+    }
 }

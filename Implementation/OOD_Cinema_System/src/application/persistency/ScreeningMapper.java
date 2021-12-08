@@ -71,7 +71,7 @@ public class ScreeningMapper {
     public PersistentScreening scheduleScreening(LocalDate date, LocalTime time, Movie movie, Screen screen) {
         /* insert new row into database */
         int oid = Database.getInstance().getNextScreeningId();  // get the oid for this new instance in the database
-        performUpdate("INSERT INTO Screenings " + "VALUES ('" + oid + "', '" + date + "', '" + time + "', '" + ((PersistentMovie) movie).getOid() + "', '" + ((PersistentScreen) screen).getOid() + "')");
+        performUpdate("INSERT INTO Screenings (oid, date, time, movie_id, screen_id) " + "VALUES ('" + oid + "', '" + date + "', '" + time + "', '" + ((PersistentMovie) movie).getOid() + "', '" + ((PersistentScreen) screen).getOid() + "')");
 
         /* return a new instance of this screening */
         return new PersistentScreening(oid, date, time, movie, screen);
@@ -93,7 +93,7 @@ public class ScreeningMapper {
         sql.append(pScreening.getDate());
         sql.append("', time = '");
         sql.append(pScreening.getTime());
-        sql.append("', ticketSold = ");
+        sql.append("', ticketsSold = ");
         sql.append(pScreening.getTicketsSold());
         sql.append(", movie_id = ");
         sql.append(((PersistentMovie) pScreening.getMovie()).getOid());
@@ -129,4 +129,22 @@ public class ScreeningMapper {
             e.printStackTrace();
         }
     }
+
+//    public boolean checkExistedScreening(LocalTime time, String screenName, Screening sg){
+//        PersistentScreen screen = ScreenMapper.getInstance().getScreen(screenName);
+//        String sql = "SELECT * FROM Screenings WHERE date = '" + sg.getDate() + "' AND time = '" +
+//                time + "' AND screen_id =" + screen.getOid() + "AND ;";
+//        Database.getInstance();
+//        Statement stmt = null;
+//        try {
+//            stmt = Database.getConnection().createStatement();
+//            ResultSet rset = stmt.executeQuery(sql);
+//
+//            rset.close();
+//            stmt.close();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 }

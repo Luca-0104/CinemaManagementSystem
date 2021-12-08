@@ -21,7 +21,8 @@ public class Database {
 
     private Database() {
         try {
-            con = DriverManager.getConnection("jdbc:sqlite:./cinema.db");
+//            con = DriverManager.getConnection("jdbc:sqlite:./cinema.db");
+            con = DriverManager.getConnection("jdbc:sqlite:./Implementation/OOD_Cinema_System/cinema.db");
         } catch (SQLException e) {
             e.printStackTrace();
         }
