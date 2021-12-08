@@ -129,4 +129,22 @@ public class ScreeningMapper {
             e.printStackTrace();
         }
     }
+
+//    public boolean checkExistedScreening(LocalTime time, String screenName, Screening sg){
+//        PersistentScreen screen = ScreenMapper.getInstance().getScreen(screenName);
+//        String sql = "SELECT * FROM Screenings WHERE date = '" + sg.getDate() + "' AND time = '" +
+//                time + "' AND screen_id =" + screen.getOid() + "AND ;";
+//        Database.getInstance();
+//        Statement stmt = null;
+//        try {
+//            stmt = Database.getConnection().createStatement();
+//            ResultSet rset = stmt.executeQuery(sql);
+//
+//            rset.close();
+//            stmt.close();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 }

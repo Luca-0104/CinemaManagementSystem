@@ -60,15 +60,31 @@ public class Cinema {
         sgm.updateScreening(sg);
     }
 
-    public void deleteScreening(Screening sg){
+    public void cancelScreening(Screening sg){
         sgm.deleteScreening(sg);
     }
 
-    /*
-        operations on movie
-     */
+//    public boolean checkExistedScreening(LocalTime time, String screenName, Screening sg){
+//        return sgm.checkExistedScreening(time, screenName, sg);
+//    }
 
     /*
-        operations on ticket
+        operations on movie !!!!!
      */
+    public static List<Movie> getMovies(){
+        return null;
+    }
+
+    public void addMovie(String title, int runningTime, int year){
+        mm.addMovie(title, runningTime);
+    }
+
+    public boolean checkExistedMovid(String title, int runningTime, int year){
+        return mm.checkExistedMovie(title, runningTime, year);
+    }
+
+    /*
+        operations on ticket !!!!!
+     */
+
 }

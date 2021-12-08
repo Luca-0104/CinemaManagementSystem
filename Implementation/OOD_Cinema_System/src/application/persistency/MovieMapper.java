@@ -119,8 +119,9 @@ public class MovieMapper {
                 int oid = rset.getInt("oid");
                 String title = rset.getString("title");
                 int runningTime = rset.getInt("runningTime");
+                int year = rset.getInt("year");
                 // pack up info into object
-                m = new PersistentMovie(oid, title, runningTime);
+                m = new PersistentMovie(oid, title, runningTime, year);
             }
 
             rset.close();
@@ -130,6 +131,23 @@ public class MovieMapper {
         }
 
         return m;
+    }
+
+    public boolean checkExistedMovie(String title, int runningTime, int year){
+        String sql = "SELECT * FROM Movies WHERE title = '" + title + "' AND runningTime = " + runningTime + ";";
+        Database.getInstance();
+        try {
+            Statement stmt = Database.getConnection().createStatement();
+            ResultSet rset = stmt.executeQuery(sql);
+            if(rset.next()){
+                return true;
+            }
+            rset.close();
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
 }

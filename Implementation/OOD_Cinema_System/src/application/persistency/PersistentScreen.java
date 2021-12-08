@@ -10,7 +10,7 @@ public class PersistentScreen extends Screen {
         this.oid = oid;
     }
 
-    int getOid() {
+    public int getOid() {
         return oid;
     }
 
