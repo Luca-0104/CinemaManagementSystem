@@ -50,6 +50,7 @@ public class AdminUI implements ManagementObserver {
      * This methods is called after the constructor and after any FXML instance variable have been injected
      */
     public void initialize() {
+        movies = ManagementSystem.getMovies();
         ms = ManagementSystem.getInstance();
         ms.setDate(LocalDate.now());
         ms.addObserver(this);

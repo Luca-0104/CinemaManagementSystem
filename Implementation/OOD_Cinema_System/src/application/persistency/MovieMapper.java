@@ -1,11 +1,15 @@
 package application.persistency;
 
+import application.domain.Movie;
+import application.domain.Screen;
 import storage.Database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MovieMapper {
@@ -45,6 +49,35 @@ public class MovieMapper {
             uniqueInstance = new MovieMapper();
         }
         return uniqueInstance;
+    }
+    
+    public List<Movie> getMovies(){
+        // if cache is empty, we query a list of movies from the database
+        if (cache.size() == 0) {
+            List<Movie> movieList = new ArrayList<Movie>();
+            try {
+                Database.getInstance();
+                Statement stmt = Database.getConnection().createStatement();
+                ResultSet rset = stmt.executeQuery("SELECT * FROM Movies;");
+                // loop through all the movies (row)
+                while (rset.next()) {
+                    // get the info from result, then pack them up into an object
+                    PersistentMovie pm = new PersistentMovie(rset.getInt("oid"), rset.getString("title"), rset.getInt("runningTime"), rset.getInt("year"));
+                    movieList.add(pm);
+                    // add this new movies instance into the cache
+                    addToCache(pm);
+                }
+                rset.close();
+                stmt.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            return movieList;
+
+            // if the cache is not empty, we return the movies in the cache
+        } else {
+            return new ArrayList<Movie>(cache.values());
+        } 
     }
 
     public PersistentMovie getMovie(String title, int runningTime, int year) {

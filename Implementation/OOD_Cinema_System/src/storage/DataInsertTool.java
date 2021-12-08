@@ -38,11 +38,11 @@ public class DataInsertTool {
                                 addToCache
 
                  */
-                PersistentMovie movie1 = mm.getMovie("testMovie1", 7200, 2021);
-                PersistentMovie movie2 = mm.getMovie("testMovie2", 7200, 2021);
-                PersistentMovie movie3 = mm.getMovie("testMovie3", 7200, 2021);
-                PersistentMovie movie4 = mm.getMovie("testMovie4", 7200, 2021);
-                PersistentMovie movie5 = mm.getMovie("testMovie5", 7200, 2021);
+                PersistentMovie movie1 = mm.getMovie("testMovie1", 120, 2021);
+                PersistentMovie movie2 = mm.getMovie("testMovie2", 120, 2021);
+                PersistentMovie movie3 = mm.getMovie("testMovie3", 120, 2021);
+                PersistentMovie movie4 = mm.getMovie("testMovie4", 120, 2021);
+                PersistentMovie movie5 = mm.getMovie("testMovie5", 120, 2021);
 
                 /*
                     movie mapper -- getMovieForOid (!!!this is "protected", these tests should be commented eventually)

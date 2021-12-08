@@ -14,12 +14,8 @@ public class PersistentMovie extends Movie {
         return oid;
     }
 
-    @Override
     public String toString() {
-        return "PersistentMovie{" +
-                "oid=" + oid +
-                ", title=" + super.getTitle() +
-                ", runningTime=" + super.getRunningTime() +
-                '}';
+        return super.getTitle() + " " + super.getRunningTime() + " " + super.getYear() + " -> id: " + oid;
     }
+
 }

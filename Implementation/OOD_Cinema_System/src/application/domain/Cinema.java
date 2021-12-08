@@ -12,7 +12,7 @@ public class Cinema {
 
     // mappers for operate the database
     ScreeningMapper sgm = ScreeningMapper.getInstance();
-    MovieMapper mm = MovieMapper.getInstance();
+    static MovieMapper mm = MovieMapper.getInstance();
     ScreenMapper sm = ScreenMapper.getInstance();
 
     /*
@@ -72,7 +72,7 @@ public class Cinema {
         operations on movie !!!!!
      */
     public static List<Movie> getMovies(){
-        return null;
+        return mm.getMovies();
     }
 
     public void addMovie(String title, int runningTime, int year){

@@ -21,7 +21,7 @@ public class Screening {
 
     //calculate the end time (does not include the 15 extra minutes for customers to leave and arrive)
     public LocalTime getEndTime(){
-        return time.plusSeconds(movie.getRunningTime());
+        return time.plusMinutes(movie.getRunningTime());
     }
 
     //get the detailed information of the screening
