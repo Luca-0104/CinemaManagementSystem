@@ -58,7 +58,7 @@ public class StaffUI implements ManagementObserver {
             currentY = firstY = (int) e.getY();
             if (e.getButton() == MouseButton.PRIMARY) {
                 mouseDown = true;
-                ms.selectScreening(yToScreen(firstY), xToTime(firstX));
+                ms.selectScreening(screens.get(yToScreen(firstY) - 1).getName(), xToTime(firstX));
             }
         });
 
@@ -200,7 +200,7 @@ public class StaffUI implements ManagementObserver {
         Optional<ScreeningInfo> result = sellTicket.showAndWait();
 
         if (result.isPresent()) {
-            ms.sellTickets();
+            ms.sellTickets(cb.getValue());
         }
     }
 

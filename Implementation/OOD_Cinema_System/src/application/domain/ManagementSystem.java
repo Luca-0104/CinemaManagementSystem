@@ -112,13 +112,13 @@ public class ManagementSystem {
 
     // operations on tickets:
 
-    public boolean sellTickets(int ticketNum, Screening sg){
-        int nts = sg.getTicketsSold();
-        Screen sc = sg.getScreen();
+    public boolean sellTickets(int ticketNum){
+        int nts = selectedScreening.getTicketsSold();
+        Screen sc = selectedScreening.getScreen();
         int cp = sc.getCapacity();
-        if(!this.checkTicketOverSold(ticketNum, sg)){
-            sg.setTicketsSold(nts + ticketNum);
-            cinema.updateScreening(sg);
+        if(!this.checkTicketOverSold(ticketNum, selectedScreening)){
+            selectedScreening.setTicketsSold(nts + ticketNum);
+            cinema.updateScreening(selectedScreening);
             this.notifyObservers();
             return true;
         }else{

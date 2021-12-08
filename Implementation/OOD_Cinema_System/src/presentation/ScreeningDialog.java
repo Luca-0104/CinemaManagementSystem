@@ -28,7 +28,7 @@ public class ScreeningDialog extends Dialog<ScreeningInfo>{
     };
     private ChoiceBox<String> timeBox = new ChoiceBox<String>(FXCollections.observableArrayList(times));
     // six screens at all
-    private Integer[] screenList = { 1, 2, 3, 4, 5, 6 };
+    private Integer[] screenList = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     private ChoiceBox<Integer> screenBox = new ChoiceBox<Integer>(FXCollections.observableArrayList(screenList));
     private List<Movie> movies;
     private String[] movieList = new String[ManagementSystem.getMovies().size()];

@@ -63,7 +63,7 @@ public class AdminUI implements ManagementObserver {
             currentY = firstY = (int) e.getY();
             if (e.getButton() == MouseButton.PRIMARY) {
                 mouseDown = true;
-                ms.selectScreening(yToScreen(firstY), xToTime(firstX));
+                ms.selectScreening(screens.get(yToScreen(firstY) - 1).getName(), xToTime(firstX));
             }
         });
         // code to be executed when mouse is reeleased
@@ -71,7 +71,7 @@ public class AdminUI implements ManagementObserver {
             mouseDown = false;
             Screening s = ms.getSelectedScreening();
             if (s != null && (currentX != firstX || yToScreen(currentY) != ((PersistentScreen)s.getScreen()).getOid())) {
-                ms.updateScreening(xToTime(timeToX(s.getTime()) + currentX - firstX), yToScreen(currentY));
+                ms.changeSelected(xToTime(timeToX(s.getTime()) + currentX - firstX), screens.get(yToScreen(currentY) - 1).getName());
             }
         });
         // code to be executed when mouse is dragged
@@ -237,10 +237,13 @@ public class AdminUI implements ManagementObserver {
 
         if (result.isPresent()) {
             ScreeningInfo s = result.get();
-            if (!ms.scheduleScreening(displayedDate, s.time, s.screenNumber, s.movieNumber)) {
+            if (!ms.scheduleScreening(displayedDate,
+                                      s.time,
+                                      movies.get(s.movieNumber).getTitle(),
+                                      movies.get(s.movieNumber).getRunningTime(),
+                                      screens.get(s.screenNumber - 1).getName())) {
                 showAddScreeningDialog(s);
             }
-            ;
         }
     }
 
@@ -250,10 +253,13 @@ public class AdminUI implements ManagementObserver {
 
         if (result.isPresent()) {
             ScreeningInfo s = result.get();
-            if (!ms.scheduleScreening(displayedDate, s.time, s.screenNumber, s.movieNumber)) {
+            if (!ms.scheduleScreening(displayedDate,
+                                      s.time,
+                                      movies.get(s.movieNumber).getTitle(),
+                                      movies.get(s.movieNumber).getRunningTime(),
+                                      screens.get(s.screenNumber - 1).getName())) {
                 showAddScreeningDialog(s);
             }
-            ;
         }
     }
 }
