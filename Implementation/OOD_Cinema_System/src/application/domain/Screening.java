@@ -19,10 +19,9 @@ public class Screening {
         this.screen = screen;
     }
 
-    //calculate the end time
-    //we add 15 extra minutes at the end for each screening for customers to leave and arrive
+    //calculate the end time (does not include the 15 extra minutes for customers to leave and arrive)
     public LocalTime getEndTime(){
-        return time.plusSeconds(movie.getRunningTime()).plusSeconds(15*60);
+        return time.plusSeconds(movie.getRunningTime());
     }
 
     //get the detailed information of the screening
