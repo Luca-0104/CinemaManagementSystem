@@ -82,7 +82,7 @@ public class MovieMapper {
 
     // Add a movie to the database
 
-    PersistentMovie addMovie(String title, int runningTime, int year) {
+    public PersistentMovie addMovie(String title, int runningTime, int year) {
         //first we try to get the movie from the cache, if already in cache it must also be in database, we do not do anything
         PersistentMovie m = getFromCacheByDetails(title, runningTime);
 

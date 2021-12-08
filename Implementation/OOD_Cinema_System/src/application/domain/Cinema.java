@@ -76,7 +76,7 @@ public class Cinema {
     }
 
     public void addMovie(String title, int runningTime, int year){
-        mm.addMovie(title, runningTime);
+        mm.addMovie(title, runningTime, year);
     }
 
     public boolean checkExistedMovid(String title, int runningTime, int year){

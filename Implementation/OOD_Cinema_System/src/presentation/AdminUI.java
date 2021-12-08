@@ -239,8 +239,9 @@ public class AdminUI implements ManagementObserver {
             ScreeningInfo s = result.get();
             if (!ms.scheduleScreening(displayedDate,
                                       s.time,
-                                      movies.get(s.movieNumber).getTitle(),
-                                      movies.get(s.movieNumber).getRunningTime(),
+                                      movies.get(s.movieNumber - 1).getTitle(),
+                                      movies.get(s.movieNumber - 1).getRunningTime(),
+                                      movies.get(s.movieNumber - 1).getYear(),
                                       screens.get(s.screenNumber - 1).getName())) {
                 showAddScreeningDialog(s);
             }
@@ -255,8 +256,9 @@ public class AdminUI implements ManagementObserver {
             ScreeningInfo s = result.get();
             if (!ms.scheduleScreening(displayedDate,
                                       s.time,
-                                      movies.get(s.movieNumber).getTitle(),
-                                      movies.get(s.movieNumber).getRunningTime(),
+                                      movies.get(s.movieNumber - 1).getTitle(),
+                                      movies.get(s.movieNumber - 1).getRunningTime(),
+                                      movies.get(s.movieNumber - 1).getYear(),
                                       screens.get(s.screenNumber - 1).getName())) {
                 showAddScreeningDialog(s);
             }

@@ -84,11 +84,11 @@ public class ManagementSystem {
         return false;
     }
 
-    public boolean scheduleScreening(LocalDate date, LocalTime time, String title, int runningTime, String screenName){
-        Movie movie = MovieMapper.getInstance().getMovie(title, runningTime);
+    public boolean scheduleScreening(LocalDate date, LocalTime time, String title, int runningTime, int year, String screenName){
+        Movie movie = MovieMapper.getInstance().getMovie(title, runningTime, year);
         if(!checkDoubleScreening(time, screenName, selectedScreening) &&
                 checkTimeAvailable(date, time, movie.getRunningTime(), screenName, null)){
-            cinema.scheduleScreening(date, time, title, runningTime, screenName);
+            cinema.scheduleScreening(date, time, title, runningTime, year, screenName);
             this.notifyObservers();
             return true;
         }

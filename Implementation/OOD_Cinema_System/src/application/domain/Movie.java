@@ -20,6 +20,10 @@ public class Movie {
         return runningTime;
     }
 
+    public int getYear() {
+        return year;
+    }
+
     public String toString() {
         return this.title + " " + this.runningTime + " " + this.year;
     }
