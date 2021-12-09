@@ -25,15 +25,15 @@ import java.util.List;
 import java.util.Optional;
 
 public class AdminUI implements ManagementObserver {
-    final static int         LEFT_MARGIN   = 50;
+    final static int         LEFT_MARGIN   = 60;
     final static int         TOP_MARGIN    = 50;
     final static int         BOTTOM_MARGIN = 50;
-    final static int         ROW_HEIGHT    = 30;
+    final static int         ROW_HEIGHT    = 60;
     final static int         COL_WIDTH     = 60;
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
     final static int         TZERO         = 18;                    // Earliest time shown
-    final static int         SLOTS         = 12;                    // Number of booking slots shown
+    final static int         SLOTS         = 20;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
     private List<Movie> movies = new ArrayList<Movie>();
@@ -50,11 +50,11 @@ public class AdminUI implements ManagementObserver {
      * This methods is called after the constructor and after any FXML instance variable have been injected
      */
     public void initialize() {
-        movies = ManagementSystem.getMovies();
         ms = ManagementSystem.getInstance();
         ms.setDate(LocalDate.now());
         ms.addObserver(this);
         screens = ManagementSystem.getScreens();
+        movies = ManagementSystem.getMovies();
         datePicker.setValue(LocalDate.now());
         displayedDate = LocalDate.now();
 
@@ -109,7 +109,8 @@ public class AdminUI implements ManagementObserver {
             gc.fillText(((PersistentScreen)screens.get(i)).getOid() + " (" + screens.get(i).getCapacity() + ")", 0, y - ROW_HEIGHT / 3);
             gc.strokeLine(LEFT_MARGIN, y, canvas.getWidth(), y);
         }
-        LocalTime start = LocalTime.of(18, 0);
+        // table start time
+        LocalTime start = LocalTime.of(14, 0);
         for (int i = 0; i < SLOTS + 1; i++) {
             LocalTime show = start.plusMinutes(i * 30);
             String tmp = show.getHour() + ":" + (show.getMinute() > 9 ? show.getMinute() : "0" + show.getMinute());
@@ -131,7 +132,9 @@ public class AdminUI implements ManagementObserver {
             }
             gc.setFill(Color.WHITE);
             // frontend
-            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2);
+//            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2);
+            gc.fillText("Title: " + s.getMovie().getTitle() + " Start: " + s.getTime() + "\n" + " Last for: " +
+                    s.getMovie().getRunningTime() + " Screen: " + s.getScreen().getName(), x, y + ROW_HEIGHT / 2);
         }
         Screening sg = ms.getSelectedScreening();
         if (mouseDown && sg != null) {
