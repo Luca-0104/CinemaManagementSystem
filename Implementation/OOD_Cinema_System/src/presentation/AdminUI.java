@@ -33,7 +33,7 @@ public class AdminUI implements ManagementObserver {
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
     final static int         TZERO         = 12;                    // Earliest time shown
-    final static int         SLOTS         = 22;                    // Number of booking slots shown
+    final static int         SLOTS         = 24;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
     private List<Movie> movies = new ArrayList<Movie>();
