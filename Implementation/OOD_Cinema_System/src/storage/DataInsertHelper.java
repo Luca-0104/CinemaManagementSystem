@@ -28,6 +28,7 @@ public class DataInsertHelper {
         insertMovies();
         System.out.println(">>> Movie insert finished");
 
+
 //        //add some predefined screenings
 //        insertScreenings();
 //        System.out.println(">>> Screening insert finished");

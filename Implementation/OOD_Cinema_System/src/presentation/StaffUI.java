@@ -189,7 +189,7 @@ public class StaffUI implements ManagementObserver {
         sellTicket.setHeaderText("Please enter the details for the ticket selling");
 
         Label label = new Label("Ticket Number: ");
-        Integer[] ticketChoice = { 1, 2, 3, 4, 5 };
+        Integer[] ticketChoice = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         ChoiceBox<Integer> cb = new ChoiceBox<Integer>(FXCollections.observableArrayList(ticketChoice));
 
         GridPane grid = new GridPane();
