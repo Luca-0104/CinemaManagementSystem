@@ -79,14 +79,18 @@ public class ManagementSystem {
     }
 
     public boolean cancelSelected(){
-        if(this.observerMessage("Confirm Cancelling Screening", true)){
-            if(!this.checkSold(this.selectedScreening)){
-                currentScreenings.remove(this.selectedScreening);
-                cinema.cancelScreening(this.selectedScreening);
-                selectedScreening = null;
-                this.notifyObservers();
-                return true;
+        if (selectedScreening != null) {
+            if (this.observerMessage("Confirm Cancelling Screening", true)) {
+                if (!this.checkSold(this.selectedScreening)) {
+                    currentScreenings.remove(this.selectedScreening);
+                    cinema.cancelScreening(this.selectedScreening);
+                    selectedScreening = null;
+                    this.notifyObservers();
+                    return true;
+                }
             }
+        } else {
+            this.observerMessage("Please Select a Screening First", false);
         }
         return false;
     }
@@ -107,7 +111,6 @@ public class ManagementSystem {
 
     public void changeSelected(LocalTime time, String screenName){
         if (selectedScreening != null){
-
             if(!checkSold(selectedScreening) && !checkDoubleScreening(time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)
                     && checkTimeAvailable(currentDate, time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)){
                 Screen screen = cinema.getScreen(screenName);
@@ -125,19 +128,23 @@ public class ManagementSystem {
     // operations on tickets:
 
     public boolean sellTickets(int ticketNum){
-        int nts = selectedScreening.getTicketsSold();
-        Screen sc = selectedScreening.getScreen();
-        int cp = sc.getCapacity();
-        if(!this.checkTicketOverSold(ticketNum, selectedScreening)){
-            selectedScreening.setTicketsSold(nts + ticketNum);
-            cinema.updateScreening(selectedScreening);
-            this.notifyObservers();
-            return true;
-        }else{
-            return false;
+        if (selectedScreening != null) {
+            int nts = selectedScreening.getTicketsSold();
+            Screen sc = selectedScreening.getScreen();
+            int cp = sc.getCapacity();
+            if (!this.checkTicketOverSold(ticketNum, selectedScreening)) {
+                selectedScreening.setTicketsSold(nts + ticketNum);
+                cinema.updateScreening(selectedScreening);
+                this.notifyObservers();
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            this.observerMessage("Please Select a Screening First", false);
         }
+        return false;
     }
-
 
     // operations on movies:
     public boolean addMovie(String title, int runningTime, int year){
@@ -164,11 +171,11 @@ public class ManagementSystem {
 
     private boolean checkDoubleScreening(LocalTime time, int runningTime, String screenName, Screening sg){
         for (Screening s : currentScreenings){
-            if(s != sg && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)){
+            if(!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)){
                 observerMessage("Double Screening", false);
                 return true;
             }
-            if(s != sg && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))){
+            if(!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))){
                 observerMessage("Double Screening", false);
                 return true;
             }
@@ -188,7 +195,7 @@ public class ManagementSystem {
 
         List<Screening> screenings = cinema.getScreenings(date);
         for (Screening s : screenings){
-            if (s.getScreen().getName().equals(screenName) && s != screening) {
+            if (s.getScreen().getName().equals(screenName) && s.equals(screening)) {
                 if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
                     observerMessage("Time is not available", false);
                     return false;
