@@ -94,8 +94,11 @@ public class ManagementSystem {
      */
     public boolean cancelSelected(){
         if (selectedScreening != null) {
+            // user confirms the cancelling operation
             if (this.observerMessage("Confirm Cancelling Screening", true)) {
+                // confirmed and check whether been sold
                 if (!this.checkSold(this.selectedScreening)) {
+                    // remove screening
                     currentScreenings.remove(this.selectedScreening);
                     cinema.cancelScreening(this.selectedScreening);
                     selectedScreening = null;
@@ -115,10 +118,12 @@ public class ManagementSystem {
     this screening will not be added, and the corresponding error will be popped out
      */
     public boolean scheduleScreening(LocalDate date, LocalTime time, String title, int runningTime, int year, String screenName){
+        // get movie object
         Movie movie = MovieMapper.getInstance().getMovie(title, runningTime, year);
-
+        // doing checks
         if(!checkDoubleScreening(time, runningTime, screenName, null) &&
                 checkTimeAvailable(date, time, movie.getRunningTime(), screenName, null)){
+            // no conflict, ask cinema to add screening
             Screening s = cinema.scheduleScreening(date, time, title, runningTime, year, screenName);
             currentScreenings.add(s);
             this.notifyObservers();
@@ -152,8 +157,6 @@ public class ManagementSystem {
     public boolean sellTickets(int ticketNum){
         if (selectedScreening != null) {
             int nts = selectedScreening.getTicketsSold();
-            Screen sc = selectedScreening.getScreen();
-            int cp = sc.getCapacity();
             if (!this.checkTicketOverSold(ticketNum, selectedScreening)) {
                 selectedScreening.setTicketsSold(nts + ticketNum);
                 cinema.updateScreening(selectedScreening);
