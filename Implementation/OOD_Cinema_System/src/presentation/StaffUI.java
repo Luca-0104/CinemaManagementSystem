@@ -24,15 +24,15 @@ import java.util.List;
 import java.util.Optional;
 
 public class StaffUI implements ManagementObserver {
-    final static int         LEFT_MARGIN   = 50;
+    final static int         LEFT_MARGIN   = 100;
     final static int         TOP_MARGIN    = 50;
     final static int         BOTTOM_MARGIN = 50;
-    final static int         ROW_HEIGHT    = 30;
+    final static int         ROW_HEIGHT    = 50;
     final static int         COL_WIDTH     = 60;
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
     final static int         TZERO         = 18;                    // Earliest time shown
-    final static int         SLOTS         = 12;                    // Number of booking slots shown
+    final static int         SLOTS         = 22;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
     private List<Screen> screens = new ArrayList<Screen>();
@@ -94,14 +94,14 @@ public class StaffUI implements ManagementObserver {
             LocalTime show = start.plusMinutes(i * 30);
             String tmp = show.getHour() + ":" + (show.getMinute() > 9 ? show.getMinute() : "0" + show.getMinute());
             int x = LEFT_MARGIN + i * COL_WIDTH;
-            gc.fillText(tmp, x + 15, 40);
+            gc.fillText(tmp, x + 10, 40);
             gc.strokeLine(x, TOP_MARGIN, x, canvas.getHeight());
         }
         List<Screening> enumV = ms.getScreenings();
         for (Screening s : enumV) {
             int x = timeToX(s.getTime());
             int y = screenToY(((PersistentScreen)s.getScreen()).getOid());
-            gc.setFill(Color.GRAY);
+            gc.setFill(Color.rgb(147, 112, 219));
             // frontend
             gc.fillRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
             if (s == ms.getSelectedScreening()) {
@@ -111,7 +111,9 @@ public class StaffUI implements ManagementObserver {
             }
             gc.setFill(Color.WHITE);
             // frontend
-            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2); // need to distinguish ticket sold condition
+            // need to distinguish ticket sold condition
+            gc.fillText("Title: "+s.getMovie().getTitle()+" Length: "+s.getMovie().getRunningTime()+"mins"
+                    +"\nStart from: "+s.getTime()+" Ticket Sold: "+s.getTicketsSold(), x, y + ROW_HEIGHT / 2);
         }
         Screening sg = ms.getSelectedScreening();
         if (mouseDown && sg != null) {
@@ -125,11 +127,11 @@ public class StaffUI implements ManagementObserver {
     }
 
     private int timeToX(LocalTime time) {
-        return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute();
+        return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute() + 720;
     }
 
     private LocalTime xToTime(int x) {
-        x -= LEFT_MARGIN;
+        x -= LEFT_MARGIN + 720;
         int h = Math.max(0, (x / PPH) + TZERO);
         int m = Math.max(0, (x % PPH) / PPM);
         return LocalTime.of(h, m);

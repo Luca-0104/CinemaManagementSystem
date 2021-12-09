@@ -25,15 +25,15 @@ import java.util.List;
 import java.util.Optional;
 
 public class AdminUI implements ManagementObserver {
-    final static int         LEFT_MARGIN   = 50;
+    final static int         LEFT_MARGIN   = 100;
     final static int         TOP_MARGIN    = 50;
     final static int         BOTTOM_MARGIN = 50;
-    final static int         ROW_HEIGHT    = 30;
+    final static int         ROW_HEIGHT    = 50;
     final static int         COL_WIDTH     = 60;
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
     final static int         TZERO         = 18;                    // Earliest time shown
-    final static int         SLOTS         = 12;                    // Number of booking slots shown
+    final static int         SLOTS         = 22;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
     private List<Movie> movies = new ArrayList<Movie>();
@@ -90,6 +90,7 @@ public class AdminUI implements ManagementObserver {
     public void update() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         screens = ManagementSystem.getScreens();
+        movies = ManagementSystem.getMovies();
         canvas.setHeight(TOP_MARGIN + screens.size() * ROW_HEIGHT);
         canvas.setWidth(LEFT_MARGIN + (SLOTS * COL_WIDTH));
         gc.setFill(Color.WHITE);
@@ -105,22 +106,22 @@ public class AdminUI implements ManagementObserver {
         for (int i = 0; i < screens.size(); i++) {
             int y = TOP_MARGIN + (i + 1) * ROW_HEIGHT;
             // frontend
-            gc.fillText(((PersistentScreen)screens.get(i)).getOid() + " (" + screens.get(i).getCapacity() + ")", 0, y - ROW_HEIGHT / 3);
+            gc.fillText("("+((PersistentScreen)screens.get(i)).getOid()+") "+ screens.get(i).getName() + "\nCapacity: " + screens.get(i).getCapacity(), 5, y - ROW_HEIGHT / 3 - 10);
             gc.strokeLine(LEFT_MARGIN, y, canvas.getWidth(), y);
         }
-        LocalTime start = LocalTime.of(18, 0);
+        LocalTime start = LocalTime.of(12, 0);
         for (int i = 0; i < SLOTS + 1; i++) {
             LocalTime show = start.plusMinutes(i * 30);
             String tmp = show.getHour() + ":" + (show.getMinute() > 9 ? show.getMinute() : "0" + show.getMinute());
             int x = LEFT_MARGIN + i * COL_WIDTH;
-            gc.fillText(tmp, x + 15, 40);
+            gc.fillText(tmp, x + 10, 40);
             gc.strokeLine(x, TOP_MARGIN, x, canvas.getHeight());
         }
         List<Screening> enumV = ms.getScreenings();
         for (Screening s : enumV) {
             int x = timeToX(s.getTime());
             int y = screenToY(((PersistentScreen)s.getScreen()).getOid());
-            gc.setFill(Color.GRAY);
+            gc.setFill(Color.rgb(147, 112, 219));
             // frontend
             gc.fillRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
             if (s == ms.getSelectedScreening()) {
@@ -130,7 +131,8 @@ public class AdminUI implements ManagementObserver {
             }
             gc.setFill(Color.WHITE);
             // frontend
-            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2);
+            gc.fillText("Title: "+s.getMovie().getTitle()+" Length: "+s.getMovie().getRunningTime()+"mins"
+                    +"\nStart from: "+s.getTime(), x, y + ROW_HEIGHT / 2);
         }
         Screening sg = ms.getSelectedScreening();
         if (mouseDown && sg != null) {
@@ -144,11 +146,11 @@ public class AdminUI implements ManagementObserver {
     }
 
     private int timeToX(LocalTime time) {
-        return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute();
+        return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute() + 720;
     }
 
     private LocalTime xToTime(int x) {
-        x -= LEFT_MARGIN;
+        x -= LEFT_MARGIN + 720;
         int h = Math.max(0, (x / PPH) + TZERO);
         int m = Math.max(0, (x % PPH) / PPM);
         return LocalTime.of(h, m);
