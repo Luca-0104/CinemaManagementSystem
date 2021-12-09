@@ -166,6 +166,11 @@ public class MovieMapper {
         return m;
     }
 
+    /*
+    this method checks the movie table in database to see whether there is a same movie
+    return true if there is a same one
+    otherwise return false
+     */
     public boolean checkExistedMovie(String title, int runningTime, int year){
         String sql = "SELECT * FROM Movies WHERE title = '" + title + "' AND runningTime = " + runningTime + ";";
         Database.getInstance();

@@ -15,10 +15,8 @@ public class Cinema {
     static MovieMapper mm = MovieMapper.getInstance();
     ScreenMapper sm = ScreenMapper.getInstance();
 
-    /*
-        'get' methods (wrapping the get methods in mappers)
-     */
 
+    //'get' methods (wrapping the get methods in mappers)
     List<Screening> getScreenings(LocalDate currentDate){
         return sgm.getScreenings(currentDate);
     }
@@ -33,6 +31,10 @@ public class Cinema {
 
     static List<Screen> getScreens(){
         return ScreenMapper.getInstance().getScreens();
+    }
+
+    public static List<Movie> getMovies(){
+        return mm.getMovies();
     }
 
     /*
@@ -71,14 +73,17 @@ public class Cinema {
     /*
         operations on movie !!!!!
      */
-    public static List<Movie> getMovies(){
-        return mm.getMovies();
-    }
 
+    // ask movie mapper to add movie
     public void addMovie(String title, int runningTime, int year){
         mm.addMovie(title, runningTime, year);
     }
 
+    /*
+    ask movie mapper to check whether there is a movie with given title, running time and year
+    return true if there is a same one
+    otherwise return false
+     */
     public boolean checkExistedMovid(String title, int runningTime, int year){
         return mm.checkExistedMovie(title, runningTime, year);
     }

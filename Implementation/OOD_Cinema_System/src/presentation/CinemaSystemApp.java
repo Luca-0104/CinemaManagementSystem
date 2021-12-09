@@ -54,7 +54,7 @@ public class CinemaSystemApp extends Application {
 
             button_staff.setOnAction(event -> {
                 try {
-                    URL url_staff = new File("Implementation/OOD_Cinema_System/src/guiStaff.fxml").toURI().toURL();
+                    URL url_staff = new File("/Implementation/OOD_Cinema_System/src/guiStaff.fxml").toURI().toURL();
                     VBox box_staff = (VBox) FXMLLoader.load(url_staff);// loads the GUI from the file and creates the StaffUI controller
                     Scene scene_staff = new Scene(box_staff, StaffUI.LEFT_MARGIN + (StaffUI.SLOTS * StaffUI.COL_WIDTH), StaffUI.TOP_MARGIN + 10 * StaffUI.ROW_HEIGHT);
                     scene_staff.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
