@@ -54,13 +54,17 @@ public class MovieMapper {
     public List<Movie> getMovies(){
         // if cache is empty, we query a list of movies from the database
         if (cache.size() == 0) {
+            System.out.println("---no cache");
             List<Movie> movieList = new ArrayList<Movie>();
             try {
                 Database.getInstance();
                 Statement stmt = Database.getConnection().createStatement();
                 ResultSet rset = stmt.executeQuery("SELECT * FROM Movies;");
                 // loop through all the movies (row)
+                int i = 1;
                 while (rset.next()) {
+                    System.out.println(i);
+                    i++;
                     // get the info from result, then pack them up into an object
                     PersistentMovie pm = new PersistentMovie(rset.getInt("oid"), rset.getString("title"), rset.getInt("runningTime"), rset.getInt("year"));
                     movieList.add(pm);
@@ -72,10 +76,12 @@ public class MovieMapper {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            System.out.println("--- movieList size: " + movieList.size());
             return movieList;
 
             // if the cache is not empty, we return the movies in the cache
         } else {
+            System.out.println("---have cache");
             return new ArrayList<Movie>(cache.values());
         } 
     }
