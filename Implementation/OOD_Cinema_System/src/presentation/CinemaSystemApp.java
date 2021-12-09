@@ -21,25 +21,25 @@ public class CinemaSystemApp extends Application {
     public void start(Stage primaryStage) {
         try {
             Button button_admin = new Button("I am Administrator");
-            button_admin.setLayoutX(300);
-            button_admin.setLayoutY(300);
+            button_admin.setLayoutX(100);
+            button_admin.setLayoutY(100);
             button_admin.setPrefSize(200, 50);
 
             Button button_staff = new Button("I am Staff");
-            button_staff.setLayoutX(600);
-            button_staff.setLayoutY(300);
+            button_staff.setLayoutX(300);
+            button_staff.setLayoutY(100);
             button_staff.setPrefSize(200, 50);
 
             button_admin.setOnAction(event -> {
                 try {
                     URL url_admin = new File("Implementation/OOD_Cinema_System/src/guiAdmin.fxml").toURI().toURL();
-                    VBox box_admin = (VBox) FXMLLoader.load(url_admin);// loads the GUI from the file and creates the StaffUI controller
-                    Scene scene_admin = new Scene(box_admin, StaffUI.LEFT_MARGIN + (StaffUI.SLOTS * StaffUI.COL_WIDTH), StaffUI.TOP_MARGIN + 10 * StaffUI.ROW_HEIGHT);
+                    VBox box_admin = (VBox) FXMLLoader.load(url_admin);// loads the GUI from the file and creates the AdminUI controller
+                    Scene scene_admin = new Scene(box_admin, AdminUI.LEFT_MARGIN + (AdminUI.SLOTS * AdminUI.COL_WIDTH), AdminUI.TOP_MARGIN + 10 * AdminUI.ROW_HEIGHT);
                     scene_admin.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
                     primaryStage.setScene(scene_admin);
-                    primaryStage.setHeight(StaffUI.TOP_MARGIN + 10 * StaffUI.ROW_HEIGHT + 120);
-                    primaryStage.setWidth(StaffUI.LEFT_MARGIN + (StaffUI.SLOTS * StaffUI.COL_WIDTH) + 60);
+                    primaryStage.setHeight(AdminUI.TOP_MARGIN + 10 * AdminUI.ROW_HEIGHT + 120);
+                    primaryStage.setWidth(AdminUI.LEFT_MARGIN + (AdminUI.SLOTS * AdminUI.COL_WIDTH) + 60);
                     primaryStage.setResizable(true);
                     primaryStage.show();
                     scene_admin.setFill(Color.BROWN);

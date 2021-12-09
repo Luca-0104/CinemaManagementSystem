@@ -28,7 +28,7 @@ public class AdminUI implements ManagementObserver {
     final static int         LEFT_MARGIN   = 50;
     final static int         TOP_MARGIN    = 50;
     final static int         BOTTOM_MARGIN = 50;
-    final static int         ROW_HEIGHT    = 30;
+    final static int         ROW_HEIGHT    = 50;
     final static int         COL_WIDTH     = 60;
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
@@ -131,7 +131,8 @@ public class AdminUI implements ManagementObserver {
             }
             gc.setFill(Color.WHITE);
             // frontend
-            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2);
+            gc.fillText("Title: "+s.getMovie().getTitle()+" Length: "+s.getMovie().getRunningTime()+"mins"
+                    +"\nStart from: "+s.getTime()+" Screen: "+s.getScreen().getName(), x, y + ROW_HEIGHT / 2);
         }
         Screening sg = ms.getSelectedScreening();
         if (mouseDown && sg != null) {

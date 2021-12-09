@@ -65,7 +65,7 @@ public class ManagementSystem {
     public void selectScreening(String screenName, LocalTime time){
         for(Screening s : currentScreenings){
             if(s.getScreen().getName().equals(screenName)){
-                if(s.getTime().equals(time)){
+                if(s.getTime().isBefore(time) && s.getEndTime().isAfter(time)){
                     selectedScreening = s;
                 }
             }
@@ -78,6 +78,7 @@ public class ManagementSystem {
             if(!this.checkSold(this.selectedScreening)){
                 currentScreenings.remove(this.selectedScreening);
                 cinema.cancelScreening(this.selectedScreening);
+                selectedScreening = null;
                 this.notifyObservers();
                 return true;
             }
