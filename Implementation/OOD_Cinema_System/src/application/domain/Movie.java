@@ -5,7 +5,7 @@ import application.persistency.PersistentMovie;
 public class Movie {
 
     private String title;
-    private int runningTime;    //minutes
+    private int runningTime;    //unit: minutes
     private int year;
 
     public Movie(String title, int runningTime, int year) {
@@ -14,6 +14,7 @@ public class Movie {
         this.year = year;
     }
 
+    // get methods
     public String getTitle() {
         return title;
     }

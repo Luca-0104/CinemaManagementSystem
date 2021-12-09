@@ -7,7 +7,7 @@ public class Screening {
 
     private LocalDate date; // start date
     private LocalTime time; //start time
-    private int ticketsSold;
+    private int ticketsSold; //cannot surpass the capacity of the screen
     private Movie movie;
     private Screen screen;
 

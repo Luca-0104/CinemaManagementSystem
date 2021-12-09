@@ -58,6 +58,7 @@ public class Cinema {
         return sgm.scheduleScreening(date, time, movie, screen);
     }
 
+    // intermediary methods that further call screeningMapper
     public void updateScreening(Screening sg){
         sgm.updateScreening(sg);
     }
@@ -65,10 +66,6 @@ public class Cinema {
     public void cancelScreening(Screening sg){
         sgm.deleteScreening(sg);
     }
-
-//    public boolean checkExistedScreening(LocalTime time, String screenName, Screening sg){
-//        return sgm.checkExistedScreening(time, screenName, sg);
-//    }
 
     /*
         operations on movie !!!!!
