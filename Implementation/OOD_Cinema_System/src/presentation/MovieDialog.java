@@ -7,6 +7,7 @@ import javafx.util.Callback;
 
 import java.time.LocalTime;
 
+// An extra class to help create a movie dialog
 @SuppressWarnings("restriction")
 public class MovieDialog extends Dialog<MovieInfo> {
     private TextField titleField = new TextField();
@@ -14,6 +15,11 @@ public class MovieDialog extends Dialog<MovieInfo> {
     private TextField yearField = new TextField();
     private ButtonType buttonTypeOk = new ButtonType("Ok", ButtonBar.ButtonData.OK_DONE);
 
+    /**
+     * Constructor with parameter.
+     * If the input does not pass the test, they should be set in the new-popped dialog
+     * @param m
+     */
     public MovieDialog(MovieInfo m) {
         this();
         titleField.setText(m.title);
@@ -21,6 +27,9 @@ public class MovieDialog extends Dialog<MovieInfo> {
         yearField.setText(String.valueOf(m.year));
     }
 
+    /**
+     * Constructor
+     */
     public MovieDialog() {
         super();
         Label label1 = new Label("Title: ");
@@ -66,6 +75,9 @@ public class MovieDialog extends Dialog<MovieInfo> {
 
     }
 
+    /**
+     * Validate the input of user
+     */
     private void validateInput() {
         boolean disable = titleField.getText().length() > 0 && runningTimeField.getText().length() > 0 && yearField.getText().length() > 0;
         getDialogPane().lookupButton(buttonTypeOk).setDisable(!disable);

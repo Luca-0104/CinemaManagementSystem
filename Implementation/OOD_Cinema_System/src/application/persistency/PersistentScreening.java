@@ -15,7 +15,7 @@ public class PersistentScreening extends Screening {
         this.oid = oid;
     }
 
-    int getOid() {
+    public int getOid() {
         return oid;
     }
 

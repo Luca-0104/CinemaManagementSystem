@@ -19,6 +19,7 @@
                         <DatePicker fx:id="datePicker" onAction="#showDate" />
                         <Button mnemonicParsing="false" onAction="#nextDay" text="&gt;" />
                         <Button fx:id="addButtonSell" mnemonicParsing="false" onAction="#showSellTicketDialog" text="Ticket Selling" />
+                        <Button mnemonicParsing="false" onAction="#cancelSelection" text="Cancel Selected" />
                     </children>
                     <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

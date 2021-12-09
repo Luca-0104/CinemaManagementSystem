@@ -1,6 +1,7 @@
 package application.domain;
 
 import application.persistency.MovieMapper;
+import application.persistency.PersistentScreening;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -12,9 +13,11 @@ public class ManagementSystem {
     private LocalDate currentDate;
     //Associations:
     private Cinema cinema = null;
+    // currentScreenings is a list of screenings in a specific day
     private List<Screening> currentScreenings;
+    // selectedScreening represents the screening selected by user in UI
     private Screening selectedScreening;
-
+    // store observers needed to be notified
     private List<ManagementObserver> observers = new ArrayList<>();
 
     //Singleton:
@@ -33,10 +36,13 @@ public class ManagementSystem {
 
     // operations on observers:
 
+    // add objects needed to be notified to the observer list,
+    // so that they will be notified after changes are made
     public void addObserver(ManagementObserver o) {
         observers.add(o);
     }
 
+    // after making changes, this method will be called to notify all the added overserver
     public void notifyObservers() {
         // loop through to tell all the  observers to update
         for (ManagementObserver mo : observers) {
@@ -44,6 +50,7 @@ public class ManagementSystem {
         }
     }
 
+    // used to send message to observer
     public boolean observerMessage(String message, boolean confirm) {
         ManagementObserver mo = (ManagementObserver) observers.get(0);
         return mo.message(message, confirm);
@@ -62,6 +69,8 @@ public class ManagementSystem {
 
     // operations on screenings:
 
+    // set selectedScreening to an exist screening with given screen name and time
+    // the parameter time needs to be inside the running period of the going to be selected screening
     public void selectScreening(String screenName, LocalTime time){
         for(Screening s : currentScreenings){
             if(s.getScreen().getName().equals(screenName)){
@@ -73,11 +82,16 @@ public class ManagementSystem {
         notifyObservers();
     }
 
+    // unselect a screening
     public void noSelectScreening(){
         selectedScreening = null;
         notifyObservers();
     }
 
+    /*
+    cancel the selected screening from database
+    if the selected screening has been sold, the cancel operation will be invalid and a warning will be sent
+     */
     public boolean cancelSelected(){
         if (selectedScreening != null) {
             if (this.observerMessage("Confirm Cancelling Screening", true)) {
@@ -95,6 +109,11 @@ public class ManagementSystem {
         return false;
     }
 
+    /*
+    Used to schedule a new Screening with given date, time, movie title, running time, made year, screen name
+    If there are conflicts with other existed screenings or there already is a same screening,
+    this screening will not be added, and the corresponding error will be popped out
+     */
     public boolean scheduleScreening(LocalDate date, LocalTime time, String title, int runningTime, int year, String screenName){
         Movie movie = MovieMapper.getInstance().getMovie(title, runningTime, year);
 
@@ -108,14 +127,18 @@ public class ManagementSystem {
         return false;
     }
 
-
+    /*
+    This method is used to change the selected screening to the given time and screen
+    However, if tickets of this screening already have been sold, this screening cannot be modified
+    The rearrenged time also cannot have conflict with other screenings, such as double added, and not available time
+     */
     public void changeSelected(LocalTime time, String screenName){
         if (selectedScreening != null){
+            // check whether tickets were sold, whether there is the same screen, and whether the changed time is available
             if(!checkSold(selectedScreening) && !checkDoubleScreening(time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)
                     && checkTimeAvailable(currentDate, time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)){
                 Screen screen = cinema.getScreen(screenName);
                 selectedScreening.setTime(time);
-                System.out.println(time);
                 selectedScreening.setScreen(screen);
                 cinema.updateScreening(selectedScreening);
                 selectedScreening = null;
@@ -125,8 +148,7 @@ public class ManagementSystem {
     }
 
 
-    // operations on tickets:
-
+    // used to reduce the remaining ticket number if the left tickets number is greater than ticketNum
     public boolean sellTickets(int ticketNum){
         if (selectedScreening != null) {
             int nts = selectedScreening.getTicketsSold();
@@ -146,7 +168,7 @@ public class ManagementSystem {
         return false;
     }
 
-    // operations on movies:
+    // add movie to the database, the unit of runningTime is minute
     public boolean addMovie(String title, int runningTime, int year){
         if(!this.checkDoubleAdded(title, runningTime, year)){
             cinema.addMovie(title, runningTime, year);
@@ -160,7 +182,11 @@ public class ManagementSystem {
 
     // checking methods:
 
-    // check if a movie is already added
+    /*
+    check if a movie is already added
+    return true if already existed
+    return false if there isn't a same movie
+     */
     private boolean checkDoubleAdded(String title, int runningTime, int year){
         if (cinema.checkExistedMovid(title, runningTime, year)){
             this.observerMessage("Existed movie", false);
@@ -169,51 +195,68 @@ public class ManagementSystem {
         return false;
     }
 
+    /*
+    check whether there will be double added situation
+    return true, if a same screening was existed
+    otherwise, return false
+     */
     private boolean checkDoubleScreening(LocalTime time, int runningTime, String screenName, Screening sg){
         for (Screening s : currentScreenings){
-            if(!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)){
-                observerMessage("Double Screening", false);
-                return true;
-            }
-            if(!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))){
-                observerMessage("Double Screening", false);
-                return true;
+            if (((PersistentScreening)s).getOid() != ((PersistentScreening)sg).getOid()) {
+                if (!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)) {
+                    observerMessage("Double Screening", false);
+                    return true;
+                }
+                if (!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))) {
+                    observerMessage("Double Screening", false);
+                    return true;
+                }
             }
         }
         return false;
-
-//        if(cinema.checkExistedScreening(time, screenName, sg)){
-//            return this.observerMessage("Existed Screening", false);
-//        }
-//        return true;
     }
 
+    /*
+    check whether the selected time has overlap with other arranged screenings
+    if overlap exists, will return false
+    otherwise will return true
+     */
     private boolean checkTimeAvailable(LocalDate date, LocalTime time, int length, String screenName, Screening screening){
         length += 15;
         LocalTime endBoundary = time.plusMinutes(length);
         LocalTime startBoundary = time.minusMinutes(15);
-
+        //get all the screenings on a particular date
         List<Screening> screenings = cinema.getScreenings(date);
+        //iterate the list of screenings
         for (Screening s : screenings){
-            if (s.getScreen().getName().equals(screenName) && s.equals(screening)) {
-                if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
-                    observerMessage("Time is not available", false);
-                    return false;
-                }
-                if (s.getEndTime().isAfter(startBoundary) && s.getEndTime().isBefore(endBoundary)){
-                    observerMessage("Time is not available", false);
-                    return false;
-                }
-                if ((s.getEndTime().isAfter(endBoundary) && s.getTime().isBefore(startBoundary))){
-                    observerMessage("Time is not available", false);
-                    return false;
+            if (((PersistentScreening)s).getOid() != ((PersistentScreening)screening).getOid()) {
+                if (s.getScreen().getName().equals(screenName) && !s.equals(screening)) {
+                    //check whether the start time of an existed screening is in the not allowed boundary of the going to be added screening
+                    if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
+                        observerMessage("Time is not available", false);
+                        return false;
+                    }
+                    //check whether the end time of an existed screening is in the not allowed boundary of the going to be added screening
+                    if (s.getEndTime().isAfter(startBoundary) && s.getEndTime().isBefore(endBoundary)){
+                        observerMessage("Time is not available", false);
+                        return false;
+                    }
+                    //check whether an existed screening completely covers the timespan
+                    if ((s.getEndTime().isAfter(endBoundary) && s.getTime().isBefore(startBoundary))){
+                        observerMessage("Time is not available", false);
+                        return false;
+                    }
                 }
             }
         }
         return true;
     }
 
-    // check if a screening has already sold tickets
+    /*
+    check if a screening has already sold tickets
+    if tickets have been sold, this method will return true
+    if haven't been sold, will return false
+     */
     private boolean checkSold(Screening sg){
         if(sg.getTicketsSold() > 0){
             this.observerMessage("This screening has been sold", false);
@@ -222,7 +265,11 @@ public class ManagementSystem {
         return false;
     }
 
-    // check if the number of tickets we want to sell more than the rest of seats in that screen
+    /*
+    check if the number of tickets we want to sell more than the rest of seats in that screen
+    if the number of ordered tickets is greater than remaining tickets, this method will return true
+    otherwise, this returns false
+     */
     private boolean checkTicketOverSold(int ticketNum, Screening sg){
         int nts = sg.getTicketsSold();
         Screen sc = sg.getScreen();
@@ -235,7 +282,7 @@ public class ManagementSystem {
     }
 
 
-    // some 'get' methods
+    // 'get' methods
 
     public LocalDate getCurrentDate() {
         return currentDate;
