@@ -44,6 +44,7 @@ public class ScreeningMapper {
                 int oid = rset.getInt("oid");
                 LocalDate sgDate = LocalDate.parse(rset.getString("date"));
                 LocalTime sgTime = LocalTime.parse(rset.getString("time"));
+                int ticketsSold = rset.getInt("ticketsSold");
                 int movieID = rset.getInt("movie_id");
                 int screenID = rset.getInt("screen_id");
 
@@ -52,7 +53,7 @@ public class ScreeningMapper {
                 PersistentScreen pScreen = ScreenMapper.getInstance().getScreenForOid(screenID);
 
                 // pack up the infos into an object then add it to list
-                PersistentScreening pScreening = new PersistentScreening(oid, sgDate, sgTime, pMovie, pScreen);
+                PersistentScreening pScreening = new PersistentScreening(oid, sgDate, sgTime, ticketsSold, pMovie, pScreen);
                 v.add(pScreening);
             }
 
@@ -71,10 +72,10 @@ public class ScreeningMapper {
     public PersistentScreening scheduleScreening(LocalDate date, LocalTime time, Movie movie, Screen screen) {
         /* insert new row into database */
         int oid = Database.getInstance().getNextScreeningId();  // get the oid for this new instance in the database
-        performUpdate("INSERT INTO Screenings (oid, date, time, movie_id, screen_id) " + "VALUES ('" + oid + "', '" + date + "', '" + time + "', '" + ((PersistentMovie) movie).getOid() + "', '" + ((PersistentScreen) screen).getOid() + "')");
+        performUpdate("INSERT INTO Screenings (oid, date, time, ticketsSold, movie_id, screen_id) " + "VALUES ('" + oid + "', '" + date + "', '" + time + "', '" + 0 + "', '" + ((PersistentMovie) movie).getOid() + "', '" + ((PersistentScreen) screen).getOid() + "')");
 
         /* return a new instance of this screening */
-        return new PersistentScreening(oid, date, time, movie, screen);
+        return new PersistentScreening(oid, date, time, 0, movie, screen);
     }
 
 

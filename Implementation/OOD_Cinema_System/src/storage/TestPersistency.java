@@ -12,7 +12,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-public class DataInsertTool {
+public class TestPersistency {
 
     //instances of mappers
     static ScreeningMapper sgm = ScreeningMapper.getInstance();
@@ -20,7 +20,6 @@ public class DataInsertTool {
     static ScreenMapper sm = ScreenMapper.getInstance();
 
     public static void main(String[] args) {
-//        String url = "jdbc:sqlite:./cinema.db";
         String url = "jdbc:sqlite:./Implementation/OOD_Cinema_System/cinema.db";
 
 

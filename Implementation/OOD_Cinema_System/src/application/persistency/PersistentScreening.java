@@ -10,8 +10,8 @@ import java.time.LocalTime;
 public class PersistentScreening extends Screening {
     private int oid;
 
-    public PersistentScreening(int oid, LocalDate date, LocalTime time, Movie movie, Screen screen) {
-        super(date, time, movie, screen);
+    public PersistentScreening(int oid, LocalDate date, LocalTime time, int ticketsSold, Movie movie, Screen screen) {
+        super(date, time, ticketsSold, movie, screen);
         this.oid = oid;
     }
 

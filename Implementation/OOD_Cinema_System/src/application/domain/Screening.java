@@ -11,10 +11,10 @@ public class Screening {
     private Movie movie;
     private Screen screen;
 
-    public Screening(LocalDate date, LocalTime time, Movie movie, Screen screen) {
+    public Screening(LocalDate date, LocalTime time, int ticketsSold, Movie movie, Screen screen) {
         this.date = date;
         this.time = time;
-        this.ticketsSold = 0;
+        this.ticketsSold = ticketsSold;
         this.movie = movie;
         this.screen = screen;
     }

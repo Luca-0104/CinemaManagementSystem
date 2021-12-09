@@ -91,7 +91,6 @@ public class ManagementSystem {
 
         if(!checkDoubleScreening(time, runningTime, screenName, null) &&
                 checkTimeAvailable(date, time, movie.getRunningTime(), screenName, null)){
-            System.out.println("in check");
             Screening s = cinema.scheduleScreening(date, time, title, runningTime, year, screenName);
             currentScreenings.add(s);
             this.notifyObservers();
@@ -103,6 +102,7 @@ public class ManagementSystem {
 
     public void changeSelected(LocalTime time, String screenName){
         if (selectedScreening != null){
+
             if(!checkSold(selectedScreening) && !checkDoubleScreening(time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)
                     && checkTimeAvailable(currentDate, time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)){
                 Screen screen = cinema.getScreen(screenName);
