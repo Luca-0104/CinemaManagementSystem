@@ -86,7 +86,8 @@ public class StaffUI implements ManagementObserver {
         for (int i = 0; i < screens.size(); i++) {
             int y = TOP_MARGIN + (i + 1) * ROW_HEIGHT;
             // frontend
-            gc.fillText(((PersistentScreen)screens.get(i)).getOid() + " (" + screens.get(i).getCapacity() + ")", 0, y - ROW_HEIGHT / 3);
+            gc.fillText("("+((PersistentScreen)screens.get(i)).getOid()+") "+ screens.get(i).getName() +
+                    "\nCapacity: " + screens.get(i).getCapacity(), 5, y - ROW_HEIGHT / 3 - 10);
             gc.strokeLine(LEFT_MARGIN, y, canvas.getWidth(), y);
         }
         LocalTime start = LocalTime.of(18, 0);
@@ -101,7 +102,7 @@ public class StaffUI implements ManagementObserver {
         for (Screening s : enumV) {
             int x = timeToX(s.getTime());
             int y = screenToY(((PersistentScreen)s.getScreen()).getOid());
-            gc.setFill(Color.rgb(147, 112, 219));
+            gc.setFill(Color.rgb(79, 195, 247));
             // frontend
             gc.fillRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
             if (s == ms.getSelectedScreening()) {
@@ -206,4 +207,10 @@ public class StaffUI implements ManagementObserver {
         }
     }
 
+    /**
+     * Transit the request to Management System of canceling selecting currently selected screening
+     */
+    public void cancelSelection() {
+        ms.noSelectScreening();
+    }
 }
