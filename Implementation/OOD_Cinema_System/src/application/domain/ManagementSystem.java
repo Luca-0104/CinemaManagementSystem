@@ -1,6 +1,7 @@
 package application.domain;
 
 import application.persistency.MovieMapper;
+import application.persistency.PersistentScreening;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -171,13 +172,15 @@ public class ManagementSystem {
 
     private boolean checkDoubleScreening(LocalTime time, int runningTime, String screenName, Screening sg){
         for (Screening s : currentScreenings){
-            if(!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)){
-                observerMessage("Double Screening", false);
-                return true;
-            }
-            if(!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))){
-                observerMessage("Double Screening", false);
-                return true;
+            if (((PersistentScreening)s).getOid() != ((PersistentScreening)sg).getOid()) {
+                if (!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)) {
+                    observerMessage("Double Screening", false);
+                    return true;
+                }
+                if (!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))) {
+                    observerMessage("Double Screening", false);
+                    return true;
+                }
             }
         }
         return false;
@@ -195,18 +198,20 @@ public class ManagementSystem {
 
         List<Screening> screenings = cinema.getScreenings(date);
         for (Screening s : screenings){
-            if (s.getScreen().getName().equals(screenName) && s.equals(screening)) {
-                if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
-                    observerMessage("Time is not available", false);
-                    return false;
-                }
-                if (s.getEndTime().isAfter(startBoundary) && s.getEndTime().isBefore(endBoundary)){
-                    observerMessage("Time is not available", false);
-                    return false;
-                }
-                if ((s.getEndTime().isAfter(endBoundary) && s.getTime().isBefore(startBoundary))){
-                    observerMessage("Time is not available", false);
-                    return false;
+            if (((PersistentScreening)s).getOid() != ((PersistentScreening)screening).getOid()) {
+                if (s.getScreen().getName().equals(screenName) && !s.equals(screening)) {
+                    if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
+                        observerMessage("Time is not available", false);
+                        return false;
+                    }
+                    if (s.getEndTime().isAfter(startBoundary) && s.getEndTime().isBefore(endBoundary)){
+                        observerMessage("Time is not available", false);
+                        return false;
+                    }
+                    if ((s.getEndTime().isAfter(endBoundary) && s.getTime().isBefore(startBoundary))){
+                        observerMessage("Time is not available", false);
+                        return false;
+                    }
                 }
             }
         }
