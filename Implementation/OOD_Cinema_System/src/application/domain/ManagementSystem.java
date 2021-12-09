@@ -203,7 +203,7 @@ public class ManagementSystem {
     // check if a screening has already sold tickets
     private boolean checkSold(Screening sg){
         if(sg.getTicketsSold() > 0){
-            this.observerMessage("Have been sold", false);
+            this.observerMessage("This screening has been sold", false);
             return true;
         }
         return false;
