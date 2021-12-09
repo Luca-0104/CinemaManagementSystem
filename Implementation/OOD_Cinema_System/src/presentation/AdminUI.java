@@ -32,7 +32,7 @@ public class AdminUI implements ManagementObserver {
     final static int         COL_WIDTH     = 60;
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
-    final static int         TZERO         = 18;                    // Earliest time shown
+    final static int         TZERO         = 12;                    // Earliest time shown
     final static int         SLOTS         = 22;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
@@ -114,7 +114,7 @@ public class AdminUI implements ManagementObserver {
             LocalTime show = start.plusMinutes(i * 30);
             String tmp = show.getHour() + ":" + (show.getMinute() > 9 ? show.getMinute() : "0" + show.getMinute());
             int x = LEFT_MARGIN + i * COL_WIDTH;
-            gc.fillText(tmp, x + 10, 40);
+            gc.fillText(tmp, x, 40);
             gc.strokeLine(x, TOP_MARGIN, x, canvas.getHeight());
         }
         List<Screening> enumV = ms.getScreenings();
@@ -123,10 +123,11 @@ public class AdminUI implements ManagementObserver {
             int y = screenToY(((PersistentScreen)s.getScreen()).getOid());
             gc.setFill(Color.rgb(147, 112, 219));
             // frontend
-            gc.fillRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+            float proportion = (float) s.getMovie().getRunningTime()/120;
+            gc.fillRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
             if (s == ms.getSelectedScreening()) {
                 gc.setStroke(Color.RED);
-                gc.strokeRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+                gc.strokeRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
                 gc.setStroke(Color.BLACK);
             }
             gc.setFill(Color.WHITE);
@@ -140,17 +141,18 @@ public class AdminUI implements ManagementObserver {
             int y = screenToY(((PersistentScreen)sg.getScreen()).getOid()) + currentY - firstY;
             gc.setStroke(Color.RED);
             // frontend
-            gc.strokeRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+            float proportion = (float) sg.getMovie().getRunningTime()/120;
+            gc.strokeRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
             gc.setStroke(Color.BLACK);
         }
     }
 
     private int timeToX(LocalTime time) {
-        return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute() + 720;
+        return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute();
     }
 
     private LocalTime xToTime(int x) {
-        x -= LEFT_MARGIN + 720;
+        x -= LEFT_MARGIN;
         int h = Math.max(0, (x / PPH) + TZERO);
         int m = Math.max(0, (x % PPH) / PPM);
         return LocalTime.of(h, m);

@@ -107,6 +107,7 @@ public class ManagementSystem {
                     && checkTimeAvailable(currentDate, time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)){
                 Screen screen = cinema.getScreen(screenName);
                 selectedScreening.setTime(time);
+                System.out.println(time);
                 selectedScreening.setScreen(screen);
                 cinema.updateScreening(selectedScreening);
                 selectedScreening = null;
