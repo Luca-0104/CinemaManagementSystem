@@ -201,8 +201,27 @@ public class ManagementSystem {
     otherwise, return false
      */
     private boolean checkDoubleScreening(LocalTime time, int runningTime, String screenName, Screening sg){
-        for (Screening s : currentScreenings){
-            if (((PersistentScreening)s).getOid() != ((PersistentScreening)sg).getOid()) {
+        //if this checking happens in changScreening
+        if (sg != null){
+            for (Screening s : currentScreenings){
+                //we will check if the screening overlaps with itself
+                if (((PersistentScreening)s).getOid() != ((PersistentScreening)sg).getOid()) {
+                    if (!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)) {
+                        observerMessage("Double Screening", false);
+                        return true;
+                    }
+                    if (!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getEndTime().equals(time.plusMinutes(runningTime))) {
+                        observerMessage("Double Screening", false);
+                        return true;
+                    }
+                }
+            }
+            return false;
+
+        //if this checking happens in scheduleScreen
+        }else{
+            for (Screening s : currentScreenings){
+                //we do not need to check if the screening overlaps with itself
                 if (!s.equals(sg) && s.getScreen().getName().equals(screenName) && s.getTime().equals(time)) {
                     observerMessage("Double Screening", false);
                     return true;
@@ -212,8 +231,10 @@ public class ManagementSystem {
                     return true;
                 }
             }
+            return false;
         }
-        return false;
+
+
     }
 
     /*
@@ -227,9 +248,38 @@ public class ManagementSystem {
         LocalTime startBoundary = time.minusMinutes(15);
         //get all the screenings on a particular date
         List<Screening> screenings = cinema.getScreenings(date);
-        //iterate the list of screenings
-        for (Screening s : screenings){
-            if (((PersistentScreening)s).getOid() != ((PersistentScreening)screening).getOid()) {
+
+        //if this checking happens in changScreening
+        if(screening != null){
+            //iterate the list of screenings
+            for (Screening s : screenings){
+                //we will check if the screening overlaps with itself
+                if (((PersistentScreening)s).getOid() != ((PersistentScreening)screening).getOid()) {
+                    if (s.getScreen().getName().equals(screenName) && !s.equals(screening)) {
+                        //check whether the start time of an existed screening is in the not allowed boundary of the going to be added screening
+                        if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
+                            observerMessage("Time is not available", false);
+                            return false;
+                        }
+                        //check whether the end time of an existed screening is in the not allowed boundary of the going to be added screening
+                        if (s.getEndTime().isAfter(startBoundary) && s.getEndTime().isBefore(endBoundary)){
+                            observerMessage("Time is not available", false);
+                            return false;
+                        }
+                        //check whether an existed screening completely covers the timespan
+                        if ((s.getEndTime().isAfter(endBoundary) && s.getTime().isBefore(startBoundary))){
+                            observerMessage("Time is not available", false);
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        //if this checking happens in scheduleScreen
+        }else{
+            //iterate the list of screenings
+            for (Screening s : screenings){
+                //we do not need to check if the screening overlaps with itself
                 if (s.getScreen().getName().equals(screenName) && !s.equals(screening)) {
                     //check whether the start time of an existed screening is in the not allowed boundary of the going to be added screening
                     if (s.getTime().isAfter(startBoundary) && s.getTime().isBefore(endBoundary)){
@@ -248,8 +298,11 @@ public class ManagementSystem {
                     }
                 }
             }
+            return true;
         }
-        return true;
+
+
+
     }
 
     /*
