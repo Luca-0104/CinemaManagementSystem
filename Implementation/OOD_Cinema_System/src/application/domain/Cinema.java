@@ -83,8 +83,4 @@ public class Cinema {
         return mm.checkExistedMovie(title, runningTime, year);
     }
 
-    /*
-        operations on ticket !!!!!
-     */
-
 }

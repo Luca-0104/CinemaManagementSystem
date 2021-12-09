@@ -56,7 +56,7 @@ public class DatabaseCreator {
                         "       oid             int  NOT NULL PRIMARY KEY,\r\n" +
                         "       date            VARCHAR(32) NOT NULL,\r\n" +
                         "       time            VARCHAR(32) NOT NULL,\r\n" +
-                        "       ticketsSold     int DEFAULT 0,\r\n" +
+                        "       ticketsSold     int NOT NULL,\r\n" +
                         "       movie_id        int NOT NULL,\r\n" +
                         "       screen_id       int NOT NULL\r\n" +
                         ") ;";
