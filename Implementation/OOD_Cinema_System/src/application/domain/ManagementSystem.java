@@ -76,6 +76,7 @@ public class ManagementSystem {
     public boolean cancelSelected(){
         if(this.observerMessage("Confirm Cancelling Screening", true)){
             if(!this.checkSold(this.selectedScreening)){
+                currentScreenings.remove(this.selectedScreening);
                 cinema.cancelScreening(this.selectedScreening);
                 this.notifyObservers();
                 return true;
@@ -102,11 +103,12 @@ public class ManagementSystem {
     public void changeSelected(LocalTime time, String screenName){
         if (selectedScreening != null){
             if(!checkSold(selectedScreening) && !checkDoubleScreening(time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)
-                    && !checkTimeAvailable(currentDate, time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)){
+                    && checkTimeAvailable(currentDate, time, selectedScreening.getMovie().getRunningTime(), screenName, selectedScreening)){
                 Screen screen = cinema.getScreen(screenName);
                 selectedScreening.setTime(time);
                 selectedScreening.setScreen(screen);
                 cinema.updateScreening(selectedScreening);
+                selectedScreening = null;
                 notifyObservers();
             }
         }
