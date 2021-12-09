@@ -269,4 +269,8 @@ public class AdminUI implements ManagementObserver {
             }
         }
     }
+
+    public void cancelSelection() {
+        ms.noSelectScreening();
+    }
 }
