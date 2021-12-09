@@ -73,6 +73,11 @@ public class ManagementSystem {
         notifyObservers();
     }
 
+    public void noSelectScreening(){
+        selectedScreening = null;
+        notifyObservers();
+    }
+
     public boolean cancelSelected(){
         if(this.observerMessage("Confirm Cancelling Screening", true)){
             if(!this.checkSold(this.selectedScreening)){

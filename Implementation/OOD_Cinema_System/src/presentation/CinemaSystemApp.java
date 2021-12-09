@@ -3,6 +3,7 @@ package presentation;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -23,12 +24,12 @@ public class CinemaSystemApp extends Application {
             Button button_admin = new Button("I am Administrator");
             button_admin.setLayoutX(100);
             button_admin.setLayoutY(100);
-            button_admin.setPrefSize(200, 50);
+            button_admin.setPrefSize(150, 50);
 
-            Button button_staff = new Button("I am Staff");
-            button_staff.setLayoutX(300);
+            Button button_staff = new Button("I am Staff(Teller)");
+            button_staff.setLayoutX(350);
             button_staff.setLayoutY(100);
-            button_staff.setPrefSize(200, 50);
+            button_staff.setPrefSize(150, 50);
 
             button_admin.setOnAction(event -> {
                 try {
@@ -38,8 +39,11 @@ public class CinemaSystemApp extends Application {
                     scene_admin.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
                     primaryStage.setScene(scene_admin);
-                    primaryStage.setHeight(AdminUI.TOP_MARGIN + 10 * AdminUI.ROW_HEIGHT + 120);
-                    primaryStage.setWidth(AdminUI.LEFT_MARGIN + (AdminUI.SLOTS * AdminUI.COL_WIDTH) + 60);
+                    primaryStage.setTitle("Administrator");
+                    primaryStage.setX(300);
+                    primaryStage.setY(200);
+                    primaryStage.setHeight(AdminUI.TOP_MARGIN + 10 * AdminUI.ROW_HEIGHT + 100);
+                    primaryStage.setWidth(AdminUI.LEFT_MARGIN + (AdminUI.SLOTS * AdminUI.COL_WIDTH) + 40);
                     primaryStage.setResizable(true);
                     primaryStage.show();
                     scene_admin.setFill(Color.BROWN);
@@ -56,6 +60,9 @@ public class CinemaSystemApp extends Application {
                     scene_staff.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
                     primaryStage.setScene(scene_staff);
+                    primaryStage.setTitle("Teller");
+                    primaryStage.setX(300);
+                    primaryStage.setY(200);
                     primaryStage.setHeight(StaffUI.TOP_MARGIN + 10 * StaffUI.ROW_HEIGHT + 120);
                     primaryStage.setWidth(StaffUI.LEFT_MARGIN + (StaffUI.SLOTS * StaffUI.COL_WIDTH) + 60);
                     primaryStage.setResizable(true);
@@ -67,12 +74,12 @@ public class CinemaSystemApp extends Application {
             });
 
             Group group = new Group();
-            group.getChildren().add(button_admin);
-            group.getChildren().add(button_staff);
+            group.getChildren().addAll(button_admin, button_staff);
 
             Scene scene = new Scene(group);
             primaryStage.setScene(scene);
-            primaryStage.setHeight(600);
+            primaryStage.setTitle("Cinema Management System");
+            primaryStage.setHeight(300);
             primaryStage.setWidth(600);
             primaryStage.show();
 

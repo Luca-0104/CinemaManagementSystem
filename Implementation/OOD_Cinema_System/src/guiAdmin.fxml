@@ -23,6 +23,7 @@
                    <Button fx:id="addButtonMovie" mnemonicParsing="false" onAction="#showAddMovieDialog" text="Add Movie" />
                    <Button fx:id="addButtonScreening" mnemonicParsing="false" onAction="#showAddScreeningDialog" text="Add Screening" />
                    <Button mnemonicParsing="false" onAction="#cancelScreening" text="Cancel Screening" />
+                   <Button mnemonicParsing="false" onAction="#cancelSelection" text="Cancel Selected" />
                </children>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
