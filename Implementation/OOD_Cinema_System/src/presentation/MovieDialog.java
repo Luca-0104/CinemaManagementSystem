@@ -50,6 +50,7 @@ public class MovieDialog extends Dialog<MovieInfo> {
                 return null;
             }
         });
+        // set dialog instructions and validate the input info
         setTitle("Add New Movie");
         setHeaderText("Please enter the details for the new Movie");
         titleField.textProperty().addListener((observable, oldValue, newValue) -> {
