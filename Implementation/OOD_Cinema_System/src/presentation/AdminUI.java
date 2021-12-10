@@ -87,7 +87,7 @@ public class AdminUI implements ManagementObserver {
     }
 
     /**
-     * This is the method that draws the booking system canvas
+     * This is the method that draws the management system canvas (admin)
      */
     @Override
     public void update() {
@@ -122,7 +122,7 @@ public class AdminUI implements ManagementObserver {
         }
         List<Screening> enumV = ms.getScreenings();
         // draw the figure representing a screening. The duration is represented by a rectangle and information will be
-        // written on the purple rectangle.
+        // written on the pink rectangle.
         for (Screening s : enumV) {
             int x = timeToX(s.getTime());
             int y = screenToY(((PersistentScreen)s.getScreen()).getOid());
