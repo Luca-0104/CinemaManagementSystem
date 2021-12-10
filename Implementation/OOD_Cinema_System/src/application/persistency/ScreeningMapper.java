@@ -19,6 +19,10 @@ public class ScreeningMapper {
 
     private static ScreeningMapper uniqueInstance;
 
+    /**
+     * This method is used to get the unique instance of ScreeningMapper in our system
+     * @return  the unique instance of ScreeningMapper
+     */
     public static ScreeningMapper getInstance() {
         if (uniqueInstance == null) {
             uniqueInstance = new ScreeningMapper();
@@ -28,6 +32,8 @@ public class ScreeningMapper {
 
     /**
      * Get a list of screenings that are on a specific day
+     * @param currentDate a LocalDate object for filtering the screenings
+     * @return  a list of all the screenings on a specific day
      */
     public List<Screening> getScreenings(LocalDate currentDate) {
         List<Screening> v = new ArrayList<Screening>();
@@ -52,11 +58,11 @@ public class ScreeningMapper {
                 PersistentMovie pMovie = MovieMapper.getInstance().getMovieForOid(movieID);
                 PersistentScreen pScreen = ScreenMapper.getInstance().getScreenForOid(screenID);
 
-                // pack up the infos into an object then add it to list
+                // pack up the infos into an PersistentScreening object then add it to list
                 PersistentScreening pScreening = new PersistentScreening(oid, sgDate, sgTime, ticketsSold, pMovie, pScreen);
                 v.add(pScreening);
             }
-
+            //close all the resources we have used
             rset.close();
             stmt.close();
         } catch (SQLException e) {
@@ -68,6 +74,11 @@ public class ScreeningMapper {
     /**
      * Schedule (add) a new screening
      * (no need to give ticketsSold number when adding a new screening, default value will be 0 automatically)
+     * @param date the date of the new screening
+     * @param time the time of the new screening
+     * @param movie the movie of the new screening
+     * @param screen the screen of the new screening
+     * @return  a PersistentScreening object, which wraps the screening we had just scheduled
      */
     public PersistentScreening scheduleScreening(LocalDate date, LocalTime time, Movie movie, Screen screen) {
         /* insert new row into database */
@@ -119,33 +130,19 @@ public class ScreeningMapper {
     /**
      * This is used to execute sql with 'update' type, including
      * INSERT / UPDATE / DELETE (all the operation types besides query)
+     * @param sql a String of sql statement
      */
     private void performUpdate(String sql) {
         try {
+            //execute the update
             Database.getInstance();
             Statement stmt = Database.getConnection().createStatement();
             stmt.executeUpdate(sql);
+            //close the resource we have used
             stmt.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-//    public boolean checkExistedScreening(LocalTime time, String screenName, Screening sg){
-//        PersistentScreen screen = ScreenMapper.getInstance().getScreen(screenName);
-//        String sql = "SELECT * FROM Screenings WHERE date = '" + sg.getDate() + "' AND time = '" +
-//                time + "' AND screen_id =" + screen.getOid() + "AND ;";
-//        Database.getInstance();
-//        Statement stmt = null;
-//        try {
-//            stmt = Database.getConnection().createStatement();
-//            ResultSet rset = stmt.executeQuery(sql);
-//
-//            rset.close();
-//            stmt.close();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
 }

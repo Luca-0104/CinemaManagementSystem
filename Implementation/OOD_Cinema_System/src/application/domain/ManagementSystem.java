@@ -204,7 +204,7 @@ public class ManagementSystem {
     otherwise, return false
      */
     private boolean checkDoubleScreening(LocalTime time, int runningTime, String screenName, Screening sg){
-        //if this checking happens in changScreening
+        //if this checking happens in "changScreening" operation
         if (sg != null){
             for (Screening s : currentScreenings){
                 //we will check if the screening overlaps with itself
@@ -221,7 +221,7 @@ public class ManagementSystem {
             }
             return false;
 
-        //if this checking happens in scheduleScreen
+        //if this checking happens in "scheduleScreening" operation
         }else{
             for (Screening s : currentScreenings){
                 //we do not need to check if the screening overlaps with itself
@@ -252,7 +252,7 @@ public class ManagementSystem {
         //get all the screenings on a particular date
         List<Screening> screenings = cinema.getScreenings(date);
 
-        //if this checking happens in changScreening
+        //if this checking happens in "changScreening" operation
         if(screening != null){
             //iterate the list of screenings
             for (Screening s : screenings){
@@ -278,7 +278,7 @@ public class ManagementSystem {
                 }
             }
             return true;
-        //if this checking happens in scheduleScreen
+        //if this checking happens in "scheduleScreening" operation
         }else{
             //iterate the list of screenings
             for (Screening s : screenings){

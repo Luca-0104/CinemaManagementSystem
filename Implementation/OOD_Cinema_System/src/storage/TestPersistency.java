@@ -44,7 +44,7 @@ public class TestPersistency {
                 PersistentMovie movie5 = mm.getMovie("testMovie5", 120, 2021);
 
                 /*
-                    movie mapper -- getMovieForOid (!!!this is "protected", these tests should be commented eventually)
+                    movie mapper -- getMovieForOid (!!!this method is "default", these tests should be commented eventually)
                     COVERAGE:   getMovieForOid
                                 getFromCache
                                 getMovie(String sql)
@@ -77,7 +77,7 @@ public class TestPersistency {
                 System.out.println(sm.getScreen("screen10").toString());
 
                 /*
-                    screen mapper --  getScreenForOid (!!!this is "protected", these tests should be commented eventually)
+                    screen mapper --  getScreenForOid (!!!this method is "default", these tests should be commented eventually)
                     COVERAGE:   getScreenForOid
                                 getFromCache
                  */
