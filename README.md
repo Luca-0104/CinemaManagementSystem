@@ -98,4 +98,3 @@ Name|UCD student number|GitLab Username
 Tianli Ren|19206214|@Renonshow
 Zhe Liu|19206218|@Thor
 Yunze Wu|19206221|@Zachary
-*Authors*
