@@ -24,15 +24,15 @@ import java.util.List;
 import java.util.Optional;
 
 public class StaffUI implements ManagementObserver {
-    final static int         LEFT_MARGIN   = 50;
+    final static int         LEFT_MARGIN   = 100;
     final static int         TOP_MARGIN    = 50;
     final static int         BOTTOM_MARGIN = 50;
-    final static int         ROW_HEIGHT    = 30;
+    final static int         ROW_HEIGHT    = 50;
     final static int         COL_WIDTH     = 60;
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
-    final static int         TZERO         = 18;                    // Earliest time shown
-    final static int         SLOTS         = 12;                    // Number of booking slots shown
+    final static int         TZERO         = 12;                    // Earliest time shown
+    final static int         SLOTS         = 24;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
     private List<Screen> screens = new ArrayList<Screen>();
@@ -44,6 +44,9 @@ public class StaffUI implements ManagementObserver {
     @FXML private Canvas canvas;
     @FXML private VBox box;
 
+    /**
+     * This methods is called after the constructor and after any FXML instance variable have been injected
+     */
     public void initialize() {
         ms = ManagementSystem.getInstance();
         ms.setDate(LocalDate.now());
@@ -67,6 +70,9 @@ public class StaffUI implements ManagementObserver {
 
     }
 
+    /**
+     * This is the method that draws the management system canvas (staff)
+     */
     @Override
     public void update() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
@@ -85,49 +91,64 @@ public class StaffUI implements ManagementObserver {
         //
         for (int i = 0; i < screens.size(); i++) {
             int y = TOP_MARGIN + (i + 1) * ROW_HEIGHT;
-            // frontend
-            gc.fillText(((PersistentScreen)screens.get(i)).getOid() + " (" + screens.get(i).getCapacity() + ")", 0, y - ROW_HEIGHT / 3);
+            // The left-most column, presenting the information of screen (oid, name, capacity)
+            gc.fillText("("+((PersistentScreen)screens.get(i)).getOid()+") "+ screens.get(i).getName() +
+                    "\nCapacity: " + screens.get(i).getCapacity(), 5, y - ROW_HEIGHT / 3 - 10);
             gc.strokeLine(LEFT_MARGIN, y, canvas.getWidth(), y);
         }
-        LocalTime start = LocalTime.of(18, 0);
+        LocalTime start = LocalTime.of(12, 0);
         for (int i = 0; i < SLOTS + 1; i++) {
             LocalTime show = start.plusMinutes(i * 30);
             String tmp = show.getHour() + ":" + (show.getMinute() > 9 ? show.getMinute() : "0" + show.getMinute());
             int x = LEFT_MARGIN + i * COL_WIDTH;
-            gc.fillText(tmp, x + 15, 40);
+            gc.fillText(tmp, x + 10, 40);
             gc.strokeLine(x, TOP_MARGIN, x, canvas.getHeight());
         }
         List<Screening> enumV = ms.getScreenings();
+        // draw the figure representing a screening. The duration is represented by a rectangle and information will be
+        // written on the blue rectangle.
         for (Screening s : enumV) {
             int x = timeToX(s.getTime());
             int y = screenToY(((PersistentScreen)s.getScreen()).getOid());
-            gc.setFill(Color.GRAY);
-            // frontend
-            gc.fillRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+            gc.setFill(Color.rgb(79, 195, 247));
+            float proportion = (float) s.getMovie().getRunningTime()/120;
+            gc.fillRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
+            // If this screening is selected, use red border to symbolize that
             if (s == ms.getSelectedScreening()) {
                 gc.setStroke(Color.RED);
-                gc.strokeRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+                gc.strokeRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
                 gc.setStroke(Color.BLACK);
             }
             gc.setFill(Color.WHITE);
-            // frontend
-            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2); // need to distinguish ticket sold condition
+            // set the text on the rectangle (extra info on selling condition)
+            gc.fillText("Title: "+s.getMovie().getTitle()+" Length: "+s.getMovie().getRunningTime()+"mins"
+                    +"\nStart from: "+s.getTime()+" Ticket Sold: "+s.getTicketsSold(), x, y + ROW_HEIGHT / 2);
         }
         Screening sg = ms.getSelectedScreening();
         if (mouseDown && sg != null) {
             int x = timeToX(sg.getTime()) + currentX - firstX;
             int y = screenToY(((PersistentScreen)sg.getScreen()).getOid()) + currentY - firstY;
             gc.setStroke(Color.RED);
-            // frontend
-            gc.strokeRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+            float proportion = (float) sg.getMovie().getRunningTime()/120;
+            gc.strokeRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
             gc.setStroke(Color.BLACK);
         }
     }
 
+    /**
+     * Transform time to x coordinate value
+     * @param time
+     * @return integer x
+     */
     private int timeToX(LocalTime time) {
         return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute();
     }
 
+    /**
+     * Transform x coordinate value to time
+     * @param x
+     * @return time
+     */
     private LocalTime xToTime(int x) {
         x -= LEFT_MARGIN;
         int h = Math.max(0, (x / PPH) + TZERO);
@@ -135,14 +156,27 @@ public class StaffUI implements ManagementObserver {
         return LocalTime.of(h, m);
     }
 
+    /**
+     * Transform screen to y coordinate value
+     * @param screen
+     * @return y
+     */
     private int screenToY(int screen) {// this assumes that the tables are continuously numbered from 1 to n-1
         return TOP_MARGIN + (ROW_HEIGHT * (screen - 1));
     }
 
+    /**
+     * Transform y coordinate to screen
+     * @param y
+     * @return screen
+     */
     private int yToScreen(int y) {
         return ((y - TOP_MARGIN) / ROW_HEIGHT) + 1;
     }
 
+    /**
+     * Display the next day
+     */
     public void nextDay() {
         displayedDate = datePicker.getValue();
         displayedDate = displayedDate.plusDays(1);
@@ -150,6 +184,9 @@ public class StaffUI implements ManagementObserver {
         ms.setDate(displayedDate);
     }
 
+    /**
+     * Display the previous day
+     */
     public void prevDay() {
         displayedDate = datePicker.getValue();
         displayedDate = displayedDate.minusDays(1);
@@ -157,11 +194,20 @@ public class StaffUI implements ManagementObserver {
         ms.setDate(displayedDate);
     }
 
+    /**
+     * Display the date picker to choose date
+     */
     public void showDate() {
         displayedDate = datePicker.getValue();
         ms.setDate(displayedDate);
     }
 
+    /**
+     * Set the message content
+     * @param s
+     * @param confirm
+     * @return boolean
+     */
     @Override
     public boolean message(String s, boolean confirm) {
         Alert alert;
@@ -180,13 +226,18 @@ public class StaffUI implements ManagementObserver {
         }
     }
 
+    /**
+     * Apply an inner class to create a dialog for selling tickets.
+     * If the number input does not meet the requirement, a new dialog will appear
+     * to let user re-choose.
+     */
     public void showSellTicketDialog() {
         Dialog sellTicket = new Dialog();
         sellTicket.setTitle("Sell Tickets");
         sellTicket.setHeaderText("Please enter the details for the ticket selling");
 
         Label label = new Label("Ticket Number: ");
-        Integer[] ticketChoice = { 1, 2, 3, 4, 5 };
+        Integer[] ticketChoice = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         ChoiceBox<Integer> cb = new ChoiceBox<Integer>(FXCollections.observableArrayList(ticketChoice));
 
         GridPane grid = new GridPane();
@@ -200,8 +251,15 @@ public class StaffUI implements ManagementObserver {
         Optional<ScreeningInfo> result = sellTicket.showAndWait();
 
         if (result.isPresent()) {
+            // transit the number, let management system check whether those tickets can be sold
             ms.sellTickets(cb.getValue());
         }
     }
 
+    /**
+     * Transit the request to Management System of canceling selecting currently selected screening
+     */
+    public void cancelSelection() {
+        ms.noSelectScreening();
+    }
 }

@@ -7,14 +7,14 @@ public class Screening {
 
     private LocalDate date; // start date
     private LocalTime time; //start time
-    private int ticketsSold;
+    private int ticketsSold; //cannot surpass the capacity of the screen
     private Movie movie;
     private Screen screen;
 
-    public Screening(LocalDate date, LocalTime time, Movie movie, Screen screen) {
+    public Screening(LocalDate date, LocalTime time, int ticketsSold, Movie movie, Screen screen) {
         this.date = date;
         this.time = time;
-        this.ticketsSold = 0;
+        this.ticketsSold = ticketsSold;
         this.movie = movie;
         this.screen = screen;
     }

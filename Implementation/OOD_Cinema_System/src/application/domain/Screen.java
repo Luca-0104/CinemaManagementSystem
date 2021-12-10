@@ -10,6 +10,7 @@ public class Screen {
         this.capacity = capacity;
     }
 
+    // get methods
     public String getName() {
         return name;
     }

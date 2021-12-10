@@ -3,7 +3,7 @@ package application.persistency;
 import application.domain.Screen;
 
 public class PersistentScreen extends Screen {
-    private int oid;
+    private int oid;    //object id
 
     public PersistentScreen(int oid, String name, int capacity) {
         super(name, capacity);

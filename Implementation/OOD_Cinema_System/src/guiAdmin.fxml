@@ -12,15 +12,6 @@
 <VBox fx:id="box" maxHeight="512.0" maxWidth="1024.0" minHeight="512.0" minWidth="1024.0" prefHeight="512.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.AdminUI">
   <children>
     <MenuBar VBox.vgrow="NEVER">
-      <menus>
-        <Menu mnemonicParsing="false" text="File">
-          <items>
-            <MenuItem mnemonicParsing="false" text="New" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-          </items>
-        </Menu>
-
-      </menus>
     </MenuBar>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
@@ -32,6 +23,7 @@
                    <Button fx:id="addButtonMovie" mnemonicParsing="false" onAction="#showAddMovieDialog" text="Add Movie" />
                    <Button fx:id="addButtonScreening" mnemonicParsing="false" onAction="#showAddScreeningDialog" text="Add Screening" />
                    <Button mnemonicParsing="false" onAction="#cancelScreening" text="Cancel Screening" />
+                   <Button mnemonicParsing="false" onAction="#cancelSelection" text="Cancel Selected" />
                </children>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
