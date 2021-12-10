@@ -25,15 +25,15 @@ import java.util.List;
 import java.util.Optional;
 
 public class AdminUI implements ManagementObserver {
-    final static int         LEFT_MARGIN   = 50;
+    final static int         LEFT_MARGIN   = 100;
     final static int         TOP_MARGIN    = 50;
     final static int         BOTTOM_MARGIN = 50;
-    final static int         ROW_HEIGHT    = 30;
+    final static int         ROW_HEIGHT    = 50;
     final static int         COL_WIDTH     = 60;
     final static int         PPM           = 2;                     // Pixels per minute
     final static int         PPH           = 60 * PPM;              // Pixels per hours
-    final static int         TZERO         = 18;                    // Earliest time shown
-    final static int         SLOTS         = 12;                    // Number of booking slots shown
+    final static int         TZERO         = 12;                    // Earliest time shown
+    final static int         SLOTS         = 24;                    // Number of booking slots shown
     private ManagementSystem ms;
     private LocalDate displayedDate;
     private List<Movie> movies = new ArrayList<Movie>();
@@ -50,10 +50,10 @@ public class AdminUI implements ManagementObserver {
      * This methods is called after the constructor and after any FXML instance variable have been injected
      */
     public void initialize() {
-        movies = ManagementSystem.getMovies();
         ms = ManagementSystem.getInstance();
         ms.setDate(LocalDate.now());
         ms.addObserver(this);
+        movies = ManagementSystem.getMovies();
         screens = ManagementSystem.getScreens();
         datePicker.setValue(LocalDate.now());
         displayedDate = LocalDate.now();
@@ -67,7 +67,7 @@ public class AdminUI implements ManagementObserver {
                 ms.selectScreening(screens.get(yToScreen(firstY) - 1).getName(), xToTime(firstX));
             }
         });
-        // code to be executed when mouse is reeleased
+        // code to be executed when mouse is released
         canvas.addEventFilter(MouseEvent.MOUSE_RELEASED, (e) -> {
             mouseDown = false;
             Screening s = ms.getSelectedScreening();
@@ -86,6 +86,9 @@ public class AdminUI implements ManagementObserver {
 
     }
 
+    /**
+     * This is the method that draws the management system canvas (admin)
+     */
     @Override
     public void update() {
         GraphicsContext gc = canvas.getGraphicsContext2D();
@@ -102,52 +105,67 @@ public class AdminUI implements ManagementObserver {
         //
         gc.strokeLine(LEFT_MARGIN, 0, LEFT_MARGIN, canvas.getHeight());
         gc.strokeLine(0, TOP_MARGIN, canvas.getWidth(), TOP_MARGIN);
-        //
         for (int i = 0; i < screens.size(); i++) {
             int y = TOP_MARGIN + (i + 1) * ROW_HEIGHT;
-            // frontend
-            gc.fillText(((PersistentScreen)screens.get(i)).getOid() + " (" + screens.get(i).getCapacity() + ")", 0, y - ROW_HEIGHT / 3);
+            // The left-most column, presenting the information of screen (oid, name, capacity)
+            gc.fillText("("+((PersistentScreen)screens.get(i)).getOid()+") "+ screens.get(i).getName() +
+                    "\nCapacity: " + screens.get(i).getCapacity(), 5, y - ROW_HEIGHT / 3 - 10);
             gc.strokeLine(LEFT_MARGIN, y, canvas.getWidth(), y);
         }
-        LocalTime start = LocalTime.of(18, 0);
+        LocalTime start = LocalTime.of(12, 0);
         for (int i = 0; i < SLOTS + 1; i++) {
             LocalTime show = start.plusMinutes(i * 30);
             String tmp = show.getHour() + ":" + (show.getMinute() > 9 ? show.getMinute() : "0" + show.getMinute());
             int x = LEFT_MARGIN + i * COL_WIDTH;
-            gc.fillText(tmp, x + 15, 40);
+            gc.fillText(tmp, x, 40);
             gc.strokeLine(x, TOP_MARGIN, x, canvas.getHeight());
         }
         List<Screening> enumV = ms.getScreenings();
+        // draw the figure representing a screening. The duration is represented by a rectangle and information will be
+        // written on the pink rectangle.
         for (Screening s : enumV) {
             int x = timeToX(s.getTime());
             int y = screenToY(((PersistentScreen)s.getScreen()).getOid());
-            gc.setFill(Color.GRAY);
-            // frontend
-            gc.fillRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+            gc.setFill(Color.rgb(244, 143, 177 ));
+            float proportion = (float) s.getMovie().getRunningTime()/120;
+            gc.fillRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
+            // If this screening is selected, use red border to symbolize that
             if (s == ms.getSelectedScreening()) {
                 gc.setStroke(Color.RED);
-                gc.strokeRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+                gc.strokeRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
                 gc.setStroke(Color.BLACK);
             }
             gc.setFill(Color.WHITE);
-            // frontend
-            gc.fillText(s.getDetails(), x, y + ROW_HEIGHT / 2);
+            // set the text on the rectangle
+            gc.fillText("Title: "+s.getMovie().getTitle()+" Length: "+s.getMovie().getRunningTime()+"mins"
+                    +"\nStart from: "+s.getTime(), x, y + ROW_HEIGHT / 2);
         }
         Screening sg = ms.getSelectedScreening();
+        // Once a screening is dragged, use another red border to show where it is moving to
         if (mouseDown && sg != null) {
             int x = timeToX(sg.getTime()) + currentX - firstX;
             int y = screenToY(((PersistentScreen)sg.getScreen()).getOid()) + currentY - firstY;
             gc.setStroke(Color.RED);
-            // frontend
-            gc.strokeRect(x, y, 4 * COL_WIDTH, ROW_HEIGHT);
+            float proportion = (float) sg.getMovie().getRunningTime()/120;
+            gc.strokeRect(x, y, 4 * COL_WIDTH * proportion, ROW_HEIGHT);
             gc.setStroke(Color.BLACK);
         }
     }
 
+    /**
+     * Transform time to x coordinate value
+     * @param time
+     * @return integer x
+     */
     private int timeToX(LocalTime time) {
         return LEFT_MARGIN + PPH * (time.getHour() - TZERO) + PPM * time.getMinute();
     }
 
+    /**
+     * Transform x coordinate value to time
+     * @param x
+     * @return time
+     */
     private LocalTime xToTime(int x) {
         x -= LEFT_MARGIN;
         int h = Math.max(0, (x / PPH) + TZERO);
@@ -155,14 +173,27 @@ public class AdminUI implements ManagementObserver {
         return LocalTime.of(h, m);
     }
 
+    /**
+     * Transform screen to y coordinate value
+     * @param screen
+     * @return y
+     */
     private int screenToY(int screen) {// this assumes that the tables are continuously numbered from 1 to n-1
         return TOP_MARGIN + (ROW_HEIGHT * (screen - 1));
     }
 
+    /**
+     * Transform y coordinate to screen
+     * @param y
+     * @return screen
+     */
     private int yToScreen(int y) {
         return ((y - TOP_MARGIN) / ROW_HEIGHT) + 1;
     }
 
+    /**
+     * Display the next day
+     */
     public void nextDay() {
         displayedDate = datePicker.getValue();
         displayedDate = displayedDate.plusDays(1);
@@ -170,6 +201,9 @@ public class AdminUI implements ManagementObserver {
         ms.setDate(displayedDate);
     }
 
+    /**
+     * Display the previous day
+     */
     public void prevDay() {
         displayedDate = datePicker.getValue();
         displayedDate = displayedDate.minusDays(1);
@@ -177,15 +211,34 @@ public class AdminUI implements ManagementObserver {
         ms.setDate(displayedDate);
     }
 
+    /**
+     * Display the date picker to choose date
+     */
     public void showDate() {
         displayedDate = datePicker.getValue();
         ms.setDate(displayedDate);
     }
 
+    /**
+     * Transit the request to Management System of canceling a screening
+     */
     public void cancelScreening() {
         ms.cancelSelected();
     }
 
+    /**
+     * Transit the request to Management System of canceling selecting currently selected screening
+     */
+    public void cancelSelection() {
+        ms.noSelectScreening();
+    }
+
+    /**
+     * Set the message content
+     * @param s
+     * @param confirm
+     * @return boolean
+     */
     @Override
     public boolean message(String s, boolean confirm) {
         Alert alert;
@@ -205,7 +258,9 @@ public class AdminUI implements ManagementObserver {
     }
 
     /**
-     * This is an example of using a separate class to create a custom dialog
+     * Apply a separate class to create a dialog for adding movie.
+     * If the result presented does not meet the requirement, a new movie dialog will appear
+     * to let user re-enter the information.
      */
     public void showAddMovieDialog() {
         MovieDialog addMovie = new MovieDialog();
@@ -213,6 +268,7 @@ public class AdminUI implements ManagementObserver {
 
         if (result.isPresent()) {
             MovieInfo m = result.get();
+            // transit the info, let management system check whether this movie can be added
             if (!ms.addMovie(m.title, m.runningTime, m.year)) {
                 showAddMovieDialog(m);
             }
@@ -220,12 +276,18 @@ public class AdminUI implements ManagementObserver {
         }
     }
 
+    /**
+     * Once the result presented does not meet the requirement, a new movie dialog will be created
+     * by this method to let user re-enter the information to add movie.
+     * @param m2
+     */
     private void showAddMovieDialog(MovieInfo m2) {
         MovieDialog addMovie = new MovieDialog(m2);
         Optional<MovieInfo> result = addMovie.showAndWait();
 
         if (result.isPresent()) {
             MovieInfo m = result.get();
+            // transit the info, let management system check whether this movie can be added
             if (!ms.addMovie(m.title, m.runningTime, m.year)) {
                 showAddMovieDialog(m);
             }
@@ -233,12 +295,18 @@ public class AdminUI implements ManagementObserver {
         }
     }
 
+    /**
+     * Apply a separate class to create a dialog for adding screening.
+     * If the result presented does not meet the requirement, a new screening dialog will appear
+     * to let user re-enter the information.
+     */
     public void showAddScreeningDialog() {
         ScreeningDialog addScreening = new ScreeningDialog();
         Optional<ScreeningInfo> result = addScreening.showAndWait();
 
         if (result.isPresent()) {
             ScreeningInfo s = result.get();
+            // transit the info, let management system check whether this screening can be added
             if (!ms.scheduleScreening(displayedDate,
                                       s.time,
                                       movies.get(s.movieNumber - 1).getTitle(),
@@ -250,12 +318,18 @@ public class AdminUI implements ManagementObserver {
         }
     }
 
+    /**
+     * Once the result presented does not meet the requirement, a new screening dialog will be created
+     * by this method to let user re-enter the information to add screening.
+     * @param s2
+     */
     private void showAddScreeningDialog(ScreeningInfo s2) {
         ScreeningDialog addScreening = new ScreeningDialog(s2);
         Optional<ScreeningInfo> result = addScreening.showAndWait();
 
         if (result.isPresent()) {
             ScreeningInfo s = result.get();
+            // transit the info, let management system check whether this screening can be added
             if (!ms.scheduleScreening(displayedDate,
                                       s.time,
                                       movies.get(s.movieNumber - 1).getTitle(),
@@ -266,4 +340,6 @@ public class AdminUI implements ManagementObserver {
             }
         }
     }
+
+
 }

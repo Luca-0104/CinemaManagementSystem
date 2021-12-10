@@ -3,7 +3,7 @@ package application.persistency;
 import application.domain.Movie;
 
 public class PersistentMovie extends Movie {
-    private int oid;
+    private int oid;    //object id
 
     public PersistentMovie(int oid, String title, int runningTime, int year) {
         super(title, runningTime, year);

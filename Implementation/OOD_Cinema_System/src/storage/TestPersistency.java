@@ -12,7 +12,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-public class DataInsertTool {
+public class TestPersistency {
 
     //instances of mappers
     static ScreeningMapper sgm = ScreeningMapper.getInstance();
@@ -20,7 +20,6 @@ public class DataInsertTool {
     static ScreenMapper sm = ScreenMapper.getInstance();
 
     public static void main(String[] args) {
-//        String url = "jdbc:sqlite:./cinema.db";
         String url = "jdbc:sqlite:./Implementation/OOD_Cinema_System/cinema.db";
 
 
@@ -45,7 +44,7 @@ public class DataInsertTool {
                 PersistentMovie movie5 = mm.getMovie("testMovie5", 120, 2021);
 
                 /*
-                    movie mapper -- getMovieForOid (!!!this is "protected", these tests should be commented eventually)
+                    movie mapper -- getMovieForOid (!!!this method is "default", these tests should be commented eventually)
                     COVERAGE:   getMovieForOid
                                 getFromCache
                                 getMovie(String sql)
@@ -78,7 +77,7 @@ public class DataInsertTool {
                 System.out.println(sm.getScreen("screen10").toString());
 
                 /*
-                    screen mapper --  getScreenForOid (!!!this is "protected", these tests should be commented eventually)
+                    screen mapper --  getScreenForOid (!!!this method is "default", these tests should be commented eventually)
                     COVERAGE:   getScreenForOid
                                 getFromCache
                  */
